@@ -1,5 +1,6 @@
 name: "Everest-bio"
 title: "Everest"
+theme: Everest.css 
 description: |
   Everest
 output_dir: "docs"
@@ -9,4 +10,7 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
