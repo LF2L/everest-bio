@@ -5,18 +5,25 @@ description: |
   Projet de recherche CREIDD et ERPI
   
 author:
-  - first_name: "Mauricio"
-    last_name: "Camargo"
-    url: https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/
-    affiliation: ERPI
-    affiliation_url: https://erpi.univ-lorraine.fr/
-    orcid_id: 0000-0003-3867-2438 
   - first_name: "Nadège"
     last_name: "Troussier"
     url: https://recherche.utt.fr/icd-directory/nadege-troussier
     affiliation: CREIDD
     affiliation_url: https://recherche.utt.fr/icd-directory/nadege-troussier
     orcid_id: 0000-0001-6707-0300
+  - first_name: "Mauricio"
+    last_name: "Camargo"
+    url: https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0003-3867-2438 
+  - first_name: "Hakim"
+    last_name: "Boudaoud"
+    url: https://erpi.univ-lorraine.fr/people/Hakim-Boudaoud/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0003-4452-5952
+        
   - first_name: "Fabio"
     last_name: "Cruz"
     url: https://erpi.univ-lorraine.fr/people/Fabio-Cruz/
