@@ -1,5 +1,5 @@
 ---
-title: "Everest Bio)"
+title: "Everest Bio"
 description: |
   **ÉV**aluation du r**É**seau de **RE**cyclage pour **S**outenir la **T**ransition vers une **BIO**économie <br/>
   Projet de recherche CREIDD et ERPI
@@ -44,6 +44,9 @@ site: distill::distill_website
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
+require(tidyverse)
+require(xaringan)
+require(xaringanExtra)
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
 
@@ -57,6 +60,19 @@ knitr::opts_chunk$set(echo = FALSE)
 Dans un contexte de consommation mondiale croissante et de pression accrue sur les ressources, qui plus est, celles dédiées à la survie de l’espèce humaine, il est urgent de dissocier la croissance économique de l'utilisation de ces dernières. Ceci pourrait notamment permettre d'accroître la résistance de l'Europe aux incertitudes liées à l'approvisionnement en matières premières et à la sécurité des chaînes de valeur, comme c'est le cas actuellement avec la crise sanitaire [@Sanye-Mengual2019]. 
 
 Il est donc temps de rendre nos filières industrielles plus résilientes et adaptées aux nouvelles conditions imposées par la planète. Pour soutenir une transition industrielle, dont celle vers une bioéconomie répondant au concept d’économie circulaire, ce projet cherche à développer une méthodologie permettant d’évaluer les services écosystémiques, et donc les externalités des organisations industrielles émergentes. Par la mise en commun de compétences du ICD/CREIDD^[Institut Charles Delaunay/Centre de recherches et d’études interdisciplinaires sur le développement durable de l'UTT (Université technologique de Troyes)]   et de l’ERPI^[  Equipe de Recherche sur les Processus Innovatifs de l’UL (Université de Lorraine)], cette méthodologie, basée sur un couplage analyse du cycle de vie et modélisation par dynamique de systèmes, cherche à faciliter l’évaluation d’un projet industriel dès sa phase amont en considérant ses potentiels impacts positifs et/ou négatifs sur son territoire. L’approche proposée sera testée sur le cas du recyclage, l’un des piliers de l’économie circulaire, et en particulier sur la mise en place d’un démonstrateur de type « smart-grid du recyclage » du plastique en circuit court. Ce projet permet également de soutenir les acteurs publics et privés par le développement d’outils d’aide à la décision supportés par les technologies numériques tel que défini dans l’axe efficacité énergétique de l’annexe 1 du texte d’appel à projet.
+
+
+
+# Presentation
+
+```{r embed-xaringan, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "slides/index.html",
+                              ratio = "16:9",
+                              max_width = 600)
+
+#xaringanExtra::use_share_again(url = "slides/index.html")
+```
 
 
 

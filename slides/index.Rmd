@@ -1,0 +1,63 @@
+---
+title: "Everest Bio"
+subtitle: |
+  **ÉV**aluation du r**É**seau de **RE**cyclage pour **S**outenir la **T**ransition vers une **BIO**économie <br/>
+  Projet de recherche CREIDD et ERPI
+author: "Fabio Xie"
+institute: "CREIDD, ERPI"
+date: "2020/11/18 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+
+## The problem: Plastic waste
+
+.pull-left[ 
+- US recycled less than 9% of its plastic waste.
+- EU, recycled about 30%. However, this number is what is collected, not from what is in circulation*. 
+- China’s ban on plastic trash
+- Plastic trash could top 13 billion tons by 2050
+- Economics of plastic recycling historically have been challenging
+- Little financial incentive to encourage consumers to recycle their own plastic waste
+
+## We barely recycle plastic!!.. 
+]
+
+
+.pull-right[ 
+![Plastic waste](https://images.unsplash.com/photo-1537084642907-629340c7e59c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80)
+]
+
+
+.footnote[
+*Kranzinger, L., Pomberger, R., Schwabl, D., Flachberger, H., Bauer, M., Lehner, M., Hofer, W., 2018. Output-oriented analysis of the wet mechanical processing of polyolefin-rich waste for feedstock recycling. Waste Manag. Res. 36, 445–453
+]
+
+
+---
+
+# Challengue
+
+The development of sustainable industrial supply chains
+
+.pull-left[
+.small[
+
+- Les seuls critères technico-économiques ne permettent pas (plus) d’avoir une prise de décision éclairée 
+
+- Besoin d’évaluer les filières de manière différente, notamment les impacts réels sur les écosystèmes
+
+- Une vision plus holistique est nécessaire pour évaluer la faisabilité de ces nouvelles filières
+]
+ ]
+
+
+---
