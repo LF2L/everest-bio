@@ -36,6 +36,7 @@ author:
     affiliation_url: https://erpi.univ-lorraine.fr/
     #orcid_id: 0000-0001-6328-1338
 bibliography: library.bib
+csl: journal-of-cleaner-production.csl
 link-citations: yes
 linkcolor: blue 
 site: distill::distill_website
@@ -65,13 +66,11 @@ Il est donc temps de rendre nos filières industrielles plus résilientes et ada
 
 # Presentation
 
+
 ```{r embed-xaringan, echo=FALSE}
 
-xaringanExtra::embed_xaringan(url = "slides/index.html",
-                              ratio = "16:9",
-                              max_width = 600)
+embed_xaringan(url = "slides/index.html", ratio = "16:9")
 
-#xaringanExtra::use_share_again(url = "slides/index.html")
 ```
 
 
@@ -81,7 +80,7 @@ xaringanExtra::embed_xaringan(url = "slides/index.html",
 Le concept d'économie circulaire (EC) est un élément central pour promouvoir un modèle durable, régénérateur et inclusif qui peut aider de manière significative nos économies à se réconcilier avec les limites et les frontières de notre planète en restaurant les systèmes naturels, en réduisant les émissions de GES (gaz à effet de serre), et en minimisant la perte de capital naturel et de biodiversité. Le fonctionnement en circuit court est l’un des piliers pour rendre les opérations d’une filière plus efficaces et rationnelles, tout en créant de la valeur locale [@Capasso2019]. 
 Cependant son opérationnalisation nécessite des prises de décision qui s’avèrent difficiles, car elles challengent le paradigme actuel des activités industrielles, centrées principalement sur l’évaluation technico-économiques et, encore trop peu et trop récemment sur des considérations environnementales. En effet, la vision traditionnelle reste prégnante bien que limitée car elle ne considère pas systématiquement l’ensemble des impacts d’une activité sur les écosystèmes.
  
-Comme démontré par les travaux réalisés depuis 2001 par le CREIDD sur les thématiques de l’écologie industrielle, l’éco-conception, l’analyse de cycle de vie et l’évaluation des risques environnementaux, la compréhension des mécanismes de transition industrielle en incluant des dimensions de durabilité, sont fondamentaux. De même, ils ont montré l’importance d’une vision intégrée pour la conception des systèmes industriels-territoires [@Vadoudi2014; @Vadoudi2015; @Vadoudi2017; @Bruel2014; @Bruel2016; @Bruel2018]. Plus récemment, des travaux ont montré que le rapprochement de l'écologie industrielle et de l’économie écologique peut être un moyen d’aller au-delà de l’étude physique des flux de matière et d’énergie [@Bruel2019; @Bruel2016]. 
+Comme démontré par les travaux réalisés depuis 2001 par le CREIDD sur les thématiques de l’écologie industrielle, l’éco-conception, l’analyse de cycle de vie et l’évaluation des risques environnementaux, la compréhension des mécanismes de transition industrielle en incluant des dimensions de durabilité, sont fondamentaux. De même, ils ont montré l’importance d’une vision intégrée pour la conception des systèmes industriels-territoires [@Vadoudi2014; @Vadoudi2015; @Troussier2017; @Bruel2014; @Bruel2016; @Bruel2018]. Plus récemment, des travaux ont montré que le rapprochement de l'écologie industrielle et de l’économie écologique peut être un moyen d’aller au-delà de l’étude physique des flux de matière et d’énergie [@Bruel2016]. 
 En particulier dans ce projet on s’intéressera à la quantification et prise en compte des services rendus par une organisation industrielle à son territoire (espace naturel, humain et social). Ceci soulève la question des externalités environnementales et plus particulièrement des services écosystémiques rendus.
 
 
