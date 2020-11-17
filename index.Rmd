@@ -160,6 +160,7 @@ L’approche méthodologique comporte les étapes suivantes :
 
 ERPI apportera sa compétence sur la formalisation des services écosystémiques rendus par les systèmes de production sur la base d’une modélisation en dynamique de systèmes et le démonstrateur.
 ICD/CREIDD apportera sa compétence sur l’évaluation des impacts écologiques et sociaux via la monétarisation des services écosystémiques.
+
 Les deux partenaires collaboreront autour du même cas d’étude qui permettra de déployer de façon conjointe les méthodologies déjà mises au point dans le cadre de travaux de thèse dans chacun des laboratoires pour proposer un modèle d’analyse des impacts locaux (écologiques et sociaux) des transformations des systèmes de production.
 
 ##	Déroulement et phasage des travaux. Le projet se déroulera en deux phases :
