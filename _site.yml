@@ -6,6 +6,9 @@ description: |
 output_dir: "docs"
 repository_url: https://github.com/LF2L/everest-bio
 navbar:
+#  logo:
+#    image: figures/logo.png
+#    href: https://lf2l.github.io/everest-bio/
   search: true
   source_url: true
   right:
