@@ -1,0 +1,73 @@
+---
+title: "Sustainable behaviour"
+description: |
+  some
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+repository_url: https://github.com/LF2L/everest-bio
+#bibliography: Biblio.bib
+#nocite: '@*'
+  
+author:
+  - first_name: " Master 3"
+    last_name: ""
+    url: 
+    affiliation: CREIDD?, ERPI?
+    affiliation_url: 
+    
+  - first_name: "Fabio"
+    last_name: "Cruz"
+    url: https://erpi.univ-lorraine.fr/people/Fabio-Cruz/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0001-8529-5327    
+    
+  - first_name: "Nadège"
+    last_name: "Troussier"
+    url: https://recherche.utt.fr/icd-directory/nadege-troussier
+    affiliation: CREIDD
+    affiliation_url: https://recherche.utt.fr/icd-directory/nadege-troussier
+    orcid_id: 0000-0001-6707-0300
+
+  - first_name: "Hakim"
+    last_name: "Boudaoud"
+    url: https://erpi.univ-lorraine.fr/people/Hakim-Boudaoud/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0003-4452-5952
+    
+  - first_name: "Mauricio"
+    last_name: "Camargo"
+    url: https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0003-3867-2438 
+        
+---
+
+
+# Abstract
+
+Master 3: Mise en place de la collecte des bouchons : pourrait être analyse sur le comportement des acteurs => quel changement dans ces profils de gens ? => autre master (identifier ce que ça change chez les gens qui participent ou pas) avec Tatiana et Laure !!! doctorant avec master côté Nancy (avec Hakim et Mauricio) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

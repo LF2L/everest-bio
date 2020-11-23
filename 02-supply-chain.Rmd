@@ -1,0 +1,65 @@
+---
+title: "Sustainable Indicators"
+description: |
+  Some additional details about the website
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+repository_url: https://github.com/LF2L/everest-bio
+#bibliography: Biblio.bib
+#nocite: '@*'
+  
+author:
+  - first_name: "Sabrina?"
+    last_name: "Master 2"
+    url: 
+    affiliation: CREIDD?, ERPI?
+    affiliation_url: 
+
+  - first_name: "Fedoua"
+    last_name: "Kasmi"
+    url: https://erpi.univ-lorraine.fr/people/Fedoua-Kasmi/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0001-5159-0264
+        
+  - first_name: "Pavlo"
+    last_name: "Santander"
+    url: http://erpi.univ-lorraine.fr/people/Pavlo-Santander/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    #orcid_id: 0000-0001-6328-1338
+    
+  - first_name: "Fabio"
+    last_name: "Cruz"
+    url: https://erpi.univ-lorraine.fr/people/Fabio-Cruz/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0001-8529-5327    
+    
+  - first_name: "Nadège"
+    last_name: "Troussier"
+    url: https://recherche.utt.fr/icd-directory/nadege-troussier
+    affiliation: CREIDD
+    affiliation_url: https://recherche.utt.fr/icd-directory/nadege-troussier
+    orcid_id: 0000-0001-6707-0300
+
+  - first_name: "Hakim"
+    last_name: "Boudaoud"
+    url: https://erpi.univ-lorraine.fr/people/Hakim-Boudaoud/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0003-4452-5952
+   
+---
+
+
+# Abstract
+
+Master 2: sur la chaine de valeur localisée sur le cas d’étude (périmètre de pavlo) sur la base d’une analyse par les acteurs effectifs et potentiels; quels ont les freins et leviers au développement du plastique recyclé dans le territoire envisagé; analyse des services écosystémiques actuels et impactés. Pas que PLA mais aussi polypro en particulier… (Sabrina, avec Fedoua Kasmi et Hakim) 
+
+
+
+
+
