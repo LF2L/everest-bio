@@ -7,8 +7,8 @@ output:
     toc: true
     toc_depth: 2
 repository_url: https://github.com/LF2L/everest-bio
-#bibliography: Biblio.bib
-#nocite: '@*'
+bibliography: 03-comportement.bib
+nocite: '@*'
   
 author:
   - first_name: " Master 3"
@@ -50,11 +50,16 @@ author:
 
 # Abstract
 
-Master 3: Mise en place de la collecte des bouchons : pourrait être analyse sur le comportement des acteurs => quel changement dans ces profils de gens ? => autre master (identifier ce que ça change chez les gens qui participent ou pas) avec Tatiana et Laure !!! doctorant avec master côté Nancy (avec Hakim et Mauricio) 
+Master 3: Mise en place de la collecte des bouchons : pourrait être analyse sur le comportement des acteurs => quel changement dans ces profils de gens ? => autre master (identifier ce que ça change chez les gens qui participent ou pas) avec Tatiana et Laure !!! doctorant avec master côté Nancy (avec Hakim et Mauricio) 
 
 
+# Rationale
 
+Some ideas:
 
+- Circular economy decisions are very complex but often the perceptions, attitudes, and personal values of decision makers directly influence organizations’ strategic actions towards a circular economy. Both active participation of organizations and the role of decision makers are pivotal to implement a circular economy for plastics [@Khan2020].
+
+- Identifying and assessing specific barriers associated with the workplace context could be crucial for achieving better employee engagement and a lower ecological footprint for organizations [@Yuriev2020]
 
 
 
