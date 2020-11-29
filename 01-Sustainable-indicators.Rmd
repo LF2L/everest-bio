@@ -7,8 +7,8 @@ output:
     toc: true
     toc_depth: 2
 repository_url: https://github.com/LF2L/everest-bio
-#bibliography: Biblio.bib
-#nocite: '@*'
+bibliography: 01-Sustainable-indicators.bib
+nocite: '@*'
 ---
 
 
@@ -18,3 +18,10 @@ Recycling is key strategy in order to establish in the circular economy umbrella
 What are the the 'pertinent' indicators to evaluate the local distributed recycling network in a perspective of revelance of and also in the quality and feasability to obtain data.
 
 Quels indicateurs pour évaluer la soutenabilité : pertinence, disponibilité, facilité de mise en œuvre ; s’accorcher au territoire : analyse des enjeux du territoire (périmètre thèse pavlo) => interview des acteurs, collecte d’info sur le territoire => impact quels sont les enjeux ? quels sont les indicateurs que l’on peut associer et les méthodes d’évaluation associée avec Nadège, Mauricio et Hakim 
+
+
+# Rationale
+
+## LCA and 3D Printing
+
+- AM’s environmental performance is seldom investigated [@Saade2020].
