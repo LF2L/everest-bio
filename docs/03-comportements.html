@@ -2316,6 +2316,16 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   }</style>
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.5.2/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+  <script src="site_libs/d3-3.3.8/d3.min.js"></script>
+  <script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
+  <link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+  <script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+  <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+  <script src="site_libs/chromatography-0.1/chromatography.js"></script>
+  <script src="site_libs/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
+  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
@@ -2411,6 +2421,9 @@ Research axis
 </ul>
 </nav>
 </div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
 <h1 id="abstract">Abstract</h1>
 <p>Master 3: Mise en place de la collecte des bouchons : pourrait être analyse sur le comportement des acteurs =&gt; quel changement dans ces profils de gens ? =&gt; autre master (identifier ce que ça change chez les gens qui participent ou pas) avec Tatiana et Laure !!! doctorant avec master côté Nancy (avec Hakim et Mauricio)</p>
 <h1 id="rationale">Rationale</h1>
@@ -2426,16 +2439,101 @@ Research axis
 </ul>
 <h2 id="on-theory-of-planned-behaviour">On Theory of planned Behaviour</h2>
 <ul>
-<li><p><span class="citation" data-cites="Ajzen1991"><a href="#ref-Ajzen1991" role="doc-biblioref">Ajzen</a> (<a href="#ref-Ajzen1991" role="doc-biblioref">1991</a>)</span> developed <strong>Theory of Planned Behaviour (TPB)</strong> which is one of the most influencing model for designing behavioral interventions <span class="citation" data-cites="Yuriev2020">(<a href="#ref-Yuriev2020" role="doc-biblioref">Yuriev et al. 2020</a>)</span>. Therefore, researchers have been increasingly employing the TPB model across various disciplines including environmental science and sustainability management TPB postulates considers three main aspects (1) attitude towards behavioral intention, (2) subjective norms, and (3) perceived behavioral control (PCB), together they shape behavioral intention as well as actual behavior. To date, TPB has received around 90,000 citations <span class="citation" data-cites="Yuriev2020">(<a href="#ref-Yuriev2020" role="doc-biblioref">Yuriev et al. 2020</a>)</span></p></li>
-<li><p>Theory of planned behavior (TPB) is based on the assumption that some conscious reasoning is involved in the formation of intentions to perform a behavior.</p></li>
-<li><p>Behavior partly on the control of the individual</p></li>
-<li><p>Behavior is predicted by attitudinal and normative factors and perceived behavioral control (PBC).</p></li>
-<li><p>PBC reflects the extent to which the individual feels able to perform the behavior.</p></li>
-<li><p>Past behavior tends to predict intentions and future behavior</p></li>
-<li><p>The factors that influenced the past behavior continue to influence the intentions and future behavior, but past behavior does not cause future behavior.</p></li>
+<li><span class="citation" data-cites="Ajzen1991"><a href="#ref-Ajzen1991" role="doc-biblioref">Ajzen</a> (<a href="#ref-Ajzen1991" role="doc-biblioref">1991</a>)</span> developed <strong>Theory of Planned Behaviour (TPB)</strong> which is one of the most influencing model for designing behavioral interventions <span class="citation" data-cites="Yuriev2020">(<a href="#ref-Yuriev2020" role="doc-biblioref">Yuriev et al. 2020</a>)</span>. Therefore, researchers have been increasingly employing the TPB model across various disciplines including environmental science and sustainability management TPB postulates considers three main aspects</li>
+</ul>
+<ol type="1">
+<li>Attitude towards behavioral intention,</li>
+<li>Subjective Norms (SN), and</li>
+<li>Perceived Behavioral Control (PCB),</li>
+</ol>
+<p>together they shape behavioral intention as well as actual behavior. To date, TPB has received around 90,000 citations <span class="citation" data-cites="Yuriev2020">(<a href="#ref-Yuriev2020" role="doc-biblioref">Yuriev et al. 2020</a>)</span></p>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-9315aa722290d2ac2f6c" style="width:624px;height:384px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9315aa722290d2ac2f6c">{"x":{"diagram":"\ngraph LR\n  A[\"Attitude toward the act (Att)\"]-->D[Behavioural Intention]\n  B[\"Subjective Norm (SN)\"]-->D[Behavioural Intention]\n  C[\"Perceived Behavioural Control (PBC)\"]-->D[Behavioural Intention]\n  D[Behavioural Intention]-->E[Behaviour]\n  C[Perceived Behavioural Control]-.->E[Behaviour]\n  \n  classDef className font-size:20px;\n  class A,B,C,D className;\n"},"evals":[],"jsHooks":[]}</script>
+</div>
+<ul>
+<li>Theory of planned behavior (TPB) is based on the assumption that some conscious reasoning is involved in the formation of intentions to perform a behavior.</li>
+<li>Behavior partly on the control of the individual</li>
+<li>Behavior is predicted by attitudinal and normative factors and perceived behavioral control (PBC).</li>
+<li>PBC reflects the extent to which the individual feels able to perform the behavior.</li>
+<li>Past behavior tends to predict intentions and future behavior</li>
+<li>The factors that influenced the past behavior continue to influence the intentions and future behavior, but past behavior does not cause future behavior.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:left;">
+Definition
+</th>
+<th style="text-align:left;">
+Definition.recycling
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Attitude
+</td>
+<td style="text-align:left;">
+Attitude toward the behavior and refers to the degree to which a person has a favorable or unfavorable evaluation or appraisal of the behavior in question
+</td>
+<td style="text-align:left;">
+The extent to which plastic recycling is valued by people, whether positive or negative
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Subjective Norms
+</td>
+<td style="text-align:left;">
+The perceived social pressure to perform or not to perform the behavior
+</td>
+<td style="text-align:left;">
+The extent to which people are influenced by perceived norms of plastic recycling in their surroundings
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Perceived Behavioral Control (PCB)
+</td>
+<td style="text-align:left;">
+The perceived ease or difficulty of performing the behavior and it is assumed to reflect past experience as well as anticipated impediments and obstacles
+</td>
+<td style="text-align:left;">
+the perceived power (and knowledge) of people to implement plastic recycling
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Behavioral intention
+</td>
+<td style="text-align:left;">
+They are indications of how hard people are willing to try, of how much of an effort they are planning to exert, in order to perform the behavior
+</td>
+<td style="text-align:left;">
+A perceived likelihood or subjective probability of decision makers that they will implement plastic recycling in their organizations
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Behaviour
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+The extent to which organizations have implemented best practices of plastic recycling
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <h2 id="on-distributed-recycling-via-additive-manufacturing">On Distributed Recycling via Additive Manufacturing</h2>
 <ul>
