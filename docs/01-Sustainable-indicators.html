@@ -53,35 +53,35 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #545454; font-weight: bold; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #a1024a; } /* BaseN */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007faa; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #008000; } /* Char */
-code span.cn { color: #d91e18; } /* Constant */
-code span.co { color: #545454; } /* Comment */
-code span.cv { color: #545454; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #aa5d00; } /* DataType */
-code span.dv { color: #a1024a; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #a1024a; } /* Float */
-code span.fu { color: #4254a7; } /* Function */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #545454; font-weight: bold; } /* Information */
-code span.kw { color: #007faa; font-weight: bold; } /* Keyword */
-code span.op { color: #696969; } /* Operator */
-code span.ot { color: #007faa; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #008000; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #008000; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #008000; } /* VerbatimString */
-code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warning */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
@@ -106,6 +106,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--/radix_placeholder_meta_tags-->
   
   <meta name="citation_reference" content="citation_title=How has LCA been applied to 3D printing? A systematic literature review and recommendations for future studies;citation_publication_date=2020;citation_volume=244;citation_doi=10.1016/j.jclepro.2019.118803;citation_issn=09596526;citation_author=Marcella Ruschi Mendes Saade;citation_author=Ammar Yahia;citation_author=Ben Amor"/>
+  <meta name="citation_reference" content="citation_title=Promoting sustainable consumption with LCA – a social practice based perspective;citation_publication_date=2020;citation_publisher=Elsevier BV;citation_volume=283;citation_doi=10.1016/j.jclepro.2020.125234;citation_issn=09596526;citation_author=Paul Suski;citation_author=Melanie Speck;citation_author=Christa Liedtke"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -125,6 +126,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
       var header = $('header').get(0);
       var headerHeight = header.offsetHeight;
       var headroom = new Headroom(header, {
+        tolerance: 5,
         onPin : function() {
           if (window.headroom_prevent_pin) {
             window.headroom_prevent_pin = false;
@@ -472,22 +474,19 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
     return offset ? offset + '/' + url : url;
   }
 
-  function createIndex() {
-    var options = {
-      keys: [
-        "title",
-        "categories",
-        "description",
-        "contents"
-      ]
-    };
-    return new window.Fuse([],options);
-  }
-
   function createFuseIndex() {
 
     // create fuse index
-    var options = { keys: ["title", "description", "contents"] };
+    var options = {
+      keys: [
+        { name: 'title', weight: 20 },
+        { name: 'categories', weight: 15 },
+        { name: 'description', weight: 10 },
+        { name: 'contents', weight: 5 },
+      ],
+      ignoreLocation: true,
+      threshold: 0
+    };
     var fuse = new window.Fuse([], options);
 
     // fetch the main search.json
@@ -555,12 +554,6 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
               shouldSort: true,
               minMatchCharLength: 2,
               limit: 10,
-              keys: [
-                { name: 'title', weight: 20 },
-                { name: 'categories', weight: 15 },
-                { name: 'description', weight: 10 },
-                { name: 'contents', weight: 5 },
-              ],
             };
             var results = fuse.search(query, searchOptions);
             callback(results
@@ -858,7 +851,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   d-article pre,
   d-article div.sourceCode,
   d-article div.sourceCode pre {
-    overflow: hidden;
+    overflow: auto;
   }
 
   d-article div.sourceCode {
@@ -2284,7 +2277,8 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   	font-family: var(--navbar-font), var(--heading-default);
   }
 
-  .distill-site-header a {
+  .distill-site-header a,
+  .nav-dropdown .nav-dropbtn {
     font-family: var(--navbar-font), var(--heading-default);
   }
 
@@ -2308,7 +2302,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   	color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.5.2/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.5.3/header-attrs.js"></script>
   <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
@@ -2379,6 +2373,7 @@ Research axis
 <li><a href="#rationale">Rationale</a>
 <ul>
 <li><a href="#lca-and-3d-printing">LCA and 3D Printing</a></li>
+<li><a href="#lca-and-social-practices">LCA and Social practices</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2392,10 +2387,17 @@ What are the the ‘pertinent’ indicators to evaluate the local distributed re
 <ul>
 <li>AM’s environmental performance is seldom investigated <span class="citation" data-cites="Saade2020">(<a href="#ref-Saade2020" role="doc-biblioref">Saade, Yahia, and Amor 2020</a>)</span>.</li>
 </ul>
+<h2 id="lca-and-social-practices">LCA and Social practices</h2>
+<ul>
+<li>Llinks social practices to the life cycle inventory of LCA <span class="citation" data-cites="Suski2020">(<a href="#ref-Suski2020" role="doc-biblioref">Suski, Speck, and Liedtke 2020</a>)</span>.</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-Saade2020" class="csl-entry" role="doc-biblioentry">
 Saade, Marcella Ruschi Mendes, Ammar Yahia, and Ben Amor. 2020. <span>“<span class="nocase">How has LCA been applied to 3D printing? A systematic literature review and recommendations for future studies</span>.”</span> <em>J. Clean. Prod.</em> 244 (January): 118803. <a href="https://doi.org/10.1016/j.jclepro.2019.118803">https://doi.org/10.1016/j.jclepro.2019.118803</a>.
+</div>
+<div id="ref-Suski2020" class="csl-entry" role="doc-biblioentry">
+Suski, Paul, Melanie Speck, and Christa Liedtke. 2020. <span>“<span class="nocase">Promoting sustainable consumption with LCA – a social practice based perspective</span>.”</span> <em>J. Clean. Prod.</em> 283 (November): 125234. <a href="https://doi.org/10.1016/j.jclepro.2020.125234">https://doi.org/10.1016/j.jclepro.2020.125234</a>.
 </div>
 </div>
 <!--radix_placeholder_article_footer-->

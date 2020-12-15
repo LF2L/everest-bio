@@ -25,3 +25,9 @@ Quels indicateurs pour évaluer la soutenabilité : pertinence, disponibilité
 ## LCA and 3D Printing
 
 - AM’s environmental performance is seldom investigated [@Saade2020].
+
+
+
+## LCA and Social practices
+
+- Llinks social practices to the life cycle inventory of LCA [@Suski2020].

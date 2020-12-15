@@ -7,7 +7,7 @@ output:
     toc: true
     toc_depth: 2
 repository_url: https://github.com/LF2L/everest-bio
-#bibliography: Biblio.bib
+bibliography: 02-supply-chain.bib
 #nocite: '@*'
   
 author:
@@ -60,6 +60,9 @@ author:
 Master 2: sur la chaine de valeur localisée sur le cas d’étude (périmètre de pavlo) sur la base d’une analyse par les acteurs effectifs et potentiels; quels ont les freins et leviers au développement du plastique recyclé dans le territoire envisagé; analyse des services écosystémiques actuels et impactés. Pas que PLA mais aussi polypro en particulier… (Sabrina, avec Fedoua Kasmi et Hakim) 
 
 
+## Rational
 
+- @Alkhuzaim2020 provide insights into more effective environmentally sustainable supply chain and circularity performance evaluation, accounting, and appraisal using emergy based performance measurements. 
+ 
 
 
