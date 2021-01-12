@@ -9,15 +9,56 @@ output:
 repository_url: https://github.com/LF2L/everest-bio
 bibliography: 01-Sustainable-indicators.bib
 nocite: '@*'
+editor_options: 
+  chunk_output_type: console
 ---
 
+```{r, include=FALSE}
 
-# Abstract
+#library(rticles)
+#library(rmarkdown)
+#render("01-Sustainable-indicators.Rmd", output_format = "word_document")
+#render("01-Sustainable-indicators.Rmd", output_format = "pdf_document")
+#render("01-Sustainable-indicators.Rmd", output_format = "elsevier_article")
 
-Recycling is key strategy in order to establish in the circular economy umbrella concept.  
-What are the the 'pertinent' indicators to evaluate the local distributed recycling network in a perspective of revelance of and also in the quality and feasability to obtain data.
+```
 
-Quels indicateurs pour évaluer la soutenabilité : pertinence, disponibilité, facilité de mise en œuvre ; s’accorcher au territoire : analyse des enjeux du territoire (périmètre thèse pavlo) => interview des acteurs, collecte d’info sur le territoire => impact quels sont les enjeux ? quels sont les indicateurs que l’on peut associer et les méthodes d’évaluation associée avec Nadège, Mauricio et Hakim 
+
+
+# Intial Thougths
+Quels indicateurs pour évaluer la soutenabilité: pertinence, disponibilité, facilité de mise en œuvre; s’accorcher au territoire: analyse des enjeux du territoire (périmètre thèse pavlo) =>
+
+interview des acteurs, collecte d’info sur le territoire => impact quels sont les enjeux? quels sont les indicateurs que l’on peut associer et les méthodes d’évaluation associée avec Nadège, Mauricio et Hakim 
+
+# Problem, Purpose statements & Research questions
+
+The development of short supply chain is becoming a topic of growing interest among consumers, researchers and public bodies in Europe.
+More than ever, the resilience of a territory relies in the capacity of becoming less dependant of outlier productors [@reference], whiwh is a elements highligtly identified by the pandemic conditions. 
+However, the evaluation of pertinent sustainable indicators for this short supply networks is one the  major topic of discussion in the scientific and practitioners communities. 
+The problem relies in the selection of these 'pertinent' indicators and trade-offs that need to be considered for a holistic evaluation and the scope of the short supply chain. 
+Moreover, depending of the material or product and their technological process associated to, this entakes difficulties in terms of dependance of stakeholders beyond the scope of the short circuit. 
+
+The context of this research is the development of a short plastic recycling network for distributing recycling purposes [@ref]. 
+The development of the development of distributing recycling approach via additive manufacturing (DRAM) [@CruzSanchez2020] is emerging as an interesting topic to propose additoanl cascading loops  to certain types plastic waste. 
+More precisely, the use of recycled assets in the printing process chaing of additive manufacturing technology can give add value to wastes to create possible products or scientific equipement a a lower cost than the commercial.
+In a sense, this apporache could be an operationalization strategy for the development of secondary raw materials, which is one of major pillars in the recycling strategy for the Circular economy in Europe.
+
+Therefore, the main research question is  *how to evaluate the global sustainability of short supply chains to foster the plastic recycling networks in a local territory?*.
+More precisely, *What are the the 'pertinent' qualitative and quantitative indicators to evaluate the local distributed recycling network in terms of revelance of quality and feasibility to obtain appropriate data with local stakeholders?*
+One element to highlight the impact that third-spaces as innovations labs, fablabs and/or makerspace can play an role in order to apporaprio agents of change  the development of 
+
+The objectives of this research are:
+
+- Establish a grid of economical, political, environementa and social indicators.
+- Define model of stakeholders that can be impacted (positive / negative) for the case of plastic recycling
+- ...
+
+Therefore, the purpose of this research is to set a baseline of sustainable indicators to evaluate a local short supply chain network for distributed recycling.
+The main perspectives relies in the articulation of means of implementation and means evaluations based sustaianble decision tools for this type of networks. 
+
+
+
+
 
 
 # Rationale

@@ -6,7 +6,7 @@ output:
   distill::distill_article:
     toc: true
     toc_depth: 2
-repository_url: https://github.com/LF2L/everest-bio
+# repository_url: https://github.com/LF2L/everest-bio
 #bibliography: Biblio.bib
 #nocite: '@*'
 ---
