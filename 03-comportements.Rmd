@@ -1,5 +1,5 @@
 ---
-title: "Sustainable behaviour"
+title: "Environmental behaviour & practices"
 description: |
   some
 output:

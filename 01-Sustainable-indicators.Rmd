@@ -7,7 +7,8 @@ output:
     toc: true
     toc_depth: 2
 repository_url: https://github.com/LF2L/everest-bio
-bibliography: 01-Sustainable-indicators.bib
+#bibliography: 01-Sustainable-indicators.bib
+bibliography: library.bib
 nocite: '@*'
 editor_options: 
   chunk_output_type: console
@@ -17,9 +18,9 @@ editor_options:
 
 #library(rticles)
 #library(rmarkdown)
-#render("01-Sustainable-indicators.Rmd", output_format = "word_document")
-#render("01-Sustainable-indicators.Rmd", output_format = "pdf_document")
-#render("01-Sustainable-indicators.Rmd", output_format = "elsevier_article")
+#render("01-Sustainable-indicators.Rmd", output_format = "word_document", output_dir = "01-Sustainable-Indicators")
+#render("01-Sustainable-indicators.Rmd", output_format = "pdf_document", output_dir = "01-Sustainable-Indicators")
+#render("01-Sustainable-indicators.Rmd", output_format = "elsevier_article", output_dir = "01-Sustainable-Indicators")
 
 ```
 
@@ -31,8 +32,9 @@ Quels indicateurs pour évaluer la soutenabilité: pertinence, disponibilité, f
 interview des acteurs, collecte d’info sur le territoire => impact quels sont les enjeux? quels sont les indicateurs que l’on peut associer et les méthodes d’évaluation associée avec Nadège, Mauricio et Hakim 
 
 
+## Mind mapping
 
-```{r}
+```{r, include=FALSE}
 library('mindr')
 ### text -> widget
 input <- c("# Chapter 1", "## Section 1.1", "## Section 1.2", "# Chapter 2")
@@ -43,6 +45,11 @@ mm(from = input, type = "file", root = "mindr")
 
 ```
 
+:::l-page
+<div style="width: 100%; height: 480px; margin: auto; position: relative; text-align: center;"><iframe allowfullscreen frameborder="0" style="width:99%; height:480px" src="https://lucid.app/documents/embeddedchart/945c1be7-a621-4c3e-9267-f77f2fb2855a" id="CJG60F2Mr.Uj"></iframe></div>
+:::
+
+
 # Problem, Purpose statements & Research questions
 
 The development of short supply chain is becoming a topic of growing interest among consumers, researchers and public bodies in Europe.
@@ -51,7 +58,7 @@ However, the evaluation of pertinent sustainable indicators for this short suppl
 The problem relies in the selection of these 'pertinent' indicators and trade-offs that need to be considered for a holistic evaluation and the scope of the short supply chain. 
 Moreover, depending of the material or product and their technological process associated to, this entakes difficulties in terms of dependance of stakeholders beyond the scope of the short circuit. 
 
-The context of this research is the development of a short plastic recycling network for distributing recycling purposes [@ref]. 
+The context of this research is the development of a short plastic recycling network for distributing recycling purposes [@reference]. 
 The development of the development of distributing recycling approach via additive manufacturing (DRAM) [@CruzSanchez2020] is emerging as an interesting topic to propose additoanl cascading loops  to certain types plastic waste. 
 More precisely, the use of recycled assets in the printing process chaing of additive manufacturing technology can give add value to wastes to create possible products or scientific equipement a a lower cost than the commercial.
 In a sense, this apporache could be an operationalization strategy for the development of secondary raw materials, which is one of major pillars in the recycling strategy for the Circular economy in Europe.
