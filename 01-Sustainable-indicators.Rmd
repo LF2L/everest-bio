@@ -30,6 +30,19 @@ Quels indicateurs pour évaluer la soutenabilité: pertinence, disponibilité, f
 
 interview des acteurs, collecte d’info sur le territoire => impact quels sont les enjeux? quels sont les indicateurs que l’on peut associer et les méthodes d’évaluation associée avec Nadège, Mauricio et Hakim 
 
+
+
+```{r}
+library('mindr')
+### text -> widget
+input <- c("# Chapter 1", "## Section 1.1", "## Section 1.2", "# Chapter 2")
+mm(from = input, type = "text", root = "Ideas to develop")
+
+input <- system.file("examples/md/bookdownplus1.md", package = "mindr")
+mm(from = input, type = "file", root = "mindr")
+
+```
+
 # Problem, Purpose statements & Research questions
 
 The development of short supply chain is becoming a topic of growing interest among consumers, researchers and public bodies in Europe.
