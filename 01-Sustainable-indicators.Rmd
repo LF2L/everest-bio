@@ -9,7 +9,7 @@ output:
 repository_url: https://github.com/LF2L/everest-bio
 #bibliography: 01-Sustainable-indicators.bib
 bibliography: library.bib
-nocite: '@*'
+#nocite: '@*'
 editor_options: 
   chunk_output_type: console
 ---

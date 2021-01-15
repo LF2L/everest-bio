@@ -8,7 +8,7 @@ output:
     toc_depth: 2
 repository_url: https://github.com/LF2L/everest-bio
 bibliography: 03-comportement.bib
-nocite: '@*'
+#nocite: '@*'
   
 author:
   - first_name: " Master 3"
@@ -46,7 +46,7 @@ author:
     orcid_id: 0000-0003-3867-2438 
         
 ---
-```{r}
+```{r, include=FALSE}
 require(DiagrammeR)
 require(tidyverse)
 require(kableExtra)
@@ -115,7 +115,7 @@ graph LR
 -	The factors that influenced the past behavior continue to influence the intentions and future behavior, but past behavior does not cause future behavior.
 
 
-```{r}
+```{r, include=FALSE}
 TPB <- 
 tribble(
   ~Variable, ~Definition, ~Definition.recycling,
@@ -143,7 +143,7 @@ tribble(
 ```
 
 
-```{r, include=TRUE}
+```{r, include=TRUE, echo=FALSE}
 
 kbl(TPB) %>%
   kable_paper(full_width = F)
