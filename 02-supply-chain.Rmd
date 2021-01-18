@@ -60,6 +60,28 @@ author:
 Master 2: sur la chaine de valeur localisée sur le cas d’étude (périmètre de pavlo) sur la base d’une analyse par les acteurs effectifs et potentiels; quels ont les freins et leviers au développement du plastique recyclé dans le territoire envisagé; analyse des services écosystémiques actuels et impactés. Pas que PLA mais aussi polypro en particulier… (Sabrina, avec Fedoua Kasmi et Hakim) 
 
 
+# Problem, Purpose statements & Research questions
+
+A new paradigm of plastic recycling, called distributed plastic recycling, has emerged in the literature in order to face the socio-environmental challenges related to plastic waste management. Under this new model of small recycling centers, the main hipohesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community. To do so, the use of additive manufacturing enables the technical paths. 
+
+ However, as with any recycling system, its feasibility must be evaluated before its implementation. Although research has been conducted regarding the technical feasibility of distributed plastic recycling, little is known about its feasibility from the supply chain point of view [@CruzSanchez2020]. .content-box-yellow[From a supply chain perspective, the establishment of  recycling networks...  ]
+
+  
+
+This study intends to explore the local impact derived from the implementation of a distributed plastic recycling chain in a territory.  
+
+The purpose of this research is to explore and assess the local impact derived from the implementation of a distributed plastic recycling chain. The study intends to research which and how the ecosystem services are impacted due to the implementation of the plastic recycling chain proposed. While not all types of materials can be recycled given the technical difficulties, the estimation of the environmental advantage is needed to assess at early stages the pertinence of ths distributed approaches  
+
+This study seeks to address the following questions: 
+
+- What are the appropriate ecosystem service indicators for assessing distributed plastic recycling? 
+
+- How does the implementation of a distributed plastic recycling chain impact on ecosystem services? 
+
+- What are the barriers and drivers for the development of a distributed plastic recycling chain in a territory? 
+ 
+ 
+ 
 ## Rational
 
 - @Alkhuzaim2020 provide insights into more effective environmentally sustainable supply chain and circularity performance evaluation, accounting, and appraisal using emergy based performance measurements. 
