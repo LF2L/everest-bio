@@ -50,38 +50,65 @@ mm(from = input, type = "file", root = "mindr")
 :::
 
 
-# Problem, Purpose statements & Research questions
+# Rationale
 
 The development of short supply chain is becoming a topic of growing interest among consumers, researchers and public bodies in Europe.
-More than ever, the resilience of a territory relies in the capacity of becoming less dependant of outlier productors [@reference], whiwh is a elements highligtly identified by the pandemic conditions. 
+More than ever, the resilience of a territory relies in the capacity of becoming less dependant of outlier productors [@reference], which is an element identified by the pandemic conditions. 
+
+<!-- Problem -->
 However, the evaluation of pertinent sustainable indicators for this short supply networks is one the  major topic of discussion in the scientific and practitioners communities. 
-The problem relies in the selection of these 'pertinent' indicators and trade-offs that need to be considered for a holistic evaluation and the scope of the short supply chain. 
+The problem relies in the selection of these 'pertinent' sustainable indicators and trade-offs that need to be considered for a holistic evaluation and the scope of the short supply chain. 
 Moreover, depending of the material or product and their technological process associated to, this entakes difficulties in terms of dependance of stakeholders beyond the scope of the short circuit. 
 
-The context of this research is the development of a short plastic recycling network for distributing recycling purposes [@reference]. 
-The development of the development of distributing recycling approach via additive manufacturing (DRAM) [@CruzSanchez2020] is emerging as an interesting topic to propose additoanl cascading loops  to certain types plastic waste. 
-More precisely, the use of recycled assets in the printing process chaing of additive manufacturing technology can give add value to wastes to create possible products or scientific equipement a a lower cost than the commercial.
-In a sense, this apporache could be an operationalization strategy for the development of secondary raw materials, which is one of major pillars in the recycling strategy for the Circular economy in Europe.
+<!-- Contex -->
+The context of this research is the development of a short plastic recycling network for distributing recycling purposes [@Santander2020]. 
+The development of the development of distributing recycling approach via additive manufacturing (DRAM) [@CruzSanchez2020] is emerging as an interesting topic to foster the use of certains plastic waste materials in order to extend eventually (multiple) lifecycle for a printed product. 
+More precisely, the use of recycled assets in the printing process chain of additive manufacturing technology can give add value to wastes to create possible final products or even scientific equipement [@Pearce2020a] a a lower cost than the commercial.
+In a sense, this approach could be an operationalization strategy for the development of secondary raw materials, which is one of major pillars in the recycling strategy for the Circular economy in Europe, even if this intervention remains largely case-dependent.
 
-Therefore, the main research question is  *how to evaluate the global sustainability of short supply chains to foster the plastic recycling networks in a local territory?*.
-More precisely, *What are the the 'pertinent' qualitative and quantitative indicators to evaluate the local distributed recycling network in terms of revelance of quality and feasibility to obtain appropriate data with local stakeholders?*
-One element to highlight the impact that third-spaces as innovations labs, fablabs and/or makerspace can play an role in order to apporaprio agents of change  the development of 
+<!-- Conceptual Framework -->
+Nevertheless, there remain a gap in the scientific literature to define in what sense DRAM could be considered as sustainable transition in the global aspect of the term. 
+The challenges of sustainable development today are generally seen in terms that go beyond just meeting basic human needs to embrace a broader vision of sustainability as fairness: 
+enhancing human well-being to more equitably meet the needs of both current and future generations.
+@Clark2020 developed an integrative framework for sustainability considering five major pilards: 
+(1) environment and development, 
+(2) governance, 
+(3) complexity, and 
+(4) context dependence.
+
+At the core of research on sustainability are the intertwined nature–society interactions.
+Sustainability science research has focused on the four key elements involved in those interactions: 
+
+- *Goals* (what people want from sustainable development), 
+- *Resources* (the capital assets of the Anthropocene System, which may be natural or anthropogenic), - *Actors* (communities, firms, states and other entities with agency that strive to use resources to achieve their goals), 
+- *Institutions* (rules, norms, culture, beliefs that shape the behavior of actors). 
+
+These key elements are bound together through key relationships of consumption and production, mediated by the relative power of different actor groups to affect one another’s actions and beliefs.
+
+Therefore, contextualizing the concptual framework to the DRAM context, the main research question is for this project are:
+
+1. *How to evaluate the global sustainability of short supply chains to foster the plastic recycling networks in a local territory?*.
+
+2.*What are the the 'pertinent' qualitative and quantitative indicators to evaluate the local distributed recycling network in terms of revelance of quality and feasibility to obtain appropriate data with local stakeholders?*
+
+One element to highlight the impact that third-spaces as innovations labs, fablabs and/or makerspace can play an role as agents of change in the development of this recycling practicesl [@Roux-Marchand2020]
 
 The objectives of this research are:
 
-- Establish a grid of economical, political, environementa and social indicators.
+- Establish a grid of economical, political, environemental and social indicators.
 - Define model of stakeholders that can be impacted (positive / negative) for the case of plastic recycling
 - ...
 
 Therefore, the purpose of this research is to set a baseline of sustainable indicators to evaluate a local short supply chain network for distributed recycling.
-The main perspectives relies in the articulation of means of implementation and means evaluations based sustaianble decision tools for this type of networks. 
+
+Based on the results of these indicators, the main challguen will be the articulation and means of implementation / evaluations to build  decision tools for this type of networks. 
 
 
 
 
 
 
-# Rationale
+# Ideas
 
 ## LCA and 3D Printing
 

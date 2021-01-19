@@ -60,7 +60,7 @@ author:
 Master 2: sur la chaine de valeur localisée sur le cas d’étude (périmètre de pavlo) sur la base d’une analyse par les acteurs effectifs et potentiels; quels ont les freins et leviers au développement du plastique recyclé dans le territoire envisagé; analyse des services écosystémiques actuels et impactés. Pas que PLA mais aussi polypro en particulier… (Sabrina, avec Fedoua Kasmi et Hakim) 
 
 
-# Problem, Purpose statements & Research questions
+# Rationale
 
 A new paradigm of plastic recycling, called distributed plastic recycling, has emerged in the literature in order to face the socio-environmental challenges related to plastic waste management. Under this new model of small recycling centers, the main hipohesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community. To do so, the use of additive manufacturing enables the technical paths. 
 
@@ -82,7 +82,7 @@ This study seeks to address the following questions:
  
  
  
-## Rational
+## Ideas
 
 - @Alkhuzaim2020 provide insights into more effective environmentally sustainable supply chain and circularity performance evaluation, accounting, and appraisal using emergy based performance measurements. 
  
