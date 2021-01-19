@@ -85,13 +85,13 @@ Sustainability science research has focused on the four key elements involved in
 
 These key elements are bound together through key relationships of consumption and production, mediated by the relative power of different actor groups to affect one another’s actions and beliefs.
 
-Therefore, contextualizing the concptual framework to the DRAM context, the main research question is for this project are:
+Therefore, contextualizing thi sustainable concptual framework to the DRAM context, the main research question is for this project are:
 
 1. *How to evaluate the global sustainability of short supply chains to foster the plastic recycling networks in a local territory?*.
 
-2.*What are the the 'pertinent' qualitative and quantitative indicators to evaluate the local distributed recycling network in terms of revelance of quality and feasibility to obtain appropriate data with local stakeholders?*
+2.*What are the 'pertinent' qualitative and quantitative indicators to evaluate the local distributed recycling network in terms of revelance of quality and feasibility to obtain appropriate data with local stakeholders?*
 
-One element to highlight the impact that third-spaces as innovations labs, fablabs and/or makerspace can play an role as agents of change in the development of this recycling practicesl [@Roux-Marchand2020]
+One element to highlight is the impact that third-spaces such as innovations labs, fablabs and/or makerspace can play, having a role of agents of change in the development of this recycling practices [@Roux-Marchand2020].
 
 The objectives of this research are:
 
