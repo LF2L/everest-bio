@@ -57,17 +57,17 @@ More than ever, the resilience of a territory relies in the capacity of becoming
 
 <!-- Problem -->
 However, the evaluation of pertinent sustainable indicators for this short supply networks is one the  major topic of discussion in the scientific and practitioners communities. 
-The problem relies in the selection of these 'pertinent' sustainable indicators and trade-offs that need to be considered for a holistic evaluation and the scope of the short supply chain. 
+The problem relies in the selection of 'pertinent' sustainable indicators and trade-offs that need to be considered for a holistic evaluation and the scope of the short supply chain. 
 Moreover, depending of the material or product and their technological process associated to, this entakes difficulties in terms of dependance of stakeholders beyond the scope of the short circuit. 
 
 <!-- Contex -->
 The context of this research is the development of a short plastic recycling network for distributing recycling purposes [@Santander2020]. 
 The development of the development of distributing recycling approach via additive manufacturing (DRAM) [@CruzSanchez2020] is emerging as an interesting topic to foster the use of certains plastic waste materials in order to extend eventually (multiple) lifecycle for a printed product. 
-More precisely, the use of recycled assets in the printing process chain of additive manufacturing technology can give add value to wastes to create possible final products or even scientific equipement [@Pearce2020a] a a lower cost than the commercial.
+More precisely, the use of recycled assets in the printing process chain of additive manufacturing technology can give add value to wastes to create possible final products or even scientific equipement [@Pearce2020a] at a lower cost than the commercial.
 In a sense, this approach could be an operationalization strategy for the development of secondary raw materials, which is one of major pillars in the recycling strategy for the Circular economy in Europe, even if this intervention remains largely case-dependent.
 
 <!-- Conceptual Framework -->
-Nevertheless, there remain a gap in the scientific literature to define in what sense DRAM could be considered as sustainable transition in the global aspect of the term. 
+Nevertheless, there remain a gap in the scientific literature related to in what extend the DRAM could be considered as sustainable in the global aspect of the term. 
 The challenges of sustainable development today are generally seen in terms that go beyond just meeting basic human needs to embrace a broader vision of sustainability as fairness: 
 enhancing human well-being to more equitably meet the needs of both current and future generations.
 @Clark2020 developed an integrative framework for sustainability considering five major pilards: 
@@ -75,16 +75,17 @@ enhancing human well-being to more equitably meet the needs of both current and 
 (2) governance, 
 (3) complexity, and 
 (4) context dependence.
-At the core of research on sustainability are the intertwined nature–society interactions.
-Sustainability science research has focused on the four key elements involved in those interactions: 
+At the core of research on sustainability, there are a intertwined nature–society interactions.
+Sustainability science research has focused on the four key elements involved in the interactions of: 
 
 - *Goals* (what people want from sustainable development), 
-- *Resources* (the capital assets of the Anthropocene System, which may be natural or anthropogenic), - *Actors* (communities, firms, states and other entities with agency that strive to use resources to achieve their goals), 
+- *Resources* (the capital assets of the Anthropocene System, which may be natural or anthropogenic),
+- *Actors* (communities, firms, states and other entities with agency that strive to use resources to achieve their goals), 
 - *Institutions* (rules, norms, culture, beliefs that shape the behavior of actors). 
 
 These key elements are bound together through key relationships of consumption and production, mediated by the relative power of different actor groups to affect one another’s actions and beliefs.
 
-Therefore, contextualizing thi sustainable concptual framework to the DRAM context, the main research question is for this project are:
+Therefore, contextualizing the sustainable conceptual framework to the DRAM context, the main research questions for this project are:
 
 1. *How to evaluate the global sustainability of short supply chains to foster the plastic recycling networks in a local territory?*.
 
@@ -108,6 +109,11 @@ Based on the results of these indicators, the main challguen will be the articul
 
 
 # Ideas
+
+
+## LCA
+
+- Review on LCA [@Visentin2020]
 
 ## LCA and 3D Printing
 

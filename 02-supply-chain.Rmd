@@ -7,7 +7,8 @@ output:
     toc: true
     toc_depth: 2
 repository_url: https://github.com/LF2L/everest-bio
-bibliography: 02-supply-chain.bib
+#bibliography: 02-supply-chain.bib
+bibliography: library.bib
 #nocite: '@*'
   
 author:
@@ -65,25 +66,31 @@ Master 2: sur la chaine de valeur localisée sur le cas d’étude (périmètre 
 
 # Rationale
 
-A new paradigm of plastic recycling, called distributed plastic recycling, has emerged in the literature in order to face the socio-environmental challenges related to plastic waste management. Under this new model of small recycling centers, the main hipohesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community. To do so, the use of additive manufacturing enables the technical paths. 
+A new paradigm of plastic recycling, called distributed plastic recycling, has emerged in the literature in order to face the socio-environmental challenges related to plastic waste management. Under this new model of small recycling centers, the main hypothesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community. To do so, the use of additive manufacturing enables the technical paths. 
 
- However, as with any recycling system, its feasibility must be evaluated before its implementation. Although research has been conducted regarding the technical feasibility of distributed plastic recycling, little is known about its feasibility from the supply chain point of view [@CruzSanchez2020]. .content-box-yellow[From a supply chain perspective, the establishment of  recycling networks...  ]
+  However, as with any recycling system, its feasibility must be evaluated before its implementation. Although research has been conducted regarding the technical feasibility of distributed plastic recycling, little is known about its feasibility from the supply chain perspective [@CruzSanchez2020] and its impact in ecosystem services. 
+From a supply chain perspective, the feasibility evaluation for the establishment of recycling networks should be oriented towards sustainable development. 
+In addition, the notion of sustainability could be used as a framework to analyze and manage the impact of human activities (or supply chain) on ecosystem services [@Abson2014].
+A network is sustainable, if it integrates the economic, environmental and social dimensions, traditionally referred to as the three pillars of sustainability (’triple bottom-lines - TBL) (Hacking and Guthrie, 2008). 
+In addition, @Bautista2016 proposes the integration of political and technological dimensions (TBL+) if they have a great importance in the system to evaluate.. However, literature reviews about supply chains networks highlight : 
+(1) the little consideration of social, technological and political aspects in sustainability assessments, and 
+(2) the great consideration of economic and environmental aspects 
+[@EspinozaPerez2017c, @Fonseca2018, @Moreno-Camacho2019]. 
 
-  
 
 This study intends to explore the local impact derived from the implementation of a distributed plastic recycling chain in a territory.  
 
-The purpose of this research is to explore and assess the local impact derived from the implementation of a distributed plastic recycling chain. The study intends to research which and how the ecosystem services are impacted due to the implementation of the plastic recycling chain proposed. While not all types of materials can be recycled given the technical difficulties, the estimation of the environmental advantage is needed to assess at early stages the pertinence of ths distributed approaches  
+The purpose of this research is to explore and assess the local impact, considering sustainability dimensions and ecosystem services, derived from the implementation of a distributed plastic recycling chain. 
+The study intends to research, based on the notion of sustainability, which and how the ecosystem services are impacted due to the implementation of the plastic recycling chain proposed. 
+While not all types of materials can be recycled given the technical difficulties, the estimation of the environmental advantage is needed to assess at early stages the pertinence of this distributed approaches  
 
 This study seeks to address the following questions: 
 
 - What are the appropriate ecosystem service indicators for assessing distributed plastic recycling? 
-
 - How does the implementation of a distributed plastic recycling chain impact on ecosystem services? 
-
 - What are the barriers and drivers for the development of a distributed plastic recycling chain in a territory? 
  
- 
+
  
 ## Ideas
 
