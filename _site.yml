@@ -18,7 +18,7 @@ navbar:
       menu:
         - text: "Sustainable Indicators"
           href: 01-Sustainable-indicators.html
-        - text: "Supply chain"
+        - text: "DRAM and ES"
           href: 02-supply-chain.html
         - text: "Environmental Behaviour"
           href: 03-comportements.html  
