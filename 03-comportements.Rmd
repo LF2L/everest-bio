@@ -58,6 +58,10 @@ require(kableExtra)
 Master 3: Mise en place de la collecte des bouchons : pourrait être analyse sur le comportement des acteurs => quel changement dans ces profils de gens ? => autre master (identifier ce que ça change chez les gens qui participent ou pas) avec Tatiana et Laure !!! doctorant avec master côté Nancy (avec Hakim et Mauricio) 
 
 
+:::l-page
+<div style="width: 100%; height: 480px; margin: auto; position: relative; text-align: center;"><iframe allowfullscreen frameborder="0" style="width:99%; height:480px" src="https://lucid.app/documents/embeddedchart/945c1be7-a621-4c3e-9267-f77f2fb2855a" id="CJG60F2Mr.Uj"></iframe></div>
+:::
+
 # Rationale
 
 Some ideas:

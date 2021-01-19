@@ -26,7 +26,7 @@ editor_options:
 
 
 
-# Intial Thougths
+# Initial Thougths
 Quels indicateurs pour évaluer la soutenabilité: pertinence, disponibilité, facilité de mise en œuvre; s’accorcher au territoire: analyse des enjeux du territoire (périmètre thèse pavlo) =>
 
 interview des acteurs, collecte d’info sur le territoire => impact quels sont les enjeux? quels sont les indicateurs que l’on peut associer et les méthodes d’évaluation associée avec Nadège, Mauricio et Hakim 
@@ -75,7 +75,6 @@ enhancing human well-being to more equitably meet the needs of both current and 
 (2) governance, 
 (3) complexity, and 
 (4) context dependence.
-
 At the core of research on sustainability are the intertwined nature–society interactions.
 Sustainability science research has focused on the four key elements involved in those interactions: 
 
