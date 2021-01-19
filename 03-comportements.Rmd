@@ -50,6 +50,7 @@ author:
 require(DiagrammeR)
 require(tidyverse)
 require(kableExtra)
+require(widgetframe)
 ```
 
 
@@ -100,16 +101,22 @@ together they shape behavioral intention as well as actual behavior.  To date, T
 
 mermaid("
 graph LR
-  A[\"Attitude toward the act (Att)\"]-->D[Behavioural Intention]
-  B[\"Subjective Norm (SN)\"]-->D[Behavioural Intention]
-  C[\"Perceived Behavioural Control (PBC)\"]-->D[Behavioural Intention]
-  D[Behavioural Intention]-->E[Behaviour]
-  C[Perceived Behavioural Control]-.->E[Behaviour]
-  
-  classDef className font-size:20px;
+  A[Attitude toward the act <br/> -ATT-]-->D[Behavioural Intention <br/>]
+  B[Subjective Norm -SN-<br/>]-->D[Behavioural Intention]
+  C[Perceived Behavioural Control -PBC-<br/>]-->D[Behavioural Intention]
+  D[Behavioural Intention <br/>]-->E[Behaviour]
+  C[Perceived Behavioural Control -PCB-]-.->E[Behaviour]
+ 
+  classDef className font-size:18px, height:60px ;
   class A,B,C,D className;
 ")
+
+#
+#  
 ```
+
+
+
 
 -	Theory of planned behavior (TPB) is based on the assumption that some conscious reasoning is involved in the formation of intentions to perform a behavior.
   - Behavior partly on the control of the individual
@@ -147,7 +154,7 @@ tribble(
 ```
 
 
-```{r, include=TRUE, echo=FALSE}
+```{r, include=TRUE, layout="l-page", echo=FALSE}
 
 kbl(TPB) %>%
   kable_paper(full_width = F)

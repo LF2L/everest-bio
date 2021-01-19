@@ -89,3 +89,8 @@ d-article h2 {
 
 
 .content-box-yellow { background-color: #fef5c4; }
+
+
+foreignObject {
+  overflow: visible;
+}
