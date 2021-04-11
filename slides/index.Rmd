@@ -74,12 +74,16 @@ knitr::include_graphics(paste0(URL, 'Fabio/Fabio.png'))
 
 ---
 
+class: left middle
+
+## My research questions so far...
+
+
+---
+
 class: left
 background-position: 0px 75px
 background-size: contain
-
-
---
 
 background-image: url(`r paste0(URL, 'DRAM/DRAM-Clean-01.jpg')`)
 
@@ -130,8 +134,7 @@ background-position: 100px 125px
 background-size: 80%
 
 
-## How an innovation lab could be a driver for local plastic recycling process?
-
+## How an innovation lab could could help as agent of change? 
 
 .footnote[
 Roux-Marchand, T., Cruz, F., Dupont, L., Camargo, M., Osorio, F., 2020. Connecting the strategic intent of innovation labs and projects: the case of the Green Fablab, in: 2020 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC). IEEE, pp. 1–10. https://doi.org/10.1109/ICE/ITMC49519.2020.9198320
@@ -165,7 +168,12 @@ knitr::include_graphics(paste0(URL, 'Various/Signos/attention-00.png'))
 ]
 
 .right-column[
+
+- Technical and economic criteria alone do not (yet) allow for informed decisions. 
+
+
 - Where is the environment in the techno-centrical approaches?
+
 -  The root of the plastic waste problem needs to be addressed: the extraction and production.
 -  Responsibility to act in the plastics economy
 
@@ -413,8 +421,6 @@ The development of sustainable industrial supply chains
 
 .pull-left[
 
-
-
 -Local closed loop  <br>
 -AM adds value  <br>
 -Small quantities   <br>
@@ -444,11 +450,28 @@ Cruz Sanchez, F.A., Boudaoud, H., Muller, L., Camargo, M., 2014. Towards a stand
 
 ---
 
+## Green Fablab: Towards a distributed recycling via additive manufacturing (DRAM)
+
+
+.left-column[ 
+Small scale: 2 km radius (neighbourhood scale) <br>
+Low processing capacity, <br>
+Technologies: cheap, easy to use <br>
+Active role of users <br>
+
+```{r, include=TRUE, echo=FALSE, out.width = '100%', fig.align='center'}
+knitr::include_graphics('figures/GF-users.jpg')
+```
+]
+
+.right-column[ 
 .center[![:scale 70%](figures/Green-fablab-circuit.png)]
 
----
+]
 
 ---
+
+
 
 class: middle
 
@@ -478,30 +501,39 @@ knitr::include_graphics(paste0(URL, 'Everest-bio/logos/logo-2.jpg'))
 ## People in Everest Bio
 
 .pull-left[
-```{r, out.width = '200px', fig.align='center'}
-knitr::include_graphics(paste0(URL, 'Everest-bio/Alexis.jpg'))
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Everest-bio/Mauricio.jpg'))
+```
+
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Everest-bio/Hakim.jpg'))
+```
+
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Everest-bio/Fedoua.jpg'))
 ```
 ]
 
-.pull-rigth[
-```{r, out.width = '200px', fig.align='center'}
+.pull-right[
+```{r, out.width = '500px', fig.align='center'}
 knitr::include_graphics(paste0(URL, 'Everest-bio/Nadege.jpg'))
 ```
 
-```{r, out.width = '200px', fig.align='center'}
+```{r, out.width = '500px', fig.align='center'}
 knitr::include_graphics(paste0(URL, 'Everest-bio/Alexis.jpg'))
 ```
 
-```{r, out.width = '200px', fig.align='center'}
+```{r, out.width = '500px', fig.align='center'}
 knitr::include_graphics(paste0(URL, 'Everest-bio/Cristian.jpg'))
 ```
 
 ]
+
 ---
 
 ## Research Question & Goal
 
-- To develop a generic methodology to assess the ecosystem services rendered by industrial activities operating in short circuit in order to improve decision-making by industrial and public actors. 
+- To develop a generic methodology to assess the **ecosystem services** rendered by industrial activities operating in short circuit in order to improve decision-making by industrial and public actors. 
 
 - Validation on the case of a short-circuit plastic recycling chain.
 
@@ -510,9 +542,9 @@ knitr::include_graphics(paste0(URL, 'Everest-bio/Cristian.jpg'))
 
 ## Methodology
 
-- In line with the thesis work previously carried out by the two teams, development of a coupled Systems Dynamics and LCA approach. 
+- In line with the thesis work previously carried out by the two teams, development of a coupled **Systems Dynamics and LCA approach**. 
 
-- Application on a case study, the GreenFablab, by evaluating its environmental impact when setting up a short plastic recycling circuit.
+- Application on a case study, the Green Fablab, by evaluating its environmental impact when setting up a short plastic recycling circuit.
 
 .center[ ![:scale 80%](figures/Goals.png)]
 
@@ -544,31 +576,58 @@ Bruel, A., Kronenberg, J., Troussier, N., & Guillaume, B. (2019). Linking indust
 
 ---
 
-### Ecosystem Services as a boundary object for sustainability
+class: middle
 
----
+### Ecosystem Services as a **boundary object** for sustainability
 
-### Systems Dynamics
+.pull-left[
 
+In that sense, Our focus is towards becoming an explicit management tool: 
 
----
+- Creating Systems, Normative and Transformative knowledge using as case study distributed recycling
 
-## Distributed recycling via additive manufacturing (DRAM)
-Technical system
+- better interdisciplinary knowledge integration, greater focus on normative knowledge, and improved recognition of the ecosystem services concept as a potential transformative tool.
 
-.center[![:scale 75%](figures/Green-fablab-0.png)]
+]
 
+.pull-right[
+```{r, out.width = '90%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/Abson2014-00.jpg'))
+```
+]
 
 .footnote[
-Cruz Sanchez, F.A., Boudaoud, H., Camargo, M., Pearce, J.M., 2020. Plastic recycling in additive manufacturing: A systematic literature review and opportunities for the circular economy. J. Clean. Prod. 264, 121602. https://doi.org/10.1016/j.jclepro.2020.121602 
+Abson, D.J., von Wehrden, H., Baumgärtner, S., Fischer, J., Hanspach, J., Härdtle, W., Heinrichs, H., Klein, A.M., Lang, D.J., Martens, P., Walmsley, D., 2014. Ecosystem services as a boundary object for sustainability. Ecol. Econ. https://doi.org/10.1016/j.ecolecon.2014.04.012
 ]
 
 ---
 
-## Distributed recycling via additive manufacturing (DRAM)
-Technical system --> Global system
+class: top, left
+background-image: url(`r paste0(URL, 'Ecoservices/Vanderwilde2021-01.jpg')`)
+background-position: 290px 0px
+background-size: 75% 
 
-.center[![:scale 75%](figures/DRAM-05.png)]
+
+### We look to connect <br> Ecosystem services and LCA 
+
+Hoping to contributing in <br> sustainability uncertainties.
+
+.footnote[
+Vanderwilde, C.P., Newell, J.P., 2021. Ecosystem services and life cycle assessment: A bibliometric review. https://doi.org/10.1016/j.resconrec.2021.105461 <br>
+Diwekar, U., Amekudzi-Kennedy, A., Bakshi, B., Baumgartner,et al, 2021. A perspective on the role of uncertainty in sustainability science and engineering. Resour. Conserv. Recycl. 164, 105140. https://doi.org/10.1016/j.resconrec.2020.105140
+]
+
+
+---
+
+### Systems Dynamics of DRAM
+
+Technical system --> Global *system* embedded in a *territory*!
+
+```{r, out.width = '90%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'DRAM/DRAM-Territory-00.jpg'))
+```
+
 
 ---
 
@@ -578,12 +637,15 @@ Technical system --> Global system
 Global system
 
 .pull-left[
-![](figures/DRAM-07.png)
+```{r, out.width = '100%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'DRAM/DRAM-08.png'))
+```
+
 ]
 
 .pull-right[
 - Establish and evaluate scenarios in a systemic and dynamic way
-- Evaluate the influences of the main operating variables on the system
+- Evaluate the influences of the main operating variables on the system taking ecosystem services boundaries
 - Taking into account the priorities of the multiple stakeholders
 - Facilitate your decision making public-private actors
 ]
@@ -595,18 +657,14 @@ Santander, P., Cruz Sanchez, F.A., Boudaoud, H., Camargo, M., 2020. Closed loop 
 
 ---
 
-# Delivrables
+# Delivrables & Valorisations
 
 1. An article in an indexed international journal
 2. Participation in an international conference 
 3. An operational model with a model of a software tool for assessing local impacts
 4. Final report on the evaluation of Green Fablab and possible generalisations for short industrial circuits.
 
----
-
-# Valorisations
-
-- Method and prototype of a tool for the evaluation of local impacts of circular production systems
+- Method and [**prototype of a tool**](https://fabbiocrux.github.io/everest-bio-tool/) for the evaluation of local impacts of circular production systems
 
 ---
 
