@@ -534,6 +534,11 @@ knitr::include_graphics(paste0(URL, 'Everest-bio/Hakim.jpg'))
 ```{r, out.width = '500px', fig.align='center'}
 knitr::include_graphics(paste0(URL, 'Everest-bio/Fedoua.jpg'))
 ```
+
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Everest-bio/Pavlo.jpg'))
+```
+
 ]
 
 .pull-right[
