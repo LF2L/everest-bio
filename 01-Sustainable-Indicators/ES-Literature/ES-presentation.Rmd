@@ -1,0 +1,73 @@
+---
+title: "Everest Bio"
+subtitle: "Ecosystem services for Distributed recycling via Additive Manufacturing"  
+author: 
+  - "Fabio CRUZ"
+  - ""
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE, message=FALSE}
+options(htmltools.dir.version = FALSE)
+# Link for the Figures
+URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
+
+#library(xaringanBuilder)
+#build_pdf("ES-presentation.Rmd")
+
+
+
+```
+
+```{r, include=FALSE, echo=FALSE}
+# CSS for the CSS
+htmltools::includeCSS("https://raw.githubusercontent.com/fabbiocrux/presentaciones/gh-pages/Assets-global/css/Fabio-fonts.css")
+htmltools::includeCSS("https://raw.githubusercontent.com/fabbiocrux/presentaciones/gh-pages/Assets-global/css/Fabio.css")
+```
+
+
+class: title-slide, right, middle
+background-position: left
+background-size: contain
+
+.pull-right[
+
+# `r rmarkdown::metadata$title`
+
+## `r rmarkdown::metadata$subtitle`
+
+### `r rmarkdown::metadata$author`
+
+### `r rmarkdown::metadata$date`
+]
+
+
+---
+
+# Agenda
+
+1. Ecosystem Services 
+2. ES and Distributed Recycling
+3. Tool 
+
+
+--- 
+
+# Definition
+
+---
+
+## Types of ES
+
+--
+## Barriers and complexities of ES
+- Adoption of ES in decision-making processes, for example data availability and accuracy, and lack of resources (time, competences, and money) to produce the assessments [@Longato2021]
+- “the multiple and overlapping scales of ES” in a plan at the urban scale, considering also that ES knowledge is not always easily translatable into specific spatial units

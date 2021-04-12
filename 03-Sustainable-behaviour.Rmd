@@ -45,7 +45,7 @@ author:
     affiliation: ERPI
     affiliation_url: https://erpi.univ-lorraine.fr/
     orcid_id: 0000-0003-3867-2438 
-        
+always_allow_html: true        
 ---
 ```{r, include=FALSE}
 require(DiagrammeR)
@@ -54,6 +54,17 @@ require(kableExtra)
 require(widgetframe)
 ```
 
+```{r, include=FALSE}
+
+#library(rticles)
+#library(rmarkdown)
+#render("03-Sustainable-behaviour.Rmd", output_format = "word_document", output_dir = "03-Sustainable-behaviour")
+
+
+#render("01-Sustainable-indicators.Rmd", output_format = "pdf_document", output_dir = "01-Sustainable-Indicators")
+#render("01-Sustainable-indicators.Rmd", output_format = "elsevier_article", output_dir = "01-Sustainable-Indicators")
+
+```
 
 # Abstract
 

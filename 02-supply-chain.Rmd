@@ -55,6 +55,18 @@ author:
    
 ---
 
+```{r, include=FALSE}
+
+#library(rticles)
+#library(rmarkdown)
+#render("02-supply-chain.Rmd", output_format = "word_document", output_dir = "02-supply-chain")
+
+
+#render("01-Sustainable-indicators.Rmd", output_format = "pdf_document", output_dir = "01-Sustainable-Indicators")
+#render("01-Sustainable-indicators.Rmd", output_format = "elsevier_article", output_dir = "01-Sustainable-Indicators")
+
+```
+
 
 # Abstract
 

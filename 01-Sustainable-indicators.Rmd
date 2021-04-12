@@ -22,6 +22,7 @@ editor_options:
 #render("01-Sustainable-indicators.Rmd", output_format = "pdf_document", output_dir = "01-Sustainable-Indicators")
 #render("01-Sustainable-indicators.Rmd", output_format = "elsevier_article", output_dir = "01-Sustainable-Indicators")
 
+
 ```
 
 
@@ -127,4 +128,4 @@ Based on the results of these indicators, the main challguen will be the articul
 
 ## LCA and Social practices
 
-- Llinks social practices to the life cycle inventory of LCA [@Suski2020].
+- 
