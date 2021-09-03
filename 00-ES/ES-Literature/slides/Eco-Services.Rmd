@@ -1,0 +1,495 @@
+---
+title: "Everest Bio"
+subtitle: "Ecosystem services for Distributed recycling via Additive Manufacturing"  
+author:
+- "Fabio CRUZ"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+#      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      navigation:
+        scroll: false # disable slide transitions by scrolling      
+---
+
+
+```{r packages, echo = FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(xaringanExtra)
+library(xaringanthemer)
+
+```
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE,
+  include = TRUE
+)
+
+# Link for the Figures
+URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
+
+#library(xaringanBuilder)
+#build_pdf("ES-presentation.Rmd")
+
+# xaringanExtra
+xaringanExtra::use_panelset()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF", 
+  base_font_size = "24px",
+  colors = c(
+    red = "#f34213",
+    purple = "#3e2f5b",
+    orange = "#ff8811",
+    green = "#d9edc2",
+    white = "#FFFFFF",
+    grey = "#F5F5F5"
+  ),
+   extra_css = list(
+    ".remark-slide-content h1" = list(
+      "margin-bottom" = 0, 
+      "margin-top" = 0),
+     ".remark-slide-content > h1:first-of-type" = list(
+       "margin-top" = "5px",
+       "margin-bottom" = "10px"
+     ),
+    ".remark-slide-content > h2:first-of-type" = list(
+       "margin-top" = "5px",
+       "margin-bottom" = "10px"
+     ),
+    ".remark-slide-content > h3:first-of-type" = list(
+       "margin-top" = "5px",
+       "margin-bottom" = "10px"
+     ),
+    ".remark-slide-content" = list (
+        "padding-top" =  "25px",
+        "padding-left" =  "50px",
+        "padding-right" =  "50px",
+        "padding-bottom" =  "25px"
+    ),
+    
+    ".small" = list("font-size" = "90%"),
+    
+    
+    ".Large , .Large .remark-code, .Large .remark-inline-code" = list("font-size"= "144%"), 
+    ".large , .large .remark-code, .large .remark-inline-code" = list("font-size"= "120%"), 
+    ".small , .small .remark-code, .small .remark-inline-code" = list("font-size"= "90%"), 
+    ".footnotesize, 
+    .footnotesize .remark-code, .footnotesize .remark-inline-code" = list( "font-size"= "80%"),
+    
+    ".scriptsize , .scriptsize .remark-code, .scriptsize .remark-inline-code" = list("font-size"= "70%"),
+    ".tiny , .tiny .remark-code, .tiny .remark-inline-code" = list("font-size"= "60%"),
+    
+    ".footnote" = list (
+        "position" =  "absolute",
+        "bottom" =  "0",
+        "padding-right" = "8em", # to avoid the page numbering 
+        "font-size" =  "60%"
+    ),
+    ".fn" = list(
+      "vertical-align" = "super",
+      "font-size" = "60%",
+      "color" = "purple"
+    ) 
+    
+
+  )
+)
+
+
+
+  
+```
+
+
+
+
+## Research Question at Everest Bio
+
+- How to develop a generic methodology to assess the **ecosystem services** (ES) rendered by industrial activities operating in short circuit in order to improve decision-making by industrial and public actors? 
+
+### Goals:
+
+- .large.bg-green[To propose and validate indicators to be used for the evaluation of ES of a production activity, and for a short circuit operation.] 
+
+.tiny[
+
+- Propose a protocol for collecting and structuring the data and information necessary to evaluate a particular case, instrumented in a digital tool for data processing and impact assessment.
+
+- Develop an evaluation model of the operational conditions allowing the construction of evaluation scenarios of an activity or industrial sector in a given context.
+
+- To apply the developed model to the case of short circuit recycling of plastics. Validation and feedback to take into account the specific conditions of the local context.
+
+]
+
+
+---
+
+
+# Agenda
+
+1. Ecosystem Services + Tool (prototype)
+2. Fedoua and territorial
+3. Point Cristian
+
+
+
+---
+
+class: inverse center middle
+
+# Ecosystem services
+
+---
+
+# Methodology
+
+Explorative search (as using systematic literature approach)
+
+- **Database**: Scopus
+- **Filters**: Title, Abstract and Keywords
+- **Search Equation**: "ecosystem services AND recycl*"
+- **Quantity of Articles**:  542 referencias
+- **Date of search**: February 10 /2021
+- **Criteria**:
+  - On ecosystem services theory
+  - Examples (eventually in recycling)
+  - Papers could be useful for Everest Bio
+
+
+---
+
+class: top left
+background-image: url('figures/ES-Rec.png')
+background-position: 100% 50%
+background-size: 60% 
+
+
+## Definitions
+
+- *Ecosystem process:*
+
+- *Ecosystem Functions*
+
+- *Ecosystem Services*
+
+*- Goods and Services*:
+
+
+
+---
+
+## Ecosystem function <br> & Services
+  
+.small.pull-left[
+
+>**Ecosystem functions** refer variously to the habitat, biological or system properties or processes of ecosystems. <br>
+Ecosystem functions as **'the capacity of natural processes and components to provide goods and services that satisfy human needs, directly or indirectly'**.fn[1] 
+]
+
+.footnote[
+1. Costanza, R., D’Arge, R., de Groot, R., Farber, S., Grasso, M., Hannon, B., Limburg, K., Naeem, S., O’Neill, R. V., Paruelo, J., Raskin, R.G., Sutton, P., van den Belt, M., 1997. The value of the world’s ecosystem services and natural capital. Nature 387, 253–260. https://doi.org/10.1038/387253a0
+]
+
+---
+
+class: top, left, middle
+background-image: url(`r paste0(URL, 'Ecoservices/MEA2005-00.jpg')`)
+background-position: right
+background-size: 55% 
+
+.pull-left[
+Ecosystem Services  consist of <br> **flows of materials, energy, and <br> information from .bg-green[Natural capital stocks] which combine with manufactured and human capital services to produce human welfare**.fn[1]
+
+]
+
+
+
+.footnote[
+1. Costanza, R., D’Arge, R., de Groot, R., Farber, S., Grasso, M., Hannon, B., Limburg, K., Naeem, S., O’Neill, R. V., Paruelo, J., Raskin, R.G., Sutton, P., van den Belt, M., 1997. The value of the world’s ecosystem services and natural capital. Nature 387, 253–260. https://doi.org/10.1038/387253a0
+]
+
+
+---
+
+class: top, left
+background-image: url(`r paste0(URL, 'Ecoservices/Natural-capital.png')`)
+background-position: 100% 20%
+background-size: 55% 
+
+
+## Natural capital 
+
+.pull-left[
+
+Stock of renewable and non-renewable natural resources (materials/manufactured/information) available to society.
+
+Each form of capital stock generates, either autonomously or in conjunction with services from other capital stocks, a flow of services that may be used to transform materials, or the spatial configuration of materials, to enhance the welfare of humans. 
+
+**The human use of this flow of services may or may not leave the original capital stock intact**
+
+]
+
+.footnote[
+Components of natural capital, developed from the natural capital figure in the EU MAES report on Mapping and assessment of ecosystems and their services (European Commission, 2013).
+]
+
+---
+
+class: top, left, middle
+background-image: url(`r paste0(URL, 'Ecoservices/Torres2021-00.jpg')`)
+background-position: right
+background-size: 80% 
+
+
+.bg-grey.Large[8 Key themes and <br> 22 Approaches <br> (Tools, Frameworks, <br>Management, Perspectives)]
+
+.small[Publications identified <br> (n = 27,628)]
+
+.footnote[
+1. Torres, A.V., Tiwari, C., Atkinson, S.F., 2021. Progress in ecosystem services research: A guide for scholars and practitioners. Ecosyst. Serv. 49, 101267. https://doi.org/10.1016/j.ecoser.2021.101267
+]
+
+---
+
+class: left, bottom
+background-image: url(`r paste0(URL, 'Ecoservices/Torres2021-01.jpg')`)
+background-position: center top
+background-size: 80% 
+
+
+
+- Computational modelling and non-monetary valuation are considered *emergent topics*.
+
+
+---
+
+## Typologies of ES:
+
+1. **Regulation functions:** Functions relates to the capacity of natural and semi-natural ecosystems to regulate essential ecological processes and life support systems through bio-geochemical cycles and other biospheric processes. In addition to maintaining ecosystem (and biosphere) health, these regulation functions provide many services that have direct and indirect benefits to humans (such as clean air, water and soil, and biological control services).
+
+2. **Habitat functions:** natural ecosystems provide refuge and reproduction habitat to wild plants and animals and thereby contribute to the (in situ) conservation of biological and genetic diversity and evolutionary processes.
+
+3. **Production functions:** Photosynthesis and nutrient uptake by autotrophs converts energy, carbon dioxide, water and nutrients into a wide variety of carbohydrate structures which are then used by secondary producers to create an even larger variety of living biomass. This broad diversity in carbohydrate structures provides many ecosystem goods for human consumption, ranging from food and raw materials to energy resources and genetic material.
+
+4. **Information functions:** Because most of human evolution took place within the context of undomesticated habitat, natural ecosystems provide an essential ‘reference function’ and contribute to the maintenance of human health by providing opportunities for reflection, spiritual enrichment, cognitive develop- ment, recreation and aesthetic experience.
+
+
+---
+
+layout: true
+
+## Benchmarking of Tools
+
+---
+
+### InvEST & SolVES
+
+The two major tools used to assess ecosystem services quantitatively are the Integrated
+Valuation of Ecosystem Services and Trade-offs (**InVEST**) and the Social Values for Ecosystem a toolkit for mapping natural capital and ecosystem services in the UK Resources (**SOLVES**)[@Zhang2019g]
+
+.pull-left[
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/tools/InVEST.png'))
+```
+
+https://github.com/natcap/invest
+
+]
+
+.pull-right[
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/tools/SolVES-00.png'))
+```
+
+[SolVES website](https://www.usgs.gov/centers/gecsc/science/social-values-ecosystem-services-solves#:~:text=Ecosystem%20services%20are%20the%20benefits,contribute%20to%20human%20well%2Dbeing.&text=SolVES%20is%20designed%20to%20assess,social%20values%20of%20ecosystem%20services.)
+
+]
+
+
+.footnote[Zhang, X., Estoque, R.C., Xie, H., Murayama, Y., Ranagalage, M., 2019. Bibliometric analysis of highly cited articles on ecosystem services. PLoS One 14, e0210707. https://doi.org/10.1371/journal.pone.0210707
+]
+
+---
+
+### EcoservR, NEVO, ARIES
+
+
+.pull-left[
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/tools/EcoservR-01.png'))
+```
+https://ecoservr.github.io/EcoservR/basemap
+https://github.com/ecoservR/ecoserv_tool
+]
+
+.pull-right[
+
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/tools/NEVO.png'))
+```
+
+https://ecosystemsknowledge.net/NEVO
+
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/tools/ARIES.png'))
+```
+
+https://ecosystemsknowledge.net/aries
+
+]
+
+These tools are focused on UK!
+
+
+
+
+
+
+
+
+
+.footnote[
+Ecosystems Knowledge Network: https://ecosystemsknowledge.net/tool/mapping
+
+]
+
+---
+
+layout: true
+
+## Benchmarking of EU Projects
+
+---
+
+### OpenNESS
+
+Integrating methods for ecosystem service assessment: Experiences from real world situations
+
+```{r, out.width = '500px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/EU/OpenNESS.png'))
+```
+
+http://www.openness-project.eu/
+
+Case studies nature-based solutions  **Bayesian networks + ES** --> http://openness.hugin.com/
+
+
+Roy Haines-Young and Marion Potschin. They worked in the development of CICES
+
+
+.footnote[
+Dunford, R., Harrison, P., et al, 2018. Integrating methods for ecosystem service assessment: Experiences from real world situations. Ecosyst. Serv. 29, 499–514. https://doi.org/10.1016/j.ecoser.2017.10.014
+]
+
+---
+
+layout: false
+
+## CICES V5.1
+
+Towards a Common International Classification of Ecosystem Services (CICES) for Integrated Environmental and Economic Accounting
+
+```{r, out.width = '800px', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'Ecoservices/CICES/CICES.png'))
+```
+
+---
+
+## Barriers and complexities  
+
+- Adoption of ES in decision-making processes, for example data availability and accuracy, and lack of resources (time, competences, and money) to produce the assessments .fn[@Longato2021]
+
+- "the multiple and overlapping scales of ES" in a plan at the urban scale, considering also that ES knowledge is not always easily translatable into specific spatial units
+
+- The **Waste-Resource Paradox**: Practical dilemmas and societal implications in the transition to a circular economy .fn[@Greer2021]
+.small[
+
+- Material: Closing a material loop, which incentivizes overproduction
+- Energy: Reducing plastic waste, which requires a new high energy demand to be processed
+- Economic: Creating new use for an old waste, which may result in a potential commodification ofwaste and a new market barrier for circular SMEs
+- Social: Secondary material recovery, at a cost to human health
+  ]
+  
+  
+  
+  
+.footnote[
+- Longato, D., Cortinovis, C., Albert, C., Geneletti, D., 2021. Practical applications of ecosystem services in spatial planning: Lessons learned from a systematic literature review. Environ. Sci. Policy 119, 72–84. https://doi.org/10.1016/j.envsci.2021.02.001
+
+- Greer, R., von Wirth, T., Loorbach, D., 2021. The Waste-Resource Paradox: Practical dilemmas and societal implications in the transition to a circular economy. J. Clean. Prod. 303, 126831. https://doi.org/10.1016/j.jclepro.2021.126831
+]
+
+---
+
+
+class: inverse center middle
+
+# Prototyping the tool
+
+---
+
+## Definitions
+
+According to CICES V5.1:  is built on the principle that a classification of services needs to describe the contribution that ecosystems make to human well-being, defined in terms of ‘what ecosystems do’.
+Thus, in the classification the definition of a service needs to highlight the ecological outcomes that particular ecosystem characteristics or processes generate, that can ultimately benefit people. The aim has therefore been to build a classification that identifies the purposes or uses that people have for the different kinds of ecosystem service and associate them with the particular ecosystem attributes or behaviours that support them
+
+
+---
+
+
+# Valorization of SE
+
+
+
+
+
+---
+
+# Strong and Weak Sustainability
+
+Strong: Coming from Ecological rationality 
+
+>The capital is not sustiable, nor reemplazable, interchangable by the financial capital of the physical capital.
+
+Weak: Coming from Economical rationality
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

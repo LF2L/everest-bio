@@ -1,0 +1,241 @@
+---
+title: "Distributed recycling for additive manufacturing: an ecosystem services perspective "
+documentclass: extarticle
+fontsize: 14pt
+geometry: "left=3cm, right=2cm,top=2.5cm,bottom=2cm"
+output: 
+  bookdown::pdf_document2:
+    toc: false
+  #   keep_tex: TRUE
+    #pandoc_args: "--latex-engine-opt=--shell-escape"
+  # bookdown::html_document2: default
+  # bookdown::word_document2: default
+#output: rticles::tf_article
+# abstract
+always_allow_html: true
+# editor_options: 
+#   markdown: 
+#     wrap: 100
+bibliography: library.bib
+#bibliography: References.bib
+link-citations: yes
+linkcolor: blue
+header-includes: |
+  \usepackage{float}
+  \usepackage{subfig}
+  \usepackage[utf8]{inputenc}
+  \def\tightlist{}
+  \usepackage[bitstream-charter]{mathdesign}
+  \usepackage{pdflscape}
+  \usepackage{svg}
+  \usepackage{lineno}
+  \usepackage{setspace}
+
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.retina = 3, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = '')
+#options(tinytex.engine_args = '--shell-escape')
+
+library(readxl)
+library(here)
+library(tidyverse)
+library(flextable)
+library(rsvg)
+set_flextable_defaults(fonts_ignore=TRUE)
+
+#URL for Figurs
+URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
+
+```
+
+\linenumbers
+\onehalfspacing
+
+# Introduction
+
+<!-- DRAM -->
+Distributed plastic recycling has emerged in the literature to face the socio-environmental challenges related to plastic waste management. 
+The main hypothesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community. To do so, the use of additive manufacturing enables the technical paths to achieve this objective. 
+However, as with any recycling system, its feasibility must be evaluated before its implementation. Based on the sustainability concept, this research intends to investigate, how the ecosystem services are impacted due to the implementation of the plastic recycling chain. Although research has been conducted regarding on the technical and logistical feasibility of distributed plastic recycling, little is known about its pertinence from the ecosystem services perspective in a territory.  
+
+This study intends to explore the local impact derived from the implementation of a distributed plastic recycling chain in a territory. 
+The purpose of this research is to identify the the set of principles, criteria and indicators from ecosystem services framework, that can be associated to distributed recycling approach, evaluating their pertinence in the local impact in terms of availability of data. 
+The Green Fablab at LF2L is considered as case study to put in practice the development of a methodological framework considering sustainability dimensions, derived from the implementation of a distributed plastic recycling chain. 
+
+This study seeks to address the following questions: 
+- What are the appropriate ecosystem service indicators for assessing an prospective filière as distributed plastic recycling? 
+- How does the implementation of a distributed plastic recycling chain impact on ecosystem services? 
+- What are the barriers and drivers for the development of a distributed plastic recycling chain in a territory? 
+
+While not all types of materials can be recycled given the technical difficulties, the estimation of the environmental advantage is needed to assess at early stages the pertinence of this distributed approaches. 
+Main tasks in this research include a systematic literature review of ecosystem services in recycling field, and the creation of a database and online tool to map these element in the local territory.
+
+
+# Background
+
+<!--# Intro -->
+Foundational ideas on ecosystem services seek for conceptual and methodological tools with the major goal to increase public interest in biodiversity conservation through the recognition, accounting and valuation of the societal dependence on the ecological life support systems for the human well-being [@Gomez-Baggethun2009]. 
+Today, ecosystems services field are being included in the decision-making through promotion of market Based Instruments for Payment for Ecosystems services schemes with the purpose of create and environmental governance according to the reality of impact on the natural capital [@ref].
+Nevertheless, commodification of nature's services by reductionist thinking about  individual services runs the risk of unintended harm and unbalanced outputs.
+Systems thinking is essential for avoiding such harm [@Gopalakrishnan2016].
+
+<!--# Definition of Ecosystem Services -->
+Ecosystem services (ES) are the ecological characteristics, function or processes that contribute (actively or passively) to the human well-being [@Costanza1997; @Costanza2017]. Ecosystem goods (e.g; Food) and services (e.g. waste assimilation) illustrate the benefits that human derive from the ecosystem functions [@Costanza1997]. 
+  <!--# Functions vs Services -->
+It is needed to distinguish between the ecosystem's functions and processes from the ecosystem services concept itself. The former describes biophysical relationships that are carried out by nature regardless of whether or not human benefits. 
+By contrast, the latter are those processes and functions where people can (or could have the potential [@ref]) obtain benefits. The ecosystem services do not flow to human well-being without crucial interactions with the different forms of capital (Natural, Social, Human, Built), which entails the need of understanding, modelling, measuring, and managing ES in a trans-disciplinary approach. Likewise, the concept of ecosystem dis-service denotes the processes and functions that affect humans in 'negative' way, making damage and costs [@ref]. 
+One major point that ES make clear is to raise awareness on the recognition of humanity's primary dependencies on the 'functions of' natural capital which reflects the fact that, however they may perceive themselves, humans are part of, and not apart from, nature [@Ekins2003]. This entails the necessity to create knowledge for trans-disciplinary approaches using ES as boundary object for sustainability for diverse stakeholders [@Honeck2021].
+
+
+
+<!--# Classification of ES -->
+Different initiatives have been reported to classify the ES, including the Millennium Ecosystem Assessment [@MEA2005], 
+The Economics of Ecosystems and BiodiversityTBB [@ref],
+THe Intergovernmetal Plastform of Biodiversity and Ecosystem Services (IPBES) [@ref] and the Common International Classification of Ecosystem Services (CICES) . 
+In the heart of the four main, they share four main categories of ES:
+**Provisioning** (e.g. food and medicines); 
+**Regulating** (e.g. pollination and climate regulation), 
+**Supporting** (e.g soil formation and fixation of solar energy) and 
+**Cultural / Information** services (e.g. artistic inspiration and recreation) services are four broad catagories types of ES constitutes the core of most recent classifications and that are shared by the most frameworks [@PedersenZari2019].
+
+<!--# Strong sustainability and ES -->
+Efforts on biodiversity conservation relies on the highlight of the economic aspects of biodiversity and the natural capital [@Costanza1997] and the environmental inaction related to the cost of policy damage occurring in the absence of an effective regulatory framework [@Bruel2016].
+  <!-- Strong sustainability -->
+From a strong sustainability perspective, a declining capital stock is an unambiguous indicator of unsustainability in the flow of goods and services that derive from it [@Ekins2003].
+More important, the recognition of the non-substitutability of natural capital with regard to the other forms of capital; acknowledging the characteristics of irreversibility (such as species extinction or climate change), uncertainty and the existence of *critical* components that make a major contribution to welfare.
+  <!--# Main environmental issue -->
+The main core of the environmental problem relies on the use of use ecosystem's functions, mainly those that generate economic welfare, that are making a negative impact and influence on the natural capital stock, and even worse, on those functions that are responsible for ecosystem stability and resilience [@Ekins2003].
+
+
+  <!-- CICES -->
+The Common International Classification of Ecosystem Services (CICES) was developed to provide hiecharchally consistent and science-based classification to be used for natural capital accounting purposes [@ref]. 
+In CICES framework, @Potschin argued the conceptual framework of cascading aspect from ecosystesm service tos of the and are commonly divided into 
+@Mustajoki2019
+
+
+<!-- \begin{landscape} -->
+```{r table-CICES, include=FALSE}
+# From the CICES intial
+CICES <- read_excel(here("tables/CICES.xlsx"), sheet = "CICES V5.1",  skip = 4 )
+CICES <- CICES %>% filter(Filter == "CICES" ) %>% select(Section,Division, Group, Class,`Class type`)
+
+CICES %>% flextable() %>%
+  set_caption("CICES ") %>%
+  #autofit() %>% 
+  width(j=1:5, width = c(1, 1, 2, 2, 2)) %>% 
+  fontsize(size=10, part = "all") %>% 
+  #fit_to_width(max_width = 8) %>% 
+  merge_v(j = c("Section", "Division",  "Class type")) %>% #"Group", "Class",
+  theme_booktabs()
+
+#names(CICES)
+```
+<!-- \end{landscape} -->
+
+
+<!--  Research themes in ES -->
+Using a systematic literature review approach, @Torres2021 distinguished and categorized 8 major key themes and 22 approaches in the ES field. Key themes represent underlying meanings or ideas that are widely used, trending or rising in the ecosystem services research field. Key approaches include methods [@Harrison2018], tools, frameworks, perspectives and management strategies to analyze, assess, and quantify ecosystem services.
+
+Efforts have been made in the literature to classify the methods used to assess ecosystem services based on 27 case studies. Ecosystem service assessment methods were classified into four broad categories: biophysical, socio-cultural, monetary, and integrative.
+
+<!-- Importance of ES in the decision making process -->
+The loss in value associated with biodiversity loss and the related loss of ecosystem services is often invisible and does not influence decision makers. It is difficult to provide information about pressure from industrial systems in corporate information systems. EE uses valuation techniques to reveal the value of nature and develops ways to overcome the current technical and ethical challenges to valuation, for example, by broadening the dominant monetary perspective on the value of nature by nonmonetary and deliberative approaches influence decision makers. 
+
+- Hoy en dia es necesario tener en cuenta no solo un factor technic-econonomic en el momento de evaluar soluciones en amount. Tambien, es necesario estavlecer cuales serain las implicationes y los impactos para el territoirio desde el punto de vista de servicios ecosistemicos
+
+## Ecosystems services in the industrial systems: towards a reconciliation of two capitals for humanity.
+
+<!-- Importance of ES in the Engineering -->
+The economic valuation of ecosystem goods and services gives an elegant framework highlighting their importance for society and human welfare. 
+However, there is a need to explicitly account for their contribution when designing and developing products and services [@Diwekar2021].
+  <!-- Engineering blindness -->
+The engineering discipline developed the implicit assumption that ecological systems have nearly endless capacity  to provide resources and adsorb wastes.
+This blindness in the engineering vision can be explaining by the fact that at the beginning of the technological industrialization, the  human activites' impacts on the earth remained marginal. This scenario is not true today.
+  <!-- Engineering withing ecological constraints -->
+Engineering within ecological constraints need to acknowledge the capacity of relevant ecosystems to supply the demanded goods and services while the ecosystems and natural capital must be protected, restored and developed to be capable of continuing to supply those services that industry (and society) relies on [@ref].
+  <!-- MEA and Planeatry results -->
+According to the Milleniums 15 out of 24 ecosystems services examined are degraded or being used in an unsustainable manner [@MEA2005]. 
+Likewise, using the  planetary boundaries framework, it is argued that anthropogenic activities already exceed the biophysical limits of the "safe operating zone" in terms of carbon and nitrogen cycles, and biodiversity loss [@Rockstrom2009; @ONeill2018].
+  <!-- Causas of exceeding Planeatry boundaries -->
+Among the root causes of ecological degradation is ignorance about the exceedance of the ecological carrying capacity in many desicions [@Liu2019g].
+Another crucial issue is that current design approaches based on life cycle characterization and footprint methods focus on continuous improvement by reducing life cycle impacts per unit of product, encouraging improvements by doing "less bad", which need not translate into keeping human activities within ecological constraints.
+<!-- Purpose of strong sustainability -->
+Ideally, it is needed to (re)designed industrial activites to reduce the demand for the demand of ecosystems services creating for a local '*island of sustainability*' which is that the demand should not exceed the supply at the local scale [@Gopalakrishnan2016]. 
+  <!-- Expand boundaries of Engineering -->
+Therefore, it's urgent to expand the boundaries for engineering design from the lowest molecular level to the process level, and from individual process to the higher levels of value chains, ecosystems and the planet [@Martinez-Hernandez2017].
+
+<!-- Sustainability frameworks -->
+@Ceschin2016 putted forward the evolution of *Design for Sustainability (DfS)* framework showing the different approaches that have evolved from a product innovation level to socio-technical systems level. 
+They pointed out that engineering interventions at only technological unit operation/product level are necessary, but not sufficient condition for sustainability.
+<!-- They hightligthed that differens Systemic design approaches are   -->
+  <!-- TES -->
+@Bakshi2015 reported a framework of Techno-Ecological Synergy (TES) in order to expand the scope of the usual techno-centric perspectives.
+This theoretical framework aims to encourage a more robust analysis of technological and ecological systems at multiple spatial scales ranging from local (e.g. for small systems such as a house and its yard, a manufacturing process and its site) to a larger scale systems that extend to consider the entire life cycle. 
+
+relies on the idea of TES and develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
+
+The key point for bussiness and government sectors in terms realize an integrated valuation and comprehensive account of both the negative impacts on ES from business activites and the positive contributions of ES to business and households [@Costanza2017].
+More general, the critical issues relies on the importance of ES to challenge the conventional approaches to growth and development, towards a perspective more focalized on the prosperity and wellbeing. 
+The loss in value associated with biodiversity loss and the related loss of ecosystem services is often invisible and does not
+
+
+
+# Methodology
+
+The purpose of this article is to propose a conceptual framework to evaluate the synergy of prospective industrial filière considering the technological and ecological spheres. 
+
+Four steps were proposed as illustrated in figure XX .
+
+  <!-- Step 1 Assessments-->
+The goal of *Asessments* step is to identify the bounddaries for the technoological and ecological systems to be evaluated.
+  <!-- Step 2 Plannig-->
+In the *Planning* step, the main aim is to jeopordize the key ecosystems services and the respective scales that are going to be included in the analysis. 
+These elements will be a intersection of the technological and geographihcal issues based on a analysis of each systems.
+  <!-- Step 3 Evaluate-->
+In the *Evaluation* stage, the main purpose is to establish the demand and supply of ES based on respective inventory and models. This include the specific allocation
+  <!-- Step 3 Management-->
+Finally, ini the last step *Management*, the main goal is to establish scenarios of evaluation based on the 'Bussiness-as-usual' and Synergy frameworks.
+This will enable to take a more informed decision to stakeholder at the evaluation of prospopective projects.
+
+An application of the framework will be presented in Section XX using as case study of the distributed recycling chain via additive manufacturing..
+In the following sub-sections, each stage of the methodology is explained.
+
+```{r Fig-Methodology, fig.cap='Operational framework for evaluatig the ecosystem services of industrial systems', out.width='80%'}
+
+#library(magick)
+#image_write(image_read_svg(img_url,  width = 350), path = "Figures/Methodology.jpeg", format = "jpeg")
+
+
+# img_url <- paste0(URL, 'Everest-bio/Methodology.svg')
+# rsvg_pdf(img_url, "Figures/Methodology.pdf")
+
+knitr::include_graphics('Figures/Methodology.pdf')
+```
+
+
+
+
+## Assessment
+
+### Definition of the Tech- and Eco- Spheres
+
+It is needed to define two types of boundaries: technological and ecological.
+<!-- Technological -->
+Regarding the technological sphere, it involves choosing the human activites that can be a single process, life cycle, or economic network.
+Concerning the ecological sphere, it relies on specifying the geographical regions that the activity is implemented. 
+
+
+
+
+
+
+
+# Case study: Distribuuting recycling via Additive Manufacturing
+## Indicators in Ecosystem Services Distributed recycling The
+
+\newpage
+
+# References

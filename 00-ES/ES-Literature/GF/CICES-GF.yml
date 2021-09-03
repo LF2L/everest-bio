@@ -1,0 +1,394 @@
+Class:
+- Cultivated terrestrial plants (including fungi, algae) grown for nutritional purposes
+- Fibres and other materials from cultivated plants, fungi, algae and bacteria for
+  direct use or processing  (excluding genetic materials)
+- Cultivated plants (including fungi, algae) grown as a source of  energy
+- Plants cultivated by in- situ aquaculture  grown for nutritional purposes
+- Fibres and other materials from in-situ aquaculture for direct use or processing  (excluding
+  genetic materials)
+- Plants cultivated by in- situ aquaculture grown as an energy source
+- Animals reared  for nutritional purposes
+- Fibres and other materials from reared animals for direct use or processing (excluding
+  genetic materials)
+- Animals reared to provide energy (including mechanical)
+- Animals reared by in-situ aquaculture for nutritional purposes
+- Fibres and other materials from animals grown by in-situ aquaculture for direct
+  use or processing  (excluding genetic materials)
+- Animals reared by in-situ aquaculture as an energy source
+- Wild plants (terrestrial and aquatic, including fungi, algae) used for nutrition
+- Fibres and other materials from wild plants for direct use or processing  (excluding
+  genetic materials)
+- Wild plants (terrestrial and aquatic, including fungi, algae) used as a source of
+  energy
+- Wild animals (terrestrial and aquatic) used for nutritional purposes
+- Fibres and other materials from wild animals for direct use or processing (excluding
+  genetic materials)
+- Wild animals (terrestrial and aquatic)  used as a source of energy
+- Seeds, spores and other plant materials collected for maintaining or establishing
+  a population
+- Higher and lower plants (whole organisms) used to breed new strains or varieties
+- Individual genes extracted from higher and lower plants for the design and construction
+  of new biological entities
+- Animal material collected for the purposes of maintaining or establishing a population
+- Wild animals  (whole organisms) used to breed  new strains or varieties
+- Individual genes extracted from organisms  for the design and construction of new
+  biological entities
+- Other
+- Bio-remediation by micro-organisms, algae, plants, and animals
+- Filtration/sequestration/storage/accumulation by micro-organisms, algae, plants,
+  and animals
+- Smell reduction
+- Noise attenuation
+- Visual screening
+- Control of erosion rates
+- Buffering and attenuation of mass movement
+- Hydrological cycle and water flow regulation (Including flood control, and coastal
+  protection)
+- Wind protection
+- Fire protection
+- Pollination (or 'gamete' dispersal in a marine context)
+- Seed dispersal
+- Maintaining nursery populations and habitats (Including gene pool protection)
+- Pest control (including invasive species)
+- Disease control
+- Weathering processes and their effect on soil quality
+- Decomposition and fixing processes and their effect on soil quality
+- Regulation of the chemical condition of freshwaters by living processes
+- Regulation of the chemical condition of salt waters by living processes
+- Regulation of chemical composition of atmosphere and oceans
+- Regulation of temperature and humidity, including ventilation and transpiration
+- Other
+- Characteristics of living systems that that enable activities promoting health,
+  recuperation or enjoyment through active or immersive interactions
+- Characteristics of living systems that enable activities promoting health, recuperation
+  or enjoyment through passive or observational interactions
+- Characteristics of living systems that enable scientific investigation or the creation
+  of traditional ecological knowledge
+- Characteristics of living systems that enable education and training
+- Characteristics of living systems that are resonant in terms of culture or heritage
+- Characteristics of living systems that enable aesthetic experiences
+- Elements of living systems that have symbolic meaning
+- Elements of living systems that have sacred or religious meaning
+- Elements of living systems used for entertainment or representation
+- Characteristics or features of living systems that have an existence value
+- Characteristics or features of living systems that have an option or bequest value
+- Other
+- Surface water for drinking
+- Surface water used as a material (non-drinking purposes)
+- Freshwater surface water used as an energy source
+- Coastal and marine water used as energy source
+- Ground (and subsurface) water for drinking
+- Ground water (and subsurface)  used as a material (non-drinking purposes)
+- Ground water (and subsurface)  used as an energy source
+- Other
+- Mineral substances used for nutritional purposes
+- Mineral substances used for material purposes
+- Mineral substances used for as an energy source
+- Non-mineral substances or ecosystem properties used for nutritional purposes
+- Non-mineral substances used for materials
+- Wind energy
+- Solar energy
+- Geothermal
+- Other
+- Dilution by freshwater and marine ecosystems
+- Dilution by atmosphere
+- Mediation by other chemical or physical means (e.g. via Filtration, sequestration,
+  storage or accumulation)
+- Mediation of nuisances by abiotic structures or processes
+- Mass flows
+- Liquid flows
+- Gaseous flows
+- Maintenance and regulation by inorganic natural chemical and physical processes
+- Other
+- Natural, abiotic characteristics of nature that enable active or passive physical
+  and experiential interactions
+- Natural, abiotic characteristics of nature that enable intellectual interactions
+- Natural, abiotic characteristics of nature that enable spiritual, symbolic and other
+  interactions
+- Natural, abiotic characteristics or features of nature that have either an existence,
+  option or bequest value
+- Other
+Code:
+- 1.1.1.1
+- 1.1.1.2
+- 1.1.1.3
+- 1.1.2.1
+- 1.1.2.2
+- 1.1.2.3
+- 1.1.3.1
+- 1.1.3.2
+- 1.1.3.3
+- 1.1.4.1
+- 1.1.4.2
+- 1.1.4.3
+- 1.1.5.1
+- 1.1.5.2
+- 1.1.5.3
+- 1.1.6.1
+- 1.1.6.2
+- 1.1.6.3
+- 1.2.1.1
+- 1.2.1.2
+- 1.2.1.3
+- 1.2.2.1
+- 1.2.2.2
+- 1.2.2.3
+- 1.3.X.X
+- 2.1.1.1
+- 2.1.1.2
+- 2.1.2.1
+- 2.1.2.2
+- 2.1.2.3
+- 2.2.1.1
+- 2.2.1.2
+- 2.2.1.3
+- 2.2.1.4
+- 2.2.1.5
+- 2.2.2.1
+- 2.2.2.2
+- 2.2.2.3
+- 2.2.3.1
+- 2.2.3.2
+- 2.2.4.1
+- 2.2.4.2
+- 2.2.5.1
+- 2.2.5.2
+- 2.2.6.1
+- 2.2.6.2
+- 2.3.X.X
+- 3.1.1.1
+- 3.1.1.2
+- 3.1.2.1
+- 3.1.2.2
+- 3.1.2.3
+- 3.1.2.4
+- 3.2.1.1
+- 3.2.1.2
+- 3.2.1.3
+- 3.2.2.1
+- 3.2.2.2
+- 3.3.X.X
+- 4.2.1.1
+- 4.2.1.2
+- 4.2.1.3
+- 4.2.1.4
+- 4.2.2.1
+- 4.2.2.2
+- 4.2.2.3
+- 4.2.X.X
+- 4.3.1.1
+- 4.3.1.2
+- 4.3.1.3
+- 4.3.2.1
+- 4.3.2.2
+- 4.3.2.3
+- 4.3.2.4
+- 4.3.2.5
+- 4.3.2.6
+- 5.1.1.1
+- 5.1.1.2
+- 5.1.1.3
+- 5.1.2.1
+- 5.2.1.1
+- 5.2.1.2
+- 5.2.1.3
+- 5.2.2.1
+- 5.3.X.X
+- 6.1.1.1
+- 6.1.2.1
+- 6.2.1.1
+- 6.2.2.1
+- 6.3.X.X
+Class type:
+- Crops by amount, type (e.g. cereals, root crops, soft fruit, etc.)
+- Material by amount, type, use, media (land, soil, freshwater, marine)
+- By amount, type, source
+- Plants, algae by amount, type
+- Plants, algae by amount, type
+- Plants, algae by amount, type
+- Animals, products by amount, type (e.g. beef, dairy)
+- Material by amount, type, use, media (land, soil, freshwater, marine)
+- By amount, type, source
+- Animals by amount, type
+- Animals by amount, type
+- Animals by amount, type
+- Plants, algae by amount, type
+- Plants, algae by amount, type
+- Material by type/source
+- Animals by amount, type
+- Material by type/source
+- By amount, type, source
+- By species or varieties
+- By species or varieties
+- Material by type
+- By species or varieties
+- By species or varieties
+- Material by type
+- Use nested codes to allocate other provisioning services from living systems to
+  appropriate Groups and Classes
+- By type of living system or by waste or subsistence type
+- By type of living system, or by water or substance type
+- By type of living system
+- By type of living system
+- By type of living system
+- By reduction in risk, area protected
+- By reduction in risk, area protected
+- By depth/volumes
+- By reduction in risk, area protected
+- By reduction in risk, area protected
+- By amount and pollinator
+- By amount and dispersal agent
+- By amount and source
+- By reduction in incidence, risk, area protected by type of living system
+- By reduction in incidence, risk, area protected by type of living system
+- By amount/concentration and source
+- By amount/concentration and source
+- By type of living system
+- By type of living system
+- By contribution of type of living system to amount, concentration or climatic parameter
+- By contribution of type of living system to amount, concentration or climatic parameter
+- Use nested codes to allocate other regulating and maintenance services from living
+  systems to appropriate Groups and Classes
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- By type of living system or environmental setting
+- Use nested codes to allocate other cultural services from living systems to appropriate
+  Groups and Classes
+- By amount, type, source
+- By amount & source
+- By amount, type, source
+- By amount, type, source
+- By amount, type, source
+- By amount & source
+- By amount & source
+- Use nested codes to allocate other provisioning services from non-living systems
+  to appropriate Groups and Classes
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Use nested codes to allocate other provisioning services from non-living systems
+  to appropriate Groups and Classes
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Use nested codes to allocate other provisioning services from non-living systems
+  to appropriate Groups and Classes
+- Amount by type
+- Amount by type
+- Amount by type
+- Amount by type
+- Use nested codes to allocate other provisioning services from non-living systems
+  to appropriate Groups and Classes
+Simple descriptor:
+- Any crops and fruits grown by humans for food; food crops
+- Material from plants, fungi, algae or bacterial that we can use
+- Plant materials used as a source of energy
+- Plants that are cultivated in fresh or salt water that we eat
+- Plants that are cultivated in fresh or salt water that we can use as a material
+- Plants that are cultivated in fresh or salt water that we can use as an energy source
+- Livestock raised in housing and/or grazed outdoors
+- Material from animals that we can use
+- Animal materials used as a source of energy or for  traction
+- Animals that are cultivated in fresh or salt water that we eat.
+- Animals that are cultivated in fresh or salt water that we can use as a material.
+- Animals that are cultivated in fresh or salt water that we can use as a source of
+  energy.
+- Food from wild plants
+- Materials  from wild plants
+- Materials from wild plants, fungi and algae used for energy
+- Food from wild animals
+- Materials from wild animals
+- Material from wild animals that can be used as a source of energy
+- Seed collection
+- Plants. fungi or algae that we can use for breeding
+- Genetic material from wild plants. fungi or algae that we can use
+- Animals used for replenishing stock
+- Wild animals that we can use for breeding
+- The genetic information that is stored in wild animals that we can use
+- .na.character
+- Decomposing wastes
+- Filtering wastes
+- Reducing smells
+- Reducing noise
+- Screening unsightly things
+- Controlling or preventing soil loss
+- Stopping landslides and avalanches harming people
+- Regulating the flows of water in our environment
+- Protecting people from winds
+- Protecting people from fire
+- Pollinating our fruit trees and other plants
+- Spreading the seeds of wild plants
+- Providing habitats for wild plants and animals that can be useful to us
+- Controlling pests and invasive species
+- Controlling disease
+- Ensuring soils form and develop
+- Ensuring the organic matter in our soils is maintained
+- Controlling the chemical quality of freshwater
+- Controlling the chemical quality of salt water
+- Regulating our global climate
+- Regulating the physical quality of air for people
+- .na.character
+- Using the environment for sport and recreation; using nature to help stay fit
+- Watching plants and animals where they live; using nature to destress
+- Researching nature
+- Studying nature
+- The things in nature that help people identify with the history or culture of where
+  they live or come from
+- The beauty of nature
+- Using nature to as a national or local emblem
+- The things in nature that have spiritual importance for people
+- The things in nature used to make films or to write books
+- The things in nature that we think should be conserved
+- The things in nature that we want future generations to enjoy or use
+- .na.character
+- Drinking water from sources at the ground surface
+- Surface water that we can use for things other than drinking
+- Hydropower
+- Wave or tidal power
+- Dirking water from the below ground
+- Sub-surface water that we can use for things other than drinking
+- Sub-surface water that we can use as a source of energy
+- .na.character
+- Minerals in our food
+- Natural inorganic materials from nature that we  can use
+- Natural inorganic materials from nature that we  can use as an energy source
+- The ways the physical environment contribute to our nutritional health
+- Gaseous, fluid or non-mineral solid inorganic materials from nature that we can
+  use (excludes water vapour)
+- Wind power
+- Solar power
+- Using underground heat
+- .na.character
+- Diluting wastes
+- Diluting wastes
+- Natural processing of wastes
+- Natural protection
+- Physical barriers to landslides
+- Physical barriers to flows
+- Physical barriers  to air movements
+- Regulating living conditions by the physical environment
+- .na.character
+- Things in the physical environment that we can experience actively or passively
+- Things in the physical environment that we can study or think about
+- Things in the physical environment that are important as symbols
+- Things in the physical environment that we think are important to others and future
+  generations
+- .na.character
