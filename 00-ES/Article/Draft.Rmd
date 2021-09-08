@@ -2,7 +2,7 @@
 title: "Distributed recycling for additive manufacturing: an ecosystem services perspective "
 documentclass: extarticle
 fontsize: 14pt
-geometry: "left=3cm, right=2cm,top=2.5cm,bottom=2cm"
+#geometry: "left=3cm, right=2cm,top=2.5cm,bottom=2cm"
 output: 
   bookdown::pdf_document2:
     toc: false
@@ -30,6 +30,8 @@ header-includes: |
   \usepackage{svg}
   \usepackage{lineno}
   \usepackage{setspace}
+  \newcommand*{\doverline}[1]{\overline{\overline{#1}}}
+  
 
 
 ---
@@ -52,7 +54,7 @@ URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
 ```
 
 \linenumbers
-\onehalfspacing
+<!-- \onehalfspacing -->
 
 # Introduction
 
@@ -163,7 +165,7 @@ Likewise, using the  planetary boundaries framework, it is argued that anthropog
 Among the root causes of ecological degradation is ignorance about the exceedance of the ecological carrying capacity in many desicions [@Liu2019g].
 Another crucial issue is that current design approaches based on life cycle characterization and footprint methods focus on continuous improvement by reducing life cycle impacts per unit of product, encouraging improvements by doing "less bad", which need not translate into keeping human activities within ecological constraints.
 <!-- Purpose of strong sustainability -->
-Ideally, it is needed to (re)designed industrial activites to reduce the demand for the demand of ecosystems services creating for a local '*island of sustainability*' which is that the demand should not exceed the supply at the local scale [@Gopalakrishnan2016]. 
+Ideally, it is needed to (re)designed industrial activities to reduce the demand for the demand of ecosystems services creating for a local '*island of sustainability*' which is that the demand should not exceed the supply at the local scale [@Gopalakrishnan2016]. 
   <!-- Expand boundaries of Engineering -->
 Therefore, it's urgent to expand the boundaries for engineering design from the lowest molecular level to the process level, and from individual process to the higher levels of value chains, ecosystems and the planet [@Martinez-Hernandez2017].
 
@@ -174,6 +176,7 @@ They pointed out that engineering interventions at only technological unit opera
   <!-- TES -->
 @Bakshi2015 reported a framework of Techno-Ecological Synergy (TES) in order to expand the scope of the usual techno-centric perspectives.
 This theoretical framework aims to encourage a more robust analysis of technological and ecological systems at multiple spatial scales ranging from local (e.g. for small systems such as a house and its yard, a manufacturing process and its site) to a larger scale systems that extend to consider the entire life cycle. 
+
 
 relies on the idea of TES and develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
 
@@ -187,23 +190,23 @@ The loss in value associated with biodiversity loss and the related loss of ecos
 
 The purpose of this article is to propose a conceptual framework to evaluate the synergy of prospective industrial filière considering the technological and ecological spheres. 
 
-Four steps were proposed as illustrated in figure XX .
+Four major steps are proposed as illustrated in figure XX .
 
   <!-- Step 1 Assessments-->
-The goal of *Asessments* step is to identify the bounddaries for the technoological and ecological systems to be evaluated.
+The goal of *Planning* step is to identify the boundaries for the technological and ecological systems to be evaluated.
   <!-- Step 2 Plannig-->
-In the *Planning* step, the main aim is to jeopordize the key ecosystems services and the respective scales that are going to be included in the analysis. 
+In the *Assessment* step, the main aim is to jeopordize the key ecosystems services and the respective scales that are going to be included in the analysis. 
 These elements will be a intersection of the technological and geographihcal issues based on a analysis of each systems.
   <!-- Step 3 Evaluate-->
 In the *Evaluation* stage, the main purpose is to establish the demand and supply of ES based on respective inventory and models. This include the specific allocation
   <!-- Step 3 Management-->
-Finally, ini the last step *Management*, the main goal is to establish scenarios of evaluation based on the 'Bussiness-as-usual' and Synergy frameworks.
+Finally, in the last step *Management*, the main goal is to establish scenarios of evaluation based on the 'Bussiness-as-usual' and Synergy frameworks.
 This will enable to take a more informed decision to stakeholder at the evaluation of prospopective projects.
 
 An application of the framework will be presented in Section XX using as case study of the distributed recycling chain via additive manufacturing..
 In the following sub-sections, each stage of the methodology is explained.
 
-```{r Fig-Methodology, fig.cap='Operational framework for evaluatig the ecosystem services of industrial systems', out.width='80%'}
+```{r Fig-Methodology, fig.cap='Operational framework for evaluatig the ecosystem services of industrial systems', out.width='100%', fig.pos='!ht'}
 
 #library(magick)
 #image_write(image_read_svg(img_url,  width = 350), path = "Figures/Methodology.jpeg", format = "jpeg")
@@ -218,22 +221,192 @@ knitr::include_graphics('Figures/Methodology.pdf')
 
 
 
-## Assessment
+## Planning
 
-### Definition of the Tech- and Eco- Spheres
+It is needed to define two types of scopes: technological and ecological.
 
-It is needed to define two types of boundaries: technological and ecological.
+
+```{r Terminology}
+Terminology <- read_csv2("tables/Terminology.csv")
+# Terminology <-  table_1 %>%  set_names(" ", "PLA", "Recycled PLA")
+
+#std_border = officer::fp_border(color="orange", width = 1)
+
+
+Terminology %>% flextable() %>%
+  set_caption("Terminology used in the deifnition of the spheres") %>%
+  width(j=1:4, width = c(1, 1.5, 1.5, 2)) %>% 
+  theme_booktabs() %>% 
+  hline( i = 3, border = officer::fp_border( color = "black", width = 1)) %>% 
+  padding(padding = 0)
+  
+```
+
+
+### Definition of the Tech-Sphere
+
 <!-- Technological -->
-Regarding the technological sphere, it involves choosing the human activites that can be a single process, life cycle, or economic network.
-Concerning the ecological sphere, it relies on specifying the geographical regions that the activity is implemented. 
+Regarding the technological sphere, three scales are analysed: *Equipment*, *Value chain* and *Economy* scales.
+  <!-- Equipment -->
+The technological system at the equipment scale is represented as $T_{i,j}$ which consists of the *i-th* facility for the *j-th* technological activity. 
+For example, in the case of a specific technological activity ($j = 1$) such as corn farming, $T_{1,1}$ and $T_{1,1}$ represent two different facilities or farms for this activity. 
+  <!-- Value chain -->
+Technological systems at the value chain scale are indicated as $\underline{T_{j}}$.
+These represent average value chain activities within a region, whose information is generally available from inventory databases.
+  <!-- Economy -->
+Technological systems at the economy scale are represented as $\doverline{T_{j}}$.
+These economic sectors, which aggregate similar activities at the value chain scale in the region or country, as in economic input-output models. 
+
+In a given problem, the scales at which technologies systems should be modeled are determined based on whether the data are available and whether the activities are site-specific.
+
+
+### Definition of the Eco-sphere
+
+<!-- Intro -->
+Concerning the ecological sphere, it relies on specifying the geographical regions where the activity is implemented. 
+  <!-- GOal -->
+The main aim is to include explicitly the ecosystem goods and services, and the ecosystem itself in the system boundary. 
+Thus, interactions within and between technological and ecological systems can be integred explicitly, enabling the assessment of regional variation and absolute environmental sustainability regarding each ES considered. 
+
+<!-- Procedure for the three levels -->
+In this step requires information about ecosystems in which the selected technological systems are nested. 
+Each technological activity is nested within a local ecosystem, indicated by the first circle around the rectangle.   <!-- Specification at Equipment scale -->
+The ecosystem local to $T_{i,j}$ is represented by $E_{i,j}$.
+For example, this could be the campus around a manufacturing facility or an agricultural farm. 
+  
+<!-- Value chain scale -->
+At the *value chain* scale, the "local ecosystem" for an activity may be approximated by aggregating similar activities in a specific geographical region, which is similar to the approach used for building a conventional LCI database. 
+The averaged local ecosystem can be justified as the general landscape characteristics around the specific activity.
+For instance, electricity generation from coal-fired power plants needs a large amount of water for cooling: thus, it is likely that these facilities are located close to water sources. 
+
+Likewise, the local ecosystem for an *economic scale* may also be defined in the same manner, since an economic sector aggregates similar value chain scale activities, and may be denoted as $\overline{E}_{j}$.
+The aggregation relationships between activities and their surrounding ecosystems at various scales have been depicted by the dotted lines in figure XX.
+
+
+
+
+#### Scope of Ecosystems Serviceshed
+
+The largest ecological scale that needs to be considered varies according to the type of ES. 
+The "largest ecological scale" is analogous to the concept of a “serviceshed” in the ES literature [@Liu2019g]. 
+
+It is indicated by outer circles in figure X. 
+The notation used is $E^{*}_{i,j,k}$ to represent the serviceshed for the $k-th$ ES, in which the $i-th$ facility of the $j-th$ technological activity is nested. 
+
+For example, due to the global flow of $CO_{2}$, the carbon sequestration ES provided by any part of the world can potentially satisfy the demand of this service anywhere else. 
+Thus, the largest ecological scale to evaluate the carbon sequestration ES is the global scale. 
+In contrast, criteria air pollutants, such as $SO_{2}$ and $NO{x}$ can only be transported and regulated by ecosystems within a narrower geographic boundary. 
+Thus, the largest ecological scale to evaluate air quality regulation service is the regional scale. 
+Larger ecological scales, such as a global scale, may not be relevant to this service.
+
+If facilities $T_{1,n}\dots,T_{m,n}$ are located in different serviceheds for a particular ES, these servicesheds need to be averages for value chain activity $\underline{T}_{n}$.
+Although such averaging implicitly assumes substitutability by implying that ES produced in one serviceshed can be used by beneficiaries in another serviceshed, this average may have to be used in the absence of spatial information at the serviceshed or smaller scales. 
+The average serviceshed is denoted as $\underline{E}^{*}_{j,k}$ for value chain activities and $\overline{E}^{*}_{j,k}$ for economic activities. 
+
+
+## Assesstment of Demand and Supply for key ES
+
+### Inventory of the Technological Systems
+
+<!-- Intro -->
+Consider a situation where a production flowsheet for an existing or new process is already available.
+A preliminary assessment of these environmental interventions must be carried out to obtain information about the different types of demands created by manufacturing facilities, and the kind of ecosystems that can supply these services to satisfy the demand. 
+
+@Liu2019g argued that the conventional Life Cycle Inveentory (LCI)  of technological systems can be used as the **demand** ($D_{k}$) for the $k-th$ ES.
+It represents the total amount of ES needed to  mitigate the emission or atisfy the resource use?
+For example, the quantity of $CO_{2}$ emitted by a technology indicate the demand for the carbon sequestration service.
+
+Environmentally-extended input-output (EEIO) data for activities at equipment, value chain and economy scale, LCI databases, and  detailed engineering models can supply information to quantify the respective demand for each service.
+Also, inventory of technological systems comprises all relevant flows associated with the functional unit, regardless of the scale at which technological activities are modeled.
+
+
+### Inventory of the Ecological Systems
+
+<!-- Intro to problem of LCA -->
+Usually, Life cycle analysis  do not integrate explicitaly models and data about ecosystem goods and services [@ref]
+Therefore, this information needs to be added directly to a conventional inventory, which we refer to as the **supply** ($S_{k}$) of the $k-th$ ES. 
+
+The main object is to establish the ability of of ecosystems to provide the demanded services. 
+For example, green plants supply the carbon sequestration service by taking up atmospheric $CO_{2}$ and sequestering it as organic matter through photosynthesis. 
+This can be understood as the dependence of production systems on ES. 
+Alternatively, it can be interpreted as the ES that nature can supply in order to produce the functional unit.
+
+<!-- Establish ecological models -->
+There is a research efforts to establish the knowledge about the supply of ES using ecological models such as 
+  <!-- Ecological models -->
+i-Tree (USDA2016b), EPIC (EPIC 2016), InVEST(Nel- son et al. 2009), and remote sensing data from sources such as the National Land Cover Database (NLCD) (NLCD 2011) and EnviroAtlas (USEPA
+
+- to complete the different odels for each ES?
+- More references on this
+
+### Allocation
+
+One key point is determining the allocation of each ES for multiple users in a selected servicehed.
+<!-- Strategies of allocation -->
+Two possible allocation strategies are proportional or avoid allocation [@ref].
+
+  <!-- Proportional -->
+Proportional allocation splits the ES supply according to selected quantities such as population, demand, or money.
+  <!-- Avoided -->
+Avoided allocation only considers total demand and supply of an ES within the serviceshed. 
+
+  <!-- Explaining proportional -->
+Proportional allocation can face similar challenges as allocation between multiple co-products in conventional LCA. 
+Allocating an ES between multiple users is analogous to determining their right of use. Two ethics of interpreting this are as follows:
+
+- *Private ownership* implies that land owners own the ES produced from their land. In addition, they can also claim an allocated fraction of ES from publicly owned land in the serviceshed. 
+For calculating ES supply under a private ownership scenario, land ownership information within the serviceshed is needed
+
+- *Public ownership* implies that ES produced from all land belongs equally to every activity in the serviceshed, regardless of their ownership. 
+This approach allocates all ES supply from the serviceshed based on the selected properties of the users. 
+If allocation is done in proportion to the demand of ES, the resulting metric is identical to that of the avoided  allocation approach.
+
+However, there could be practical issues with this land ownership based allocation of ES are the public availability of land ownership data and the possible applicability of other ES ownership schemes.
+
+  <!-- Conclusion -->
+Proportional allocation can provide local sustainability metrics; while for avoided allocation, all activities in a selected serviceshed are assumed to have identical sustainability metrics.
 
 
 
 
 
+## Evaluation 
+
+###Impact Assessment
+
+In this step, the echno-Ecological Synergy (TES) Sustainability Metrics is applied [@Bakshi2015]. 
+Once the demand and supply are quantified and allocated, TES sustainability metrics may be calculated. 
+For the k-th ES, the sustainability metric $V_{k}$ is:
+
+$$
+V_{k} = \frac{S_{k} - D_{k}}{D_{k}}
+$$
 
 
-# Case study: Distribuuting recycling via Additive Manufacturing
+where, $S_{k}$ and $D_{k}$ are the supply and demand of the $k-th$ ES, respectively. 
+
+The basic results from TES consist of  of pairs of numbers ${D}$
+
+This metric indicates the extent to which the technological activity is within the relevant ecosystem’s carrying capacity, and may be calculated at each of the scales discussed in Step 1 to obtain indicators at local, serviceshed and average scales. 
+Absolute environmental sustainability for the $k-th$ ES is defined at the serviceshed scale (indicated by $^{*}) :
+
+$$
+V_{k}^{*} \geq 0, \forall k
+$$
+
+Strong sustainability requires satisfaction of this criterion in the corresponding servicesheds for each ES. 
+If metrics are calculated for the average serviceshed, then satisfaction of equation (2) suggests only weak sustainability, since it implicitly assumes that the absolute environmental sustainability in one serviceshed can be used to compensate for unsustainability in another. 
+Thus, the unsustainability in some servicesheds would be overlooked due to the averaging. 
+This problem would be potentially solved by disaggregating the average serviceshed and calculating the metrics for each component serviceshed separately. 
+However, this will require more data.
+
+
+###
+## Management
+
+
+
+# Case study: Distributing recycling via Additive Manufacturing
 ## Indicators in Ecosystem Services Distributed recycling The
 
 \newpage
