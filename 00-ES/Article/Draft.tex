@@ -1,0 +1,684 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+  14pt,
+]{extarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Distributed recycling for additive manufacturing: an ecosystem services perspective},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=Blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[left=2cm, right=2cm,top=3cm,bottom=2cm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage[utf8]{inputenc}
+\def\tightlist{}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{pdflscape}
+\usepackage{svg}
+\usepackage{lineno}
+\usepackage{setspace}
+\newcommand*{\doverline}[1]{\overline{\overline{#1}}}
+\usepackage{tabu}
+
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\title{Distributed recycling for additive manufacturing: an ecosystem services perspective}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\linenumbers
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+The current ecological urgency confirms that the understanding and managing the interactions between humans systems and the rest of nature is a major prerequisite for addressing the worsening environmental and social crises of the \(21^{st}\) century (\protect\hyperlink{ref-Lomborg2020}{Lomborg 2020}).
+No country currently meets minimum thresholds for social development without exceeding planetary boundaries (\protect\hyperlink{ref-ONeill2018}{O'Neill et al. 2018}).
+Therefore, it is no possible to rely only on techno-centric interventations without considering the finite planetary ecosystem characterized by profound uncertainty and the shared goals of ecological sustainability and just distribution (\protect\hyperlink{ref-ref}{\textbf{ref?}}).
+We need to integrate ecological carrying capacity since the fuzzy front end phase of a industrial systems.
+
+However, the integration of ecological aspects in the decision-making seems not evident given the complexity to define the boundaries and interactions of industrial and ecological systems.
+The main purpose of this article is to propose a methodology in order to evaluate the techno-ecological synergy with identifying relative and absolute sustainability aspect of prospective industrial systems.
+This methodology is based in the integration of the ecosystem services supply and demand analysis with the purpose to identify scenarios and design improvements.
+As a case application, the study of distributed recycling manufacturing will be describe.
+Plastic pollution is a global concern that must be addressed collectively with the utmost priority because it endangers the ecosystem and all life forms (\protect\hyperlink{ref-Kumar2021}{Kumar et al. 2021}).
+Therefore, new approaches need to be explored in order to reduce ar at least recycling this material.
+Thus, this study intends to explore the local impact derived from the implementation of a distributed plastic recycling chain in a territory.
+
+The expected results seek to address the following questions:
+
+\begin{itemize}
+\tightlist
+\item
+  What are the appropriate ecosystem service indicators for assessing an prospective filière as distributed plastic recycling?
+\item
+  How does the implementation of a distributed plastic recycling chain impact on ecosystem services?
+\item
+  What are the barriers and drivers for the development of a distributed plastic recycling chain in a territory?
+  From a perspective of strong sustainability, we look to identify a set of principles, criteria and indicators for deployments distributed recycling approach,
+\end{itemize}
+
+In a methodological level, the expected in goals concern to the creation of decision-tools to informed decisions about real impact of industrial systems in a territory.
+This start by raising awareness of the dependence of natural capital in the technology system towards quantification and valuation of technological impacts on ecosystems.
+
+\textcolor{red}{The article is structure as follows.... ( to complete) } section \ref{background} \ldots{}
+
+\hypertarget{background}{%
+\section{Background}\label{background}}
+
+\label{background}
+
+\hypertarget{ecosystem-services}{%
+\subsection{Ecosystem services}\label{ecosystem-services}}
+
+Foundational ideas on ecosystem services seek for conceptual and methodological tools with the major goal to increase public interest in biodiversity conservation through the recognition, accounting and valuation of the societal dependence on the ecological life support systems for the human well-being (\protect\hyperlink{ref-Gomez-Baggethun2010}{Gómez-Baggethun et al. 2010}; \protect\hyperlink{ref-DeGroot2002}{De Groot, Wilson, and Boumans 2002}).
+Today, ecosystems services field are being included in the decision-making through promotion of market Based Instruments for Payment for Ecosystems services schemes with the purpose of create and environmental governance according to the reality of impact on the natural capital (\protect\hyperlink{ref-Laurans2013}{Laurans et al. 2013}).
+Nevertheless, commodification of nature's services by reductionist thinking about individual services runs the risk of unintended harm and unbalanced outputs.
+Systems thinking is essential for avoiding such harm (\protect\hyperlink{ref-Gopalakrishnan2016}{Gopalakrishnan, Bakshi, and Ziv 2016}).
+
+Ecosystem services (ES) are the ecological characteristics, function or processes that contribute (actively or passively) to the human well-being (\protect\hyperlink{ref-Costanza1997}{Costanza et al. 1997}, \protect\hyperlink{ref-Costanza2017}{2017}). Ecosystem goods (e.g; Food) and services (e.g.~waste assimilation) illustrate the benefits that human derive from the ecosystem functions (\protect\hyperlink{ref-Costanza1997}{Costanza et al. 1997}).
+It is needed to distinguish between the ecosystem's functions and processes from the ecosystem services concept itself. The former describes biophysical relationships that are carried out by nature regardless of whether or not human benefits.
+By contrast, the latter are those processes and functions where people can (or could have the potential (\protect\hyperlink{ref-ref}{\textbf{ref?}})) obtain benefits. The ecosystem services do not flow to human well-being without crucial interactions with the different forms of capital (Natural, Social, Human, Built), which entails the need of understanding, modelling, measuring, and managing ES in a trans-disciplinary approach. Likewise, the concept of ecosystem dis-service denotes the processes and functions that affect humans in `negative' way, making damage and costs (\protect\hyperlink{ref-ref}{\textbf{ref?}}).
+One major point that ES make clear is to raise awareness on the recognition of humanity's primary dependencies on the `functions of' natural capital which reflects the fact that, however they may perceive themselves, humans are part of, and not apart from, nature (\protect\hyperlink{ref-Ekins2003}{Ekins et al. 2003}). This entails the necessity to create knowledge for trans-disciplinary approaches using ES as boundary object for sustainability for diverse stakeholders (\protect\hyperlink{ref-Honeck2021}{Honeck et al. 2021}).
+
+Using a systematic literature review approach, \protect\hyperlink{ref-Torres2021}{Torres, Tiwari, and Atkinson} (\protect\hyperlink{ref-Torres2021}{2021}) distinguished and categorized 8 major key themes and 22 approaches in the ES field. Key themes represent underlying meanings or ideas that are widely used, trending or rising in the ecosystem services research field.
+Key approaches include methods (\protect\hyperlink{ref-Harrison2018}{Harrison et al. 2018}), tools, frameworks, perspectives and management strategies to analyze, assess, and quantify ecosystem services.
+It was reported that, computational modelling and non-monetary valuation are emergent topics that appear to be trending upwards in terms of interest.
+
+Efforts have been made in the literature to classify the methods used to assess ecosystem services based on 27 case studies. Ecosystem service assessment methods were classified into four broad categories: biophysical, socio-cultural, monetary, and integrative.
+
+Different initiatives have been reported to classify the ES, including the Millennium Ecosystem Assessment (\protect\hyperlink{ref-MEA2005}{MEA 2005}),
+The Economics of Ecosystems and Biodiversity TEEB (\protect\hyperlink{ref-TEEB2010}{TEEB 2010}),
+The Intergovernmetal Plastform of Biodiversity and Ecosystem Services (IPBES) (\protect\hyperlink{ref-ref}{\textbf{ref?}}) and the Common International Classification of Ecosystem Services (CICES).
+In the heart of the four main, they share four main categories of ES:
+\textbf{Provisioning} (e.g.~food and medicines);
+\textbf{Regulating} (e.g.~pollination and climate regulation),
+\textbf{Supporting} (e.g soil formation and fixation of solar energy) and
+\textbf{Cultural / Information} services (e.g.~artistic inspiration and recreation) services are four broad catagories types of ES constitutes the core of most recent classifications and that are shared by the most frameworks (\protect\hyperlink{ref-PedersenZari2019}{Pedersen Zari 2019}).
+
+\begin{figure}[!ht]
+
+{\centering \includegraphics[width=1\linewidth]{Figures/Comparison} 
+
+}
+
+\caption{ES conceptual framework}(\#fig:Fig:ES)
+\end{figure}
+
+Efforts on biodiversity conservation relies on the highlight of the economic aspects of biodiversity and the natural capital (\protect\hyperlink{ref-Costanza1997}{Costanza et al. 1997}) and the environmental inaction related to the cost of policy damage occurring in the absence of an effective regulatory framework (\protect\hyperlink{ref-Bruel2016}{Bruel et al. 2016}).
+From a strong sustainability perspective, a declining capital stock is an unambiguous indicator of unsustainability in the flow of goods and services that derive from it (\protect\hyperlink{ref-Ekins2003}{Ekins et al. 2003}).
+More important, the recognition of the non-substitutability of natural capital with regard to the other forms of capital; acknowledging the characteristics of irreversibility (such as species extinction or climate change), uncertainty and the existence of \emph{critical} components that make a major contribution to welfare.
+The main core of the environmental problem relies on the use of use ecosystem's functions, mainly those that generate economic welfare, that are making a negative impact and influence on the natural capital stock, and even worse, on those functions that are responsible for ecosystem stability and resilience (\protect\hyperlink{ref-Ekins2003}{Ekins et al. 2003}).
+
+The Common International Classification of Ecosystem Services (CICES) was developed to provide hiecharchally consistent and science-based classification to be used for natural capital accounting purposes (\protect\hyperlink{ref-ref}{\textbf{ref?}}).
+In CICES framework, \protect\hyperlink{ref-Potschin-Young2018}{Potschin-Young et al.} (\protect\hyperlink{ref-Potschin-Young2018}{2018}) argued the conceptual framework of cascading aspect from ecosystesm service are commonly divided Groups, division.
+
+\begin{figure}[!ht]
+
+{\centering \includegraphics[width=1\linewidth]{Figures/cices} 
+
+}
+
+\caption{ES conceptual framework}\label{fig:Fig-ES-cices}
+\end{figure}
+
+\textcolor{red}{to complete ... }
+
+\hypertarget{distributed-recycling-via-additive-manufacturing}{%
+\subsection{Distributed recycling via additive manufacturing}\label{distributed-recycling-via-additive-manufacturing}}
+
+Distributed plastic recycling has emerged in the literature to face the socio-environmental challenges related to plastic waste management (\protect\hyperlink{ref-CruzSanchez2020}{Cruz Sanchez et al. 2020}; \protect\hyperlink{ref-Santander2020}{Santander et al. 2020}).
+The main hypothesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community.
+To do so, the use of additive manufacturing enables the technical paths to achieve this objective.
+While not all types of materials can be recycled given the technical difficulties, the estimation of the environmental advantage is needed to assess at early stages the pertinence of this distributed approaches.
+However, as with any recycling system, its feasibility and real impact must be evaluated before its implementation.
+Although research has been conducted regarding on the technical and logistical feasibility of distributed plastic recycling, little is known about its pertinence from the ecosystem services perspective in a territory.
+
+\textcolor{red}{ To complete ...}
+
+\hypertarget{ecosystems-services-in-the-industrial-systems-towards-a-reconciliation-of-two-capitals-for-humanity.}{%
+\subsection{Ecosystems services in the industrial systems: towards a reconciliation of two capitals for humanity.}\label{ecosystems-services-in-the-industrial-systems-towards-a-reconciliation-of-two-capitals-for-humanity.}}
+
+The economic valuation of ecosystem goods and services gives an elegant framework highlighting their importance for society and human welfare.
+However, there is a need to explicitly account for their contribution when designing and developing products and services (\protect\hyperlink{ref-Diwekar2021}{Diwekar et al. 2021}).
+The engineering discipline developed the implicit assumption that ecological systems have nearly endless capacity to provide resources and adsorb wastes.
+This blindness in the engineering vision can be explaining by the fact that at the beginning of the technological industrialization, the human activites' impacts on the earth remained marginal. This scenario is not true today.
+The need for ecosystem services research has become evident due to the impacts of population growth, economic activities, and urbanization on natural capital (\protect\hyperlink{ref-Torres2021}{Torres, Tiwari, and Atkinson 2021}).
+The loss in value associated with biodiversity loss and the related loss of ecosystem services is often invisible and does not influence decision makers (\protect\hyperlink{ref-Bruel2018}{Bruel et al. 2019}).
+It is difficult to provide information about pressure from industrial systems in corporate information systems.
+Engineering within ecological constraints need to acknowledge the capacity of relevant ecosystems to supply the demanded goods and services while the ecosystems and natural capital must be protected, restored and developed to be capable of continuing to supply those services that industry (and society) relies on (\protect\hyperlink{ref-ref}{\textbf{ref?}}).
+
+According to the Milleniums 15 out of 24 ecosystems services examined are degraded or being used in an unsustainable manner (\protect\hyperlink{ref-MEA2005}{MEA 2005}).
+Likewise, using the planetary boundaries framework, it is argued that anthropogenic activities already exceed the biophysical limits of the ``safe operating zone'' in terms of carbon and nitrogen cycles, and biodiversity loss (\protect\hyperlink{ref-Rockstrom2009}{Rockström et al. 2009}; \protect\hyperlink{ref-ONeill2018}{O'Neill et al. 2018}).
+Among the root causes of ecological degradation is ignorance about the exceedance of the ecological carrying capacity in many desicions (\protect\hyperlink{ref-Liu2019g}{Liu and Bakshi 2019}).
+Another crucial issue is that current design approaches based on life cycle characterization and footprint methods focus on continuous improvement by reducing life cycle impacts per unit of product, encouraging improvements by doing ``less bad,'' which need not translate into keeping human activities within ecological constraints.
+Ideally, it is needed to (re)designed industrial activities to reduce the demand for the demand of ecosystems services creating for a local `\emph{island of sustainability}' (\protect\hyperlink{ref-Wallner1996}{Wallner, Narodoslawsky, and Moser 1996}) which is that the demand should not exceed the supply at the local scale (\protect\hyperlink{ref-Gopalakrishnan2016}{Gopalakrishnan, Bakshi, and Ziv 2016}).
+Therefore, it's urgent to expand the boundaries for engineering design from the lowest molecular level to the process level, and from individual process to the higher levels of value chains, ecosystems and the planet (\protect\hyperlink{ref-Martinez-Hernandez2017}{Martinez-Hernandez 2017}).
+
+\protect\hyperlink{ref-Ceschin2016}{Ceschin and Gaziulusoy} (\protect\hyperlink{ref-Ceschin2016}{2016}) putted forward the evolution of \emph{Design for Sustainability (DfS)} framework showing the different approaches that have evolved from a product innovation level to socio-technical systems level.
+They pointed out that engineering interventions at only technological unit operation/product level are necessary, but not sufficient condition for sustainability.
+\protect\hyperlink{ref-Bakshi2015}{Bakshi, Ziv, and Lepech} (\protect\hyperlink{ref-Bakshi2015}{2015}) reported a framework of Techno-Ecological Synergy (TES) in order to expand the scope of the usual techno-centric perspectives.
+THe main point argued is that TES develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
+The final aims is to encourage a more robust analysis of technological and ecological systems at multiple spatial scales ranging from local (e.g.~for small systems such as a house and its yard, a manufacturing process and its site) to a larger scale systems that extend to consider the entire life cycle.
+
+\textcolor{red}{
+Based on this background, in the following section a methodlogy will be presented in the analysis of the  To complete ...}
+
+\hypertarget{methodology}{%
+\section{Methodology}\label{methodology}}
+
+The purpose of this article is to propose a conceptual framework to evaluate the synergy of prospective industrial filière considering the technological and ecological spheres.
+
+\begin{figure}[!ht]
+
+{\centering \includegraphics[width=1\linewidth]{Figures/Methodology} 
+
+}
+
+\caption{Operational framework for evaluatig the ecosystem services of industrial systems}\label{fig:Fig-Methodology}
+\end{figure}
+
+Four major steps are proposed as illustrated in figure \ref{Fig-Methodology} .
+
+The goal of \emph{Planning} step is to identify the boundaries for the technological and ecological systems to be evaluated.
+In the \emph{Assessment} step, the main aim is to jeopardize the key ecosystems services and the respective scales that are going to be included in the analysis.
+These elements will be a intersection of the technological and geographical issues based on a analysis of each systems.
+In the \emph{Evaluation} stage, the main purpose is to establish the demand and supply of ES based on respective inventory and models. This include the specific allocation
+Finally, in the last step \emph{Management}, the main goal is to establish scenarios of evaluation based on the `Bussiness-as-usual' and Synergy frameworks.
+This will enable to take a more informed decision to stakeholder at the evaluation of prospopective projects.
+
+An application of the framework will be presented in Section XX using as case study of the distributed recycling chain via additive manufacturing..
+In the following sub-sections, each stage of the methodology is explained.
+
+\hypertarget{planning}{%
+\subsection{Planning}\label{planning}}
+
+Three main elements needs to be carry out in this phase: 1) definition of the technological and ecological spheres, 2) priorization of the territorial issues, and 3) identification of the industrial issues.
+
+\providecommand{\docline}[3]{\noalign{\global\setlength{\arrayrulewidth}{#1}}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+\begin{longtable}[c]{|p{1.00in}|p{1.50in}|p{1.50in}|p{2.00in}}
+
+\caption{Terminology used in the deifnition of the spheres}\label{tab:Terminology}\\
+
+\hhline{>{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}->{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}->{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}->{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}-}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Sphere}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Terminology}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Definition}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Exemple}}} \\
+
+\noalign{\global\setlength{\arrayrulewidth}{2pt}}\arrayrulecolor[HTML]{000000}\cline{1-4}
+
+\endfirsthead
+
+\hhline{>{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}->{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}->{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}->{\arrayrulecolor[HTML]{000000}\global\arrayrulewidth=2pt}-}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Sphere}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Terminology}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Definition}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Exemple}}} \\
+
+\noalign{\global\setlength{\arrayrulewidth}{2pt}}\arrayrulecolor[HTML]{000000}\cline{1-4}\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Techno-sphere}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Equipement\ scale}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Detailed\ models}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Corn\ production\ at\ a\ location}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Value\ chain\ scale}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Average\ activities}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Average\ corn\ production\ in\ a\ region}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Economy\ scale}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Industrial\ sectors}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Grain\ farming\ sector}}} \\
+
+\noalign{\global\setlength{\arrayrulewidth}{1pt}}\arrayrulecolor[HTML]{000000}\cline{1-4}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Eco-sphere}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Ecosystem\ Services\ (ES)}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Benefits\ humans\ received\ from\ Nature}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Serviceshead}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Area\ providing\ the\ ES\ to\ specific\ users\ of\ that\ servicee}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{ES\ demand}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Emissions\ and\ resource\ use\ by\ technological\ systems}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{ES\ supply}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1.5in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{Ecological\ capacity\ to\ mediate/sequester/absord\ impacts}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 2in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+\noalign{\global\setlength{\arrayrulewidth}{2pt}}\arrayrulecolor[HTML]{000000}\cline{1-4}
+
+\end{longtable}
+
+\begin{figure}[!ht]
+\includegraphics[width=1\linewidth]{Figures/Systemes} \caption{Notation for assessing techno-ecological synergies}\label{fig:Fig-spheres}
+\end{figure}
+
+\hypertarget{territorial-issues}{%
+\subsubsection{Territorial issues}\label{territorial-issues}}
+
+\textcolor{red}{ To complete based on articles that reading on Sabrina (so far) ...}
+
+\hypertarget{industrial-issues}{%
+\subsubsection{Industrial Issues}\label{industrial-issues}}
+
+\textcolor{red}{ To complete based on article that reading on...}
+
+\hypertarget{definition-of-the-tech-sphere}{%
+\subsubsection{Definition of the Tech-Sphere}\label{definition-of-the-tech-sphere}}
+
+It is needed to define two types of scopes: technological and ecological.
+Regarding the technological sphere, three scales are analysed: \emph{Equipment}, \emph{Value chain} and \emph{Economy} scales.
+The technological system at the equipment scale is represented as \(T_{i,j}\) which consists of the \emph{i-th} facility for the \emph{j-th} technological activity.
+For example, in the case of a specific technological activity (\(j = 1\)) such as corn farming, \(T_{1,1}\) and \(T_{1,1}\) represent two different facilities or farms for this activity.
+Technological systems at the value chain scale are indicated as \(\underline{T_{j}}\).
+These represent average value chain activities within a region, whose information is generally available from inventory databases.
+Technological systems at the economy scale are represented as \(\overline{T_{j}}\).
+These economic sectors, which aggregate similar activities at the value chain scale in the region or country, as in economic input-output models.
+
+In a given problem, the scales at which technologies systems should be modeled are determined based on whether the data are available and whether the activities are site-specific.
+
+\hypertarget{definition-of-the-eco-sphere}{%
+\subsubsection{Definition of the Eco-sphere}\label{definition-of-the-eco-sphere}}
+
+Concerning the ecological sphere, it relies on specifying the geographical regions where the activity is implemented.
+The main aim is to include explicitly the ecosystem goods and services, and the ecosystem itself in the system boundary.
+Thus, interactions within and between technological and ecological systems can be integred explicitly, enabling the assessment of regional variation and absolute environmental sustainability regarding each ES considered.
+
+In this step requires information about ecosystems in which the selected technological systems are nested.
+Each technological activity is nested within a local ecosystem, indicated by the first circle around the rectangle.
+The ecosystem local to \(T_{i,j}\) is represented by \(E_{i,j}\).
+For example, this could be the campus around a manufacturing facility or an agricultural farm.
+
+At the \emph{value chain} scale, the ``local ecosystem'' for an activity may be approximated by aggregating similar activities in a specific geographical region, which is similar to the approach used for building a conventional LCI database.
+The averaged local ecosystem can be justified as the general landscape characteristics around the specific activity.
+For instance, electricity generation from coal-fired power plants needs a large amount of water for cooling: thus, it is likely that these facilities are located close to water sources.
+
+Likewise, the local ecosystem for an \emph{economic scale} may also be defined in the same manner, since an economic sector aggregates similar value chain scale activities, and may be denoted as \(\overline{E}_{j}\).
+The aggregation relationships between activities and their surrounding ecosystems at various scales have been depicted by the dotted lines in figure XX.
+
+\hypertarget{scope-of-ecosystems-serviceshed}{%
+\paragraph{Scope of Ecosystems Serviceshed}\label{scope-of-ecosystems-serviceshed}}
+
+The largest ecological scale that needs to be considered varies according to the type of ES.
+The ``largest ecological scale'' is analogous to the concept of a ``serviceshed'' in the ES literature (\protect\hyperlink{ref-Liu2019g}{Liu and Bakshi 2019}).
+
+It is indicated by outer circles in figure X.
+The notation used is \(E^{*}_{i,j,k}\) to represent the serviceshed for the \(k-th\) ES, in which the \(i-th\) facility of the \(j-th\) technological activity is nested.
+
+For example, due to the global flow of \(CO_{2}\), the carbon sequestration ES provided by any part of the world can potentially satisfy the demand of this service anywhere else.
+Thus, the largest ecological scale to evaluate the carbon sequestration ES is the global scale.
+In contrast, criteria air pollutants, such as \(SO_{2}\) and \(NO{x}\) can only be transported and regulated by ecosystems within a narrower geographic boundary.
+Thus, the largest ecological scale to evaluate air quality regulation service is the regional scale.
+Larger ecological scales, such as a global scale, may not be relevant to this service.
+
+If facilities \(T_{1,n}\dots,T_{m,n}\) are located in different serviceheds for a particular ES, these servicesheds need to be averages for value chain activity \(\underline{T}_{n}\).
+Although such averaging implicitly assumes substitutability by implying that ES produced in one serviceshed can be used by beneficiaries in another serviceshed, this average may have to be used in the absence of spatial information at the serviceshed or smaller scales.
+The average serviceshed is denoted as \(\underline{E}^{*}_{j,k}\) for value chain activities and \(\overline{E}^{*}_{j,k}\) for economic activities.
+
+\hypertarget{assesstment-of-demand-and-supply-for-key-es}{%
+\subsection{Assesstment of Demand and Supply for key ES}\label{assesstment-of-demand-and-supply-for-key-es}}
+
+\hypertarget{inventory-of-the-technological-systems}{%
+\subsubsection{Inventory of the Technological Systems}\label{inventory-of-the-technological-systems}}
+
+Consider a situation where a production flowsheet for an existing or new process is already available.
+A preliminary assessment of these environmental interventions must be carried out to obtain information about the different types of demands created by manufacturing facilities, and the kind of ecosystems that can supply these services to satisfy the demand.
+
+\protect\hyperlink{ref-Liu2019g}{Liu and Bakshi} (\protect\hyperlink{ref-Liu2019g}{2019}) argued that the conventional Life Cycle Inveentory (LCI) of technological systems can be used as the \textbf{demand} (\(D_{k}\)) for the \(k-th\) ES.
+It represents the total amount of ES needed to mitigate the emission or satisfy the resource use.
+For example, the quantity of \(CO_{2}\) emitted by a technology indicate the demand for the carbon sequestration service.
+
+Environmentally-extended input-output (EEIO) data for activities at equipment, value chain and economy scale, LCI databases, and detailed engineering models can supply information to quantify the respective demand for each service.
+Also, inventory of technological systems comprises all relevant flows associated with the functional unit, regardless of the scale at which technological activities are modeled.
+
+\hypertarget{inventory-of-the-ecological-systems}{%
+\subsubsection{Inventory of the Ecological Systems}\label{inventory-of-the-ecological-systems}}
+
+Usually, Life cycle analysis do not integrate explicitly models and data about ecosystem goods and services (\protect\hyperlink{ref-ref}{\textbf{ref?}})
+Therefore, this information needs to be added directly to a conventional inventory, which we refer to as the \textbf{supply} (\(S_{k}\)) of the \(k-th\) ES.
+
+The main object is to establish the ability of of ecosystems to provide the demanded services.
+For example, green plants supply the carbon sequestration service by taking up atmospheric \(CO_{2}\) and sequestering it as organic matter through photosynthesis.
+This can be understood as the dependence of production systems on ES.
+Alternatively, it can be interpreted as the ES that nature can supply in order to produce the functional unit.
+
+There is a research efforts to establish the knowledge about the supply of ES using ecological models such as
+i-Tree (USDA2016b), EPIC (EPIC 2016), InVEST(Nel- son et al.~2009), and remote sensing data from sources such as the National Land Cover Database (NLCD) (NLCD 2011) and EnviroAtlas..
+
+\textcolor{red}{to complete ... }
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  to complete the different models for each ES?.
+\item
+  More references on this
+\end{enumerate}
+
+\hypertarget{allocation}{%
+\subsubsection{Allocation}\label{allocation}}
+
+One key point is determining the allocation of each ES for multiple users in a selected servicehed.
+Two possible allocation strategies are proportional or avoid allocation (\protect\hyperlink{ref-ref}{\textbf{ref?}}).
+
+Proportional allocation splits the ES supply according to selected quantities such as population, demand, or money.
+Avoided allocation only considers total demand and supply of an ES within the serviceshed.
+
+Proportional allocation can face similar challenges as allocation between multiple co-products in conventional LCA.
+Allocating an ES between multiple users is analogous to determining their right of use. Two ethics of interpreting this are as follows:
+
+\begin{itemize}
+\item
+  \emph{Private ownership} implies that land owners own the ES produced from their land. In addition, they can also claim an allocated fraction of ES from publicly owned land in the serviceshed.
+  For calculating ES supply under a private ownership scenario, land ownership information within the serviceshed is needed
+\item
+  \emph{Public ownership} implies that ES produced from all land belongs equally to every activity in the serviceshed, regardless of their ownership.
+  This approach allocates all ES supply from the serviceshed based on the selected properties of the users.
+  If allocation is done in proportion to the demand of ES, the resulting metric is identical to that of the avoided allocation approach.
+\end{itemize}
+
+However, there could be practical issues with this land ownership based allocation of ES are the public availability of land ownership data and the possible applicability of other ES ownership schemes.
+
+Proportional allocation can provide local sustainability metrics; while for avoided allocation, all activities in a selected serviceshed are assumed to have identical sustainability metrics.
+
+\hypertarget{evaluation}{%
+\subsection{Evaluation}\label{evaluation}}
+
+\hypertarget{techno-ecological-synergy}{%
+\subsubsection{Techno-ecological synergy}\label{techno-ecological-synergy}}
+
+In this step, the Techno-Ecological Synergy (TES) Sustainability Metrics is applied (\protect\hyperlink{ref-Bakshi2015}{Bakshi, Ziv, and Lepech 2015}).
+Once the demand and supply are quantified and allocated, TES sustainability metrics may be calculated.
+For the k-th ES, the sustainability metric \(V_{k}\) is:
+
+\[
+V_{k} = \frac{S_{k} - D_{k}}{D_{k}}
+\]
+
+where, \(S_{k}\) and \(D_{k}\) are the supply and demand of the \(k-th\) ES, respectively.
+
+The basic results from TES consist of of pairs of numbers \({D}\)
+
+This metric indicates the extent to which the technological activity is within the relevant ecosystem's carrying capacity, and may be calculated at each of the scales discussed in Step 1 to obtain indicators at local, serviceshed and average scales.
+Absolute environmental sustainability for the \(k-th\) ES is defined at the serviceshed scale (indicated by \$\^{}\{*\}) :
+
+\[
+V_{k}^{*} \geq 0, \forall k
+\]
+
+Strong sustainability requires satisfaction of this criterion in the corresponding servicesheds for each ES.
+If metrics are calculated for the average serviceshed, then satisfaction of equation (2) suggests only weak sustainability, since it implicitly assumes that the absolute environmental sustainability in one serviceshed can be used to compensate for unsustainability in another.
+Thus, the unsustainability in some servicesheds would be overlooked due to the averaging.
+This problem would be potentially solved by disaggregating the average serviceshed and calculating the metrics for each component serviceshed separately.
+However, this will require more data.
+
+\hypertarget{management}{%
+\subsection{Management}\label{management}}
+
+\hypertarget{interpretation}{%
+\subsubsection{Interpretation}\label{interpretation}}
+
+A hierarchy of metrics
+The Techno-Ecological Synergy (TES) metric obtained are multi-scale and multidimensional.
+Therefore, these metrics may be interprested by plotting the local and servicehed scale metrics.
+
+\includegraphics[width=1\linewidth]{Figures/Quadrantes-sustainability}
+
+Figure \ref{Figure-TES} present four quadrants that represent the sustainability.
+Quadrant I illustrated the most desirable situation where local and serviceshed scale metrics are sustainable.
+In other words, the industrial activity is within the ecological capacity of local ecosystems, and global activities in the serviceshed are also within the serviceshed's ecological capacity.
+From a perspective of absolute environmental sustainability, all systems should strive toward or maintain this situation.
+On the other hand, Quadrant III represents the most undesirable situation where local neither servicehed scale are sustainable.
+Ecological overshoot exists at both local and serviceshed scales.
+Efforts toward improvement should reduce emissions and restore ecosystems at both
+
+Regarding the quandrant II, it represents the situation where the ES is used sustainably in the serviceshed but not at the local scale.
+This implies that the activity is relying on ES outside its locality but within the serviceshed to satisfy its demand.
+Improvement of a system in this quadrant could involve enhancing local sustainability by either reducing demand, increasing the local ES supply, or payment to other activities in the serviceshed that provide support (\protect\hyperlink{ref-ref}{\textbf{ref?}}).
+On the contrary in Quadrant IV, the ES is used sustainably in the local region, but not in the serviceshed.
+Here, the activity is an ``island of sustainability'' (\protect\hyperlink{ref-Wallner1996}{Wallner, Narodoslawsky, and Moser 1996}).
+If all activities within a serviceshed strive toward becoming such islands, it will help in achieving serviceshed scale environmental sustainability.
+
+\hypertarget{improvements-and-design-in-the-system}{%
+\subsubsection{Improvements and Design in the system}\label{improvements-and-design-in-the-system}}
+
+In this step, the main goal is to put effort for making changes such that \(V_{i,j,k} \geq 0, \forall\{i,j,k\}\).
+This may be achieved by enhancing technological efficiency to reduce the demand for ecosystem services, or by restoring and protecting ecological systems to increase the supply of ecosystem services.
+This final vision is to encourage engineering and human activities to be within ecological constraints.
+
+Three main elements in terms of design is expected in this step
+The first is the explicit recognition of the inherent interdependencies between technological and ecological systems.
+Such recognition enables a better understanding of the resiliency of coupled techno-ecological systems during any enhancement of technological efficiency or restoration of ecological service provision.
+The collaboration with multi-stakeholders is expected in this step.
+
+Typically, changes are likely to be easiest at the smallest scale, such as a manufacturing process.
+If there are emissions that cannot be absorbed or mitigated by ecosystems, then it will be impossible for \(V\{i,j,k\} \geq 0\) for some values of \(i, j,\) and \(k\).
+Examples include processes that emit molecules that do not occur in nature such as chlorofluorocarbons, various synthetic polymers, many pharmaceutical molecules, etc.
+For such molecules, the only way to satisfy the TES objective of \(V\{i,j,k\} \geq 0\) is by technological changes.
+One approach is to treat such molecules as ``technological nutrients'' and like biological nutrients, to recycle in technological systems.
+Nonrenewable resources will invariably result in values of \(V\{i,j,k\} \geq 0\).
+Therefore, this framework will discourage their extraction and encourage their reuse and recycling by efforts such as industrial symbiosis.
+
+\hypertarget{establishment-on-scenarios}{%
+\subsubsection{Establishment on Scenarios}\label{establishment-on-scenarios}}
+
+\textcolor{red}{to complete ... }
+
+\hypertarget{case-study-distributing-recycling-via-additive-manufacturing}{%
+\section{Case study: Distributing recycling via Additive Manufacturing}\label{case-study-distributing-recycling-via-additive-manufacturing}}
+
+\hypertarget{indicators-in-ecosystem-services-distributed-recycling-the}{%
+\subsection{Indicators in Ecosystem Services Distributed recycling The}\label{indicators-in-ecosystem-services-distributed-recycling-the}}
+
+\newpage
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-Bakshi2015}{}%
+Bakshi, Bhavik R, Guy Ziv, and Michael D Lepech. 2015. {``{Techno-ecological synergy: A framework for sustainable engineering}.''} \emph{Environ. Sci. Technol.} 49 (3): 1752--60. \url{https://doi.org/10.1021/es5041442}.
+
+\leavevmode\hypertarget{ref-Bruel2018}{}%
+Bruel, Aurélien, Jakub Kronenberg, Nadège Troussier, and Bertrand Guillaume. 2019. {``{Linking Industrial Ecology and Ecological Economics: A Theoretical and Empirical Foundation for the Circular Economy}.''} \emph{J. Ind. Ecol.} 23 (1): 12--21. \url{https://doi.org/10.1111/jiec.12745}.
+
+\leavevmode\hypertarget{ref-Bruel2016}{}%
+Bruel, Aurélien, Nadège Troussier, Bertrand Guillaume, and Natalia Sirina. 2016. {``{Considering Ecosystem Services in Life Cycle Assessment to Evaluate Environmental Externalities}.''} \emph{Procedia CIRP} 48: 382--87. \url{https://doi.org/10.1016/j.procir.2016.03.143}.
+
+\leavevmode\hypertarget{ref-Ceschin2016}{}%
+Ceschin, Fabrizio, and Idil Gaziulusoy. 2016. {``{Evolution of design for sustainability: From product design to design for system innovations and transitions}.''} \emph{Des. Stud.} 47 (November): 118--63. \url{https://doi.org/10.1016/j.destud.2016.09.002}.
+
+\leavevmode\hypertarget{ref-Costanza1997}{}%
+Costanza, Robert, Ralph D'Arge, Rudolf de Groot, Stephen Farber, Monica Grasso, Bruce Hannon, Karin Limburg, et al. 1997. {``{The value of the world's ecosystem services and natural capital}.''} \emph{Nature} 387 (6630): 253--60. \url{https://doi.org/10.1038/387253a0}.
+
+\leavevmode\hypertarget{ref-Costanza2017}{}%
+Costanza, Robert, Rudolf de Groot, Leon Braat, Ida Kubiszewski, Lorenzo Fioramonti, Paul Sutton, Steve Farber, and Monica Grasso. 2017. {``{Twenty years of ecosystem services: How far have we come and how far do we still need to go?}''} Elsevier B.V. \url{https://doi.org/10.1016/j.ecoser.2017.09.008}.
+
+\leavevmode\hypertarget{ref-CruzSanchez2020}{}%
+Cruz Sanchez, Fabio A., Hakim Boudaoud, Mauricio Camargo, and Joshua M. Pearce. 2020. {``{Plastic recycling in additive manufacturing: A systematic literature review and opportunities for the circular economy}.''} \emph{J. Clean. Prod.} 264 (August): 121602. \url{https://doi.org/10.1016/j.jclepro.2020.121602}.
+
+\leavevmode\hypertarget{ref-DeGroot2002}{}%
+De Groot, Rudolf S., Matthew A. Wilson, and Roelof M. J. Boumans. 2002. {``{A typology for the classification, description and valuation of ecosystem functions, goods and services}.''} \emph{Ecol. Econ.} 41 (3): 393--408. \url{https://doi.org/10.1016/S0921-8009(02)00089-7}.
+
+\leavevmode\hypertarget{ref-Diwekar2021}{}%
+Diwekar, U., A. Amekudzi-Kennedy, B. Bakshi, R. Baumgartner, R. Boumans, P. Burger, H. Cabezas, et al. 2021. {``{A perspective on the role of uncertainty in sustainability science and engineering}.''} \emph{Resour. Conserv. Recycl.} 164 (January): 105140. \url{https://doi.org/10.1016/j.resconrec.2020.105140}.
+
+\leavevmode\hypertarget{ref-Ekins2003}{}%
+Ekins, Paul, Sandrine Simon, Lisa Deutsch, Carl Folke, and Rudolf De Groot. 2003. {``{A framework for the practical application of the concepts of critical natural capital and strong sustainability}.''} \emph{Ecol. Econ.} 44 (2-3): 165--85. \url{https://doi.org/10.1016/S0921-8009(02)00272-0}.
+
+\leavevmode\hypertarget{ref-Gopalakrishnan2016}{}%
+Gopalakrishnan, Varsha, Bhavik R. Bakshi, and Guy Ziv. 2016. {``{Assessing the capacity of local ecosystems to meet industrial demand for ecosystem services}.''} \emph{AIChE J.} 62 (9): 3319--33. \url{https://aiche.onlinelibrary.wiley.com/doi/full/10.1002/aic.15340\%20https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/aic.15340\%20https://aiche.onlinelibrary.wiley.com/doi/10.1002/aic.15340}.
+
+\leavevmode\hypertarget{ref-Gomez-Baggethun2010}{}%
+Gómez-Baggethun, Erik, Rudolf de Groot, Pedro L. Lomas, and Carlos Montes. 2010. {``{The history of ecosystem services in economic theory and practice: From early notions to markets and payment schemes}.''} \emph{Ecol. Econ.} 69 (6): 1209--18. \url{https://doi.org/10.1016/j.ecolecon.2009.11.007}.
+
+\leavevmode\hypertarget{ref-Harrison2018}{}%
+Harrison, Paula A., Rob Dunford, David N. Barton, Eszter Kelemen, Berta Martín-López, Lisa Norton, Mette Termansen, et al. 2018. {``{Selecting methods for ecosystem service assessment: A decision tree approach}.''} \emph{Ecosyst. Serv.} 29 (February): 481--98. \url{https://doi.org/10.1016/j.ecoser.2017.09.016}.
+
+\leavevmode\hypertarget{ref-Honeck2021}{}%
+Honeck, Erica, Louise Gallagher, Bertrand von Arx, Anthony Lehmann, Nicolas Wyler, Olga Villarrubia, Benjamin Guinaudeau, and Martin A. Schlaepfer. 2021. {``{Integrating ecosystem services into policymaking -- A case study on the use of boundary organizations}.''} \emph{Ecosyst. Serv.} 49 (June): 101286. \url{https://doi.org/10.1016/j.ecoser.2021.101286}.
+
+\leavevmode\hypertarget{ref-Kumar2021}{}%
+Kumar, Rakesh, Anurag Verma, Arkajyoti Shome, Rama Sinha, Srishti Sinha, Prakash Kumar Jha, Ritesh Kumar, et al. 2021. {``{Impacts of Plastic Pollution on Ecosystem Services, Sustainable Development Goals, and Need to Focus on Circular Economy and Policy Interventions}.''} \emph{Sustainability} 13 (17): 9963. \url{https://doi.org/10.3390/su13179963}.
+
+\leavevmode\hypertarget{ref-Laurans2013}{}%
+Laurans, Yann, Aleksandar Rankovic, Raphaël Billé, Romain Pirard, and Laurent Mermet. 2013. {``{Use of ecosystem services economic valuation for decision making: Questioning a literature blindspot}.''} Academic Press. \url{https://doi.org/10.1016/j.jenvman.2013.01.008}.
+
+\leavevmode\hypertarget{ref-Liu2019g}{}%
+Liu, Xinyu, and Bhavik R. Bakshi. 2019. {``{Ecosystem Services in Life Cycle Assessment while Encouraging Techno-Ecological Synergies}.''} \emph{J. Ind. Ecol.} 23 (2): 347--60. \url{https://doi.org/10.1111/jiec.12755}.
+
+\leavevmode\hypertarget{ref-Lomborg2020}{}%
+Lomborg, Bjorn. 2020. {``{Welfare in the 21st century: Increasing development, reducing inequality, the impact of climate change, and the cost of climate policies}.''} \emph{Technol. Forecast. Soc. Change} 156 (July): 119981. \url{https://doi.org/10.1016/j.techfore.2020.119981}.
+
+\leavevmode\hypertarget{ref-Martinez-Hernandez2017}{}%
+Martinez-Hernandez, Elias. 2017. {``{Trends in sustainable process design---from molecular to global scales}.''} \emph{Curr. Opin. Chem. Eng.} 17 (August): 35--41. \url{https://doi.org/10.1016/j.coche.2017.05.005}.
+
+\leavevmode\hypertarget{ref-MEA2005}{}%
+MEA. 2005. {``{Ecosystems and Human well-being: Synthesis}.''} \href{https://www.islandpress.org}{www.islandpress.org}.
+
+\leavevmode\hypertarget{ref-ONeill2018}{}%
+O'Neill, Daniel W., Andrew L. Fanning, William F. Lamb, and Julia K. Steinberger. 2018. {``{A good life for all within planetary boundaries}.''} \emph{Nat. Sustain.} 1 (2): 88--95. \url{https://doi.org/10.1038/s41893-018-0021-4}.
+
+\leavevmode\hypertarget{ref-PedersenZari2019}{}%
+Pedersen Zari, Maibritt. 2019. {``{Ecosystem services impacts as part of building materials selection criteria}.''} \emph{Mater. Today Sustain.} 3-4. \url{https://doi.org/10.1016/j.mtsust.2019.100010}.
+
+\leavevmode\hypertarget{ref-Potschin-Young2018}{}%
+Potschin-Young, M., R. Haines-Young, C. Görg, U. Heink, K. Jax, and C. Schleyer. 2018. {``{Understanding the role of conceptual frameworks: Reading the ecosystem service cascade}.''} \emph{Ecosyst. Serv.} 29 (February): 428--40. \url{https://doi.org/10.1016/j.ecoser.2017.05.015}.
+
+\leavevmode\hypertarget{ref-Rockstrom2009}{}%
+Rockström, Johan, Will Steffen, Kevin Noone, Åsa Persson, F. Stuart Chapin, Eric F. Lambin, Timothy M. Lenton, et al. 2009. {``{A safe operating space for humanity}.''} \url{https://doi.org/10.1038/461472a}.
+
+\leavevmode\hypertarget{ref-Santander2020}{}%
+Santander, Pavlo, Fabio A Cruz Sanchez, Hakim Boudaoud, and Mauricio Camargo. 2020. {``{Closed loop supply chain network for local and distributed plastic recycling for 3D printing: a MILP-based optimization approach}.''} \emph{Resour. Conserv. Recycl.} 154 (March): 104531. \url{https://doi.org/10.1016/j.resconrec.2019.104531}.
+
+\leavevmode\hypertarget{ref-TEEB2010}{}%
+TEEB. 2010. \emph{{The Economics of Ecosystems and Biodiversity Ecological and Economic Foundations.}} \url{https://doi.org/10.4324/9781849775489}.
+
+\leavevmode\hypertarget{ref-Torres2021}{}%
+Torres, Angélica Valencia, Chetan Tiwari, and Samuel F. Atkinson. 2021. {``{Progress in ecosystem services research: A guide for scholars and practitioners}.''} \emph{Ecosyst. Serv.} 49 (June): 101267. \url{https://doi.org/10.1016/j.ecoser.2021.101267}.
+
+\leavevmode\hypertarget{ref-Wallner1996}{}%
+Wallner, H. P., M. Narodoslawsky, and F. Moser. 1996. {``{Islands of sustainability: A bottom-up approach towards sustainable development}.''} \emph{Environ. Plan. A} 28 (10): 1763--78. \url{https://doi.org/10.1068/a281763}.
+
+\end{CSLReferences}
+
+\end{document}
