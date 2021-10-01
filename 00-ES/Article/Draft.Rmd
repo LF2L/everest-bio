@@ -63,7 +63,7 @@ URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
 <!-- Intro -->
 The current ecological urgency confirms that the understanding and managing the interactions between humans systems and the rest of nature is a major prerequisite for addressing the worsening environmental and social crises of the $21^{st}$ century [@Lomborg2020].
 No country currently meets minimum thresholds for social development without exceeding planetary boundaries [@ONeill2018].
-Therefore, it is no possible to rely only on techno-centric interventations without considering the finite planetary ecosystem characterized by profound uncertainty and the shared goals of ecological sustainability and just distribution [@ref].
+Therefore, it is no possible to rely only on techno-centric interventions without considering the finite planetary ecosystem characterized by profound uncertainty and the shared goals of ecological sustainability and just distribution [@ref].
 We need to integrate ecological carrying capacity since the fuzzy front end phase of a industrial systems. 
 
 <!-- Gap in the literature -->
@@ -219,7 +219,7 @@ This blindness in the engineering vision can be explaining by the fact that at t
  <!-- Importance of ES in the decision making process -->
 The loss in value associated with biodiversity loss and the related loss of ecosystem services is often invisible and does not influence decision makers [@Bruel2018]. 
 It is difficult to provide information about pressure from industrial systems in corporate information systems. 
-Engineering within ecological constraints need to acknowledge the capacity of relevant ecosystems to supply the demanded goods and services while the ecosystems and natural capital must be protected, restored and developed to be capable of continuing to supply those services that industry (and society) relies on [@ref].
+Engineering within ecological constraints need to acknowledge the capacity of relevant ecosystems to supply the demanded goods and services while the ecosystems and natural capital must be protected, restored and developed to be capable of continuing to supply those services that industry (and society) relies on [@Bakshi2018].
 
 
 
@@ -227,7 +227,7 @@ Engineering within ecological constraints need to acknowledge the capacity of re
 According to the Milleniums 15 out of 24 ecosystems services examined are degraded or being used in an unsustainable manner [@MEA2005]. 
 Likewise, using the  planetary boundaries framework, it is argued that anthropogenic activities already exceed the biophysical limits of the "safe operating zone" in terms of carbon and nitrogen cycles, and biodiversity loss [@Rockstrom2009; @ONeill2018].
   <!-- Causas of exceeding Planeatry boundaries -->
-Among the root causes of ecological degradation is ignorance about the exceedance of the ecological carrying capacity in many desicions [@Liu2019g].
+Among the root causes of ecological degradation is ignorance about the exceed of the ecological carrying capacity in many decisions [@Liu2019g; @Rodrigues2021].
 Another crucial issue is that current design approaches based on life cycle characterization and footprint methods focus on continuous improvement by reducing life cycle impacts per unit of product, encouraging improvements by doing "less bad", which need not translate into keeping human activities within ecological constraints.
 <!-- Purpose of strong sustainability -->
 Ideally, it is needed to (re)designed industrial activities to reduce the demand for the demand of ecosystems services creating for a local '*island of sustainability*' [@Wallner1996] which is that the demand should not exceed the supply at the local scale [@Gopalakrishnan2016]. 
@@ -240,7 +240,7 @@ They pointed out that engineering interventions at only technological unit opera
 <!-- They hightligthed that differens Systemic design approaches are   -->
   <!-- TES -->
 @Bakshi2015 reported a framework of Techno-Ecological Synergy (TES) in order to expand the scope of the usual techno-centric perspectives.
-THe main point argued is that TES develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
+The main point argued is that TES develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
 The final aims is to encourage a more robust analysis of technological and ecological systems at multiple spatial scales ranging from local (e.g. for small systems such as a house and its yard, a manufacturing process and its site) to a larger scale systems that extend to consider the entire life cycle. 
 
 
@@ -253,7 +253,7 @@ Based on this background, in the following section a methodlogy will be presente
 
 # Methodology
 
-The purpose of this article is to propose a conceptual framework to evaluate the synergy of prospective industrial filière considering the technological and ecological spheres. 
+The purpose of this article is to propose a conceptual framework to evaluate the synergy of prospective industrial filières considering the technological and ecological spheres. 
 
 
 ```{r Fig-Methodology, fig.cap='Operational framework for evaluatig the ecosystem services of industrial systems', out.width='100%', fig.pos='!ht', fig.align='center'}
@@ -289,7 +289,7 @@ In the following sub-sections, each stage of the methodology is explained.
 
 ## Planning
 
-Three main elements needs to be carry out in this phase: 1) definition of the technological and ecological spheres, 2) priorization of the territorial issues, and 3) identification of the industrial issues.
+Three main elements needs to be carry out in this phase: 1) definition of the technological and ecological spheres, 2) prioritization of the territorial issues, and 3) identification of the industrial issues.
 
 
 
@@ -328,7 +328,19 @@ knitr::include_graphics('Figures/Systemes.pdf')
 
 ### Territorial issues
 
-\textcolor{red}{ To complete based on articles that reading on Sabrina (so far) ...} 
+<!-- Urban Ecosystem Services -->
+More than two thirds of the world's population are expected to live in cities by 2050 [@ref]. Thus, the integration of ecosystem services in the urban and peri-urban planning is a key issue for on quality of life in cities [@Gomez-Baggethun2013].
+  <!-- Importance of Urban ES -->
+Urban ecosystems are especially important in providing services with direct impact on health and security such as air purification, noise reduction, urban
+cooling, and runoff mitigation [@Bolund1999]. 
+  <!-- Classification of Urban ES -->
+@Gomez-Baggethun2013 draws on the developments of the ecosystem services for urban planning. 
+They formulated a classification of ecosystem services and disservices in urban areas, including valuation methods and tools.
+  
+  <!-- Goal -->
+The main purpose in this step is the identification of the main urban priorities in the territorial context from a perspective of ecosystem services.
+THe ES in a particular city varies greatly in function of the environmental and socio-economic characteristics of the territory.
+
 
 ### Industrial Issues
 

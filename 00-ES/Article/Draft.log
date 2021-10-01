@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  13 SEP 2021 09:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  20 SEP 2021 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1326,22 +1326,23 @@ LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 <Figures/Systemes.pdf, id=263, 1084.05pt x 1179.40625pt>
 File: Figures/Systemes.pdf Graphic file (type pdf)
 <use Figures/Systemes.pdf>
-Package pdftex.def Info: Figures/Systemes.pdf  used on input line 369.
+Package pdftex.def Info: Figures/Systemes.pdf  used on input line 371.
 (pdftex.def)             Requested size: 500.4886pt x 544.51306pt.
 [10] [11 <./Figures/Systemes.pdf>] [12] [13] [14] [15]
-<Figures/Quadrantes-sustainability.pdf, id=377, 1055.945pt x 746.79pt>
+<Figures/Quadrantes-sustainability.pdf, id=387, 1055.945pt x 746.79pt>
 File: Figures/Quadrantes-sustainability.pdf Graphic file (type pdf)
 <use Figures/Quadrantes-sustainability.pdf>
 Package pdftex.def Info: Figures/Quadrantes-sustainability.pdf  used on input l
-ine 542.
+ine 555.
 (pdftex.def)             Requested size: 500.48344pt x 353.95406pt.
+[16]
 
-LaTeX Warning: Reference `Figure-TES' on page 16 undefined on input line 544.
+LaTeX Warning: Reference `Figure-TES' on page 17 undefined on input line 557.
 
-[16 <./Figures/Quadrantes-sustainability.pdf>] [17] [18] [19] [20] [21] [22]
+[17 <./Figures/Quadrantes-sustainability.pdf>] [18] [19] [20] [21] [22] [23]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     684.
+(LaTeX3)     703.
 
 (./Draft.aux)
 
@@ -1352,9 +1353,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19265 strings out of 479023
- 310278 string characters out of 5859412
- 705754 words of memory out of 5000000
+ 19268 strings out of 479023
+ 310322 string characters out of 5859412
+ 704756 words of memory out of 5000000
  35792 multiletter control sequences out of 15000+600000
  477102 words of font info for 375 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1372,10 +1373,10 @@ ype1/public/mathdesign/mdbch/md-chb8t.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on Draft.pdf (22 pages, 404285 bytes).
+Output written on Draft.pdf (23 pages, 406769 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 511 compressed objects within 6 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 527 compressed objects within 6 object streams
+ 114 named destinations out of 1000 (max. 500000)
  71822 words of extra memory for PDF output out of 74296 (max. 10000000)
 
