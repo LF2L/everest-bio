@@ -1,8 +1,8 @@
 ---
-title: "Distributed recycling for additive manufacturing: an ecosystem services perspective "
-documentclass: extarticle
-fontsize: 14pt
-geometry: "left=2cm, right=2cm,top=3cm,bottom=2cm"
+title: "Towards a robust desicion tool for ecosystems services in the industrial systems:  A case study of Distributed recycling for additive manufacturing"
+#documentclass: extarticle
+#fontsize: 14pt
+#geometry: "left=2cm, right=2cm,top=3cm,bottom=2cm"
 output: 
   bookdown::pdf_document2:
     toc: true
@@ -60,14 +60,65 @@ URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
 
 # Introduction
 
+<!-- ## Ecosystems services in the industrial systems: towards a reconciliation of two capitals for humanity. -->
 <!-- Intro -->
 The current ecological urgency confirms that the understanding and managing the interactions between humans systems and the rest of nature is a major prerequisite for addressing the worsening environmental and social crises of the $21^{st}$ century [@Lomborg2020].
-No country currently meets minimum thresholds for social development without exceeding planetary boundaries [@ONeill2018].
+<!-- Technological development claiming sustainabiilty -->
+Even though engineering products and processes might meet the needs of the present, many of the technological developments are compromising the ability of future generations to meet their own needs [@ref].
+For claiming for sustainability in technological development and interventions, the human activities should not exceed critical ecosystem capacity  [@Bakshi2018]. 
+This meta-principle is a imperative but not sufficient condition for sustainability.
+Moreover, no country currently meets minimum thresholds for social development without exceeding planetary boundaries [@ONeill2018].
 Therefore, it is no possible to rely only on techno-centric interventions without considering the finite planetary ecosystem characterized by profound uncertainty and the shared goals of ecological sustainability and just distribution [@ref].
-We need to integrate ecological carrying capacity since the fuzzy front end phase of a industrial systems. 
-
+We need to integrate ecological carrying capacity since the fuzzy front end phase of an industrial systems. 
 <!-- Gap in the literature -->
 However, the integration of ecological aspects in the decision-making seems not evident given the complexity to define the boundaries and interactions of industrial and ecological systems.
+
+
+<!-- Sustainability frameworks -->
+@Ceschin2016 putted forward the evolution of *Design for Sustainability (DfS)* framework showing the different approaches that have evolved from a product innovation level to socio-technical systems level. 
+They pointed out that engineering interventions at only technological unit operation/product level are necessary, but not sufficient condition for sustainability.
+<!-- They hightligthed that differens Systemic design approaches are   -->
+
+<!-- Importance of ES in the Engineering -->
+The economic valuation of ecosystem goods and services gives an elegant framework highlighting their importance for society and human welfare. 
+However, there is a need to explicitly account for their contribution when designing and developing products and services [@Diwekar2021].
+  <!-- Engineering blindness -->
+The engineering discipline developed the implicit assumption that ecological systems have nearly endless capacity  to provide resources and adsorb wastes.
+This blindness in the engineering vision can be explaining by the fact that at the beginning of the technological industrialization, the  human activites' impacts on the earth remained marginal. This scenario is not true today.
+  <!-- Engineering withing ecological constraints -->
+The need for ecosystem services research has become evident due to the impacts of population growth, economic activities, and urbanization on natural capital [@Torres2021].
+ <!-- Importance of ES in the decision making process -->
+The loss in value associated with biodiversity loss and the related loss of ecosystem services is often invisible and does not influence decision makers [@Bruel2018]. 
+It is difficult to provide information about pressure from industrial systems in corporate information systems. 
+Engineering within ecological constraints need to acknowledge the capacity of relevant ecosystems to supply the demanded goods and services while the ecosystems and natural capital must be protected, restored and developed to be capable of continuing to supply those services that industry (and society) relies on [@Bakshi2018].
+
+
+
+  <!-- MEA and Planeatry results -->
+According to the Milleniums 15 out of 24 ecosystems services examined are degraded or being used in an unsustainable manner [@MEA2005]. 
+Likewise, using the  planetary boundaries framework, it is argued that anthropogenic activities already exceed the biophysical limits of the "safe operating zone" in terms of carbon and nitrogen cycles, and biodiversity loss [@Rockstrom2009; @ONeill2018].
+  <!-- Causas of exceeding Planeatry boundaries -->
+Among the root causes of ecological degradation is ignorance about the exceed of the ecological carrying capacity in many decisions [@Liu2019g; @Rodrigues2021].
+Another crucial issue is that current design approaches based on life cycle characterization and footprint methods focus on continuous improvement by reducing life cycle impacts per unit of product, encouraging improvements by doing "less bad", which need not translate into keeping human activities within ecological constraints.
+<!-- Purpose of strong sustainability -->
+Ideally, it is needed to (re)designed industrial activities to reduce the demand for the demand of ecosystems services creating for a local '*island of sustainability*' [@Wallner1996] which is that the demand should not exceed the supply at the local scale [@Gopalakrishnan2016]. 
+  <!-- Expand boundaries of Engineering -->
+Therefore, it's urgent to expand the boundaries for engineering design from the lowest molecular level to the process level, and from individual process to the higher levels of value chains, ecosystems and the planet [@Martinez-Hernandez2017].
+
+
+  <!-- TES -->
+@Bakshi2015 reported a framework of Techno-Ecological Synergy (TES) in order to expand the scope of the usual techno-centric perspectives.
+The main point argued is that TES develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
+The final aims is to encourage a more robust analysis of technological and ecological systems at multiple spatial scales ranging from local (e.g. for small systems such as a house and its yard, a manufacturing process and its site) to a larger scale systems that extend to consider the entire life cycle. 
+
+
+<!-- The key point for bussiness and government sectors in terms realize an integrated valuation and comprehensive account of both the negative impacts on ES from business activites and the positive contributions of ES to business and households [@Costanza2017]. -->
+<!-- More general, the critical issues relies on the importance of ES to challenge the conventional approaches to growth and development, towards a perspective more focalized on the prosperity and wellbeing.  -->
+
+\textcolor{red}{
+Based on this background, in the following section a methodlogy will be presented in the analysis of the  To complete ...} 
+
+
 The main purpose of this article is to propose a methodology in order to evaluate the techno-ecological synergy with identifying relative and absolute sustainability aspect of prospective industrial systems. 
 This methodology is based in the integration of the ecosystem services supply and demand analysis with the purpose to identify scenarios and design improvements. 
   <!-- Case study -->
@@ -187,7 +238,17 @@ knitr::include_graphics('Figures/cices.png')
 ```
 
 
-\textcolor{red}{to complete ... }
+The CICES scheme, on the other hand, refers to ES specifically as the products from ecosystem, which can be directly used by human-beings [70]. 
+With this definition, supporting services defined in MEA scheme are excluded from CICES scheme, because supporting services cannot be directly consumed by human beings. 
+The product-based CICES framework can enable clearer mapping between ecological and economic products. 
+The hierarchical structure of CICES scheme has provisioning, regulating and cultural services at the highest (section) level. 
+The following levels organize ES according to their divisions, groups and classes. 
+At lower levels, more specific services can be defined and characterized. 
+For example, at section level, we may have only the provisioning service but at class level, we may define the service to be forage grass cultivated as animal feed. 
+Therefore, the hierarchical structure can supply different levels of detail needed by decision makers. 
+
+Figure 2.2 demonstrates the hierarchical structure of CICES scheme. 
+
 
 
 ## Distributed recycling via additive manufacturing 
@@ -206,54 +267,11 @@ Although research has been conducted regarding on the technical and logistical f
 
 
 
-## Ecosystems services in the industrial systems: towards a reconciliation of two capitals for humanity.
-
-<!-- Importance of ES in the Engineering -->
-The economic valuation of ecosystem goods and services gives an elegant framework highlighting their importance for society and human welfare. 
-However, there is a need to explicitly account for their contribution when designing and developing products and services [@Diwekar2021].
-  <!-- Engineering blindness -->
-The engineering discipline developed the implicit assumption that ecological systems have nearly endless capacity  to provide resources and adsorb wastes.
-This blindness in the engineering vision can be explaining by the fact that at the beginning of the technological industrialization, the  human activites' impacts on the earth remained marginal. This scenario is not true today.
-  <!-- Engineering withing ecological constraints -->
- The need for ecosystem services research has become evident due to the impacts of population growth, economic activities, and urbanization on natural capital [@Torres2021].
- <!-- Importance of ES in the decision making process -->
-The loss in value associated with biodiversity loss and the related loss of ecosystem services is often invisible and does not influence decision makers [@Bruel2018]. 
-It is difficult to provide information about pressure from industrial systems in corporate information systems. 
-Engineering within ecological constraints need to acknowledge the capacity of relevant ecosystems to supply the demanded goods and services while the ecosystems and natural capital must be protected, restored and developed to be capable of continuing to supply those services that industry (and society) relies on [@Bakshi2018].
-
-
-
-  <!-- MEA and Planeatry results -->
-According to the Milleniums 15 out of 24 ecosystems services examined are degraded or being used in an unsustainable manner [@MEA2005]. 
-Likewise, using the  planetary boundaries framework, it is argued that anthropogenic activities already exceed the biophysical limits of the "safe operating zone" in terms of carbon and nitrogen cycles, and biodiversity loss [@Rockstrom2009; @ONeill2018].
-  <!-- Causas of exceeding Planeatry boundaries -->
-Among the root causes of ecological degradation is ignorance about the exceed of the ecological carrying capacity in many decisions [@Liu2019g; @Rodrigues2021].
-Another crucial issue is that current design approaches based on life cycle characterization and footprint methods focus on continuous improvement by reducing life cycle impacts per unit of product, encouraging improvements by doing "less bad", which need not translate into keeping human activities within ecological constraints.
-<!-- Purpose of strong sustainability -->
-Ideally, it is needed to (re)designed industrial activities to reduce the demand for the demand of ecosystems services creating for a local '*island of sustainability*' [@Wallner1996] which is that the demand should not exceed the supply at the local scale [@Gopalakrishnan2016]. 
-  <!-- Expand boundaries of Engineering -->
-Therefore, it's urgent to expand the boundaries for engineering design from the lowest molecular level to the process level, and from individual process to the higher levels of value chains, ecosystems and the planet [@Martinez-Hernandez2017].
-
-<!-- Sustainability frameworks -->
-@Ceschin2016 putted forward the evolution of *Design for Sustainability (DfS)* framework showing the different approaches that have evolved from a product innovation level to socio-technical systems level. 
-They pointed out that engineering interventions at only technological unit operation/product level are necessary, but not sufficient condition for sustainability.
-<!-- They hightligthed that differens Systemic design approaches are   -->
-  <!-- TES -->
-@Bakshi2015 reported a framework of Techno-Ecological Synergy (TES) in order to expand the scope of the usual techno-centric perspectives.
-The main point argued is that TES develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
-The final aims is to encourage a more robust analysis of technological and ecological systems at multiple spatial scales ranging from local (e.g. for small systems such as a house and its yard, a manufacturing process and its site) to a larger scale systems that extend to consider the entire life cycle. 
-
-
-<!-- The key point for bussiness and government sectors in terms realize an integrated valuation and comprehensive account of both the negative impacts on ES from business activites and the positive contributions of ES to business and households [@Costanza2017]. -->
-<!-- More general, the critical issues relies on the importance of ES to challenge the conventional approaches to growth and development, towards a perspective more focalized on the prosperity and wellbeing.  -->
-
-\textcolor{red}{
-Based on this background, in the following section a methodlogy will be presented in the analysis of the  To complete ...} 
-
 
 # Methodology
 
-The purpose of this article is to propose a conceptual framework to evaluate the synergy of prospective industrial filières considering the technological and ecological spheres. 
+The purpose of this article is to evaluate the supply and demand of eecosystem services for a prospective distributed recycling chain for additive manufacturing.
+A conceptual framework to evaluate the synergy of prospective industrial filières considering the technological and ecological spheres. 
 
 
 ```{r Fig-Methodology, fig.cap='Operational framework for evaluatig the ecosystem services of industrial systems', out.width='100%', fig.pos='!ht', fig.align='center'}
@@ -293,290 +311,119 @@ Three main elements needs to be carry out in this phase: 1) definition of the te
 
 
 
-```{r Terminology}
-Terminology <- read_csv2("tables/Terminology.csv")
-# Terminology <-  table_1 %>%  set_names(" ", "PLA", "Recycled PLA")
-
-#std_border = officer::fp_border(color="orange", width = 1)
-
-set_flextable_defaults(
-  padding = 0,
-  line_spacing = 1,
-  border.color = '#000000'
-)
-Terminology %>% flextable() %>%
-  set_caption("Terminology used in the deifnition of the spheres") %>%
-  width(j=1:4, width = c(1, 1.5, 1.5, 2)) %>% 
-  # theme_booktabs() %>% 
-  hline( i = 3, border = officer::fp_border( color = "black", width = 1)) %>% 
-  #border(border.top = officer::fp_border(color = "black") ) %>% 
-  padding(padding = 0)
-  
-
-
-```
-
-
- 
-```{r Fig-spheres, fig.cap='Notation for assessing techno-ecological synergies', out.width='100%', fig.pos='!ht'}
-
-# img_url <- paste0(URL, 'Everest-bio/Systemes.svg')
-# rsvg_pdf(img_url, "Figures/Systemes.pdf")
-
-knitr::include_graphics('Figures/Systemes.pdf')
-```
-
-### Territorial issues
-
-<!-- Urban Ecosystem Services -->
-More than two thirds of the world's population are expected to live in cities by 2050 [@ref]. Thus, the integration of ecosystem services in the urban and peri-urban planning is a key issue for on quality of life in cities [@Gomez-Baggethun2013].
-  <!-- Importance of Urban ES -->
-Urban ecosystems are especially important in providing services with direct impact on health and security such as air purification, noise reduction, urban
-cooling, and runoff mitigation [@Bolund1999]. 
-  <!-- Classification of Urban ES -->
-@Gomez-Baggethun2013 draws on the developments of the ecosystem services for urban planning. 
-They formulated a classification of ecosystem services and disservices in urban areas, including valuation methods and tools.
-  
-  <!-- Goal -->
-The main purpose in this step is the identification of the main urban priorities in the territorial context from a perspective of ecosystem services.
-THe ES in a particular city varies greatly in function of the environmental and socio-economic characteristics of the territory.
-
-
-### Industrial Issues
-
-\textcolor{red}{ To complete based on article that reading on...} 
-
-
-
-### Definition of the Tech-Sphere
-
-It is needed to define two types of scopes: technological and ecological.
-<!-- Technological -->
-Regarding the technological sphere, three scales are analysed: *Equipment*, *Value chain* and *Economy* scales.
-  <!-- Equipment -->
-The technological system at the equipment scale is represented as $T_{i,j}$ which consists of the *i-th* facility for the *j-th* technological activity. 
-For example, in the case of a specific technological activity ($j = 1$) such as corn farming, $T_{1,1}$ and $T_{1,1}$ represent two different facilities or farms for this activity. 
-  <!-- Value chain -->
-Technological systems at the value chain scale are indicated as $\underline{T_{j}}$.
-These represent average value chain activities within a region, whose information is generally available from inventory databases.
-  <!-- Economy -->
-Technological systems at the economy scale are represented as $\overline{T_{j}}$.
-These economic sectors, which aggregate similar activities at the value chain scale in the region or country, as in economic input-output models. 
-
-In a given problem, the scales at which technologies systems should be modeled are determined based on whether the data are available and whether the activities are site-specific.
-
-
-
-
-
-### Definition of the Eco-sphere
-
-<!-- Intro -->
-Concerning the ecological sphere, it relies on specifying the geographical regions where the activity is implemented. 
-  <!-- GOal -->
-The main aim is to include explicitly the ecosystem goods and services, and the ecosystem itself in the system boundary. 
-Thus, interactions within and between technological and ecological systems can be integred explicitly, enabling the assessment of regional variation and absolute environmental sustainability regarding each ES considered. 
-
-<!-- Procedure for the three levels -->
-In this step requires information about ecosystems in which the selected technological systems are nested. 
-Each technological activity is nested within a local ecosystem, indicated by the first circle around the rectangle.   <!-- Specification at Equipment scale -->
-The ecosystem local to $T_{i,j}$ is represented by $E_{i,j}$.
-For example, this could be the campus around a manufacturing facility or an agricultural farm. 
-
-<!-- Value chain scale -->
-At the *value chain* scale, the "local ecosystem" for an activity may be approximated by aggregating similar activities in a specific geographical region, which is similar to the approach used for building a conventional LCI database. 
-The averaged local ecosystem can be justified as the general landscape characteristics around the specific activity.
-For instance, electricity generation from coal-fired power plants needs a large amount of water for cooling: thus, it is likely that these facilities are located close to water sources. 
-
-Likewise, the local ecosystem for an *economic scale* may also be defined in the same manner, since an economic sector aggregates similar value chain scale activities, and may be denoted as $\overline{E}_{j}$.
-The aggregation relationships between activities and their surrounding ecosystems at various scales have been depicted by the dotted lines in figure XX.
-
-
-
-
-#### Scope of Ecosystems Serviceshed
-
-The largest ecological scale that needs to be considered varies according to the type of ES. 
-The "largest ecological scale" is analogous to the concept of a “serviceshed” in the ES literature [@Liu2019g]. 
-
-It is indicated by outer circles in figure X. 
-The notation used is $E^{*}_{i,j,k}$ to represent the serviceshed for the $k-th$ ES, in which the $i-th$ facility of the $j-th$ technological activity is nested. 
-
-For example, due to the global flow of $CO_{2}$, the carbon sequestration ES provided by any part of the world can potentially satisfy the demand of this service anywhere else. 
-Thus, the largest ecological scale to evaluate the carbon sequestration ES is the global scale. 
-In contrast, criteria air pollutants, such as $SO_{2}$ and $NO{x}$ can only be transported and regulated by ecosystems within a narrower geographic boundary. 
-Thus, the largest ecological scale to evaluate air quality regulation service is the regional scale. 
-Larger ecological scales, such as a global scale, may not be relevant to this service.
-
-If facilities $T_{1,n}\dots,T_{m,n}$ are located in different serviceheds for a particular ES, these servicesheds need to be averages for value chain activity $\underline{T}_{n}$.
-Although such averaging implicitly assumes substitutability by implying that ES produced in one serviceshed can be used by beneficiaries in another serviceshed, this average may have to be used in the absence of spatial information at the serviceshed or smaller scales. 
-The average serviceshed is denoted as $\underline{E}^{*}_{j,k}$ for value chain activities and $\overline{E}^{*}_{j,k}$ for economic activities. 
-
-
-## Assesstment of Demand and Supply for key ES
-
-### Inventory of the Technological Systems
-
-<!-- Intro -->
-Consider a situation where a production flowsheet for an existing or new process is already available.
-A preliminary assessment of these environmental interventions must be carried out to obtain information about the different types of demands created by manufacturing facilities, and the kind of ecosystems that can supply these services to satisfy the demand. 
-
-@Liu2019g argued that the conventional Life Cycle Inveentory (LCI)  of technological systems can be used as the **demand** ($D_{k}$) for the $k-th$ ES.
-It represents the total amount of ES needed to  mitigate the emission or satisfy the resource use.
-For example, the quantity of $CO_{2}$ emitted by a technology indicate the demand for the carbon sequestration service.
-
-Environmentally-extended input-output (EEIO) data for activities at equipment, value chain and economy scale, LCI databases, and  detailed engineering models can supply information to quantify the respective demand for each service.
-Also, inventory of technological systems comprises all relevant flows associated with the functional unit, regardless of the scale at which technological activities are modeled.
-
-
-### Inventory of the Ecological Systems
-
-<!-- Intro to problem of LCA -->
-Usually, Life cycle analysis  do not integrate explicitly models and data about ecosystem goods and services [@ref]
-Therefore, this information needs to be added directly to a conventional inventory, which we refer to as the **supply** ($S_{k}$) of the $k-th$ ES. 
-
-The main object is to establish the ability of of ecosystems to provide the demanded services. 
-For example, green plants supply the carbon sequestration service by taking up atmospheric $CO_{2}$ and sequestering it as organic matter through photosynthesis. 
-This can be understood as the dependence of production systems on ES. 
-Alternatively, it can be interpreted as the ES that nature can supply in order to produce the functional unit.
-
-<!-- Establish ecological models -->
-There is a research efforts to establish the knowledge about the supply of ES using ecological models such as 
-  <!-- Ecological models -->
-i-Tree (USDA2016b), EPIC (EPIC 2016), InVEST(Nel- son et al. 2009), and remote sensing data from sources such as the National Land Cover Database (NLCD) (NLCD 2011) and EnviroAtlas..
-
-\textcolor{red}{to complete ... }
-
-1. to complete the different models for each ES?.
-2. More references on this
-
-
-### Allocation
-
-One key point is determining the allocation of each ES for multiple users in a selected servicehed.
-<!-- Strategies of allocation -->
-Two possible allocation strategies are proportional or avoid allocation [@ref].
-
-  <!-- Proportional -->
-Proportional allocation splits the ES supply according to selected quantities such as population, demand, or money.
-  <!-- Avoided -->
-Avoided allocation only considers total demand and supply of an ES within the serviceshed. 
-
-  <!-- Explaining proportional -->
-Proportional allocation can face similar challenges as allocation between multiple co-products in conventional LCA. 
-Allocating an ES between multiple users is analogous to determining their right of use. Two ethics of interpreting this are as follows:
-
-- *Private ownership* implies that land owners own the ES produced from their land. In addition, they can also claim an allocated fraction of ES from publicly owned land in the serviceshed. 
-For calculating ES supply under a private ownership scenario, land ownership information within the serviceshed is needed
-
-- *Public ownership* implies that ES produced from all land belongs equally to every activity in the serviceshed, regardless of their ownership. 
-This approach allocates all ES supply from the serviceshed based on the selected properties of the users. 
-If allocation is done in proportion to the demand of ES, the resulting metric is identical to that of the avoided  allocation approach.
-
-However, there could be practical issues with this land ownership based allocation of ES are the public availability of land ownership data and the possible applicability of other ES ownership schemes.
-
-  <!-- Conclusion -->
-Proportional allocation can provide local sustainability metrics; while for avoided allocation, all activities in a selected serviceshed are assumed to have identical sustainability metrics.
-
-
-
-
-
-## Evaluation 
-
-### Techno-ecological synergy
-
-In this step, the Techno-Ecological Synergy (TES) Sustainability Metrics is applied [@Bakshi2015]. 
-Once the demand and supply are quantified and allocated, TES sustainability metrics may be calculated. 
-For the k-th ES, the sustainability metric $V_{k}$ is:
-
-$$
-V_{k} = \frac{S_{k} - D_{k}}{D_{k}}
-$$
-
-
-where, $S_{k}$ and $D_{k}$ are the supply and demand of the $k-th$ ES, respectively. 
-
-The basic results from TES consist of  of pairs of numbers ${D}$
-
-This metric indicates the extent to which the technological activity is within the relevant ecosystem’s carrying capacity, and may be calculated at each of the scales discussed in Step 1 to obtain indicators at local, serviceshed and average scales. 
-Absolute environmental sustainability for the $k-th$ ES is defined at the serviceshed scale (indicated by $^{*}) :
-
-$$
-V_{k}^{*} \geq 0, \forall k
-$$
-
-Strong sustainability requires satisfaction of this criterion in the corresponding servicesheds for each ES. 
-If metrics are calculated for the average serviceshed, then satisfaction of equation (2) suggests only weak sustainability, since it implicitly assumes that the absolute environmental sustainability in one serviceshed can be used to compensate for unsustainability in another. 
-Thus, the unsustainability in some servicesheds would be overlooked due to the averaging. 
-This problem would be potentially solved by disaggregating the average serviceshed and calculating the metrics for each component serviceshed separately. 
-However, this will require more data.
-
-
-## Management
-
-### Interpretation
-
-A hierarchy of metrics 
-The Techno-Ecological Synergy (TES) metric obtained are multi-scale and multidimensional.
-Therefore, these metrics  may be interprested by plotting the local and servicehed scale metrics. 
-
-```{r Fig:Quandrantes, out.width='100%'}
-# img_url <- paste0(URL, 'Everest-bio/Quadrantes-sustainability.svg')
-# rsvg_pdf(img_url, "Figures/Quadrantes-sustainability.pdf")
-
-knitr::include_graphics('Figures/Quadrantes-sustainability.pdf')
-```
-
-
-Figure \@ref(Figure-TES) present four quadrants that represent the sustainability.
-  <!-- Quadrant I -->
-Quadrant I illustrated the most desirable situation where local and serviceshed scale metrics are sustainable.
-In other words, the industrial activity is within the ecological capacity of local ecosystems, and global activities in the serviceshed are also within the serviceshed’s ecological capacity. 
-From a perspective of absolute environmental sustainability, all systems should strive toward or maintain this situation.
-  <!-- Quadrant III -->
-On the other hand, Quadrant III represents the most undesirable situation where local neither servicehed scale are sustainable.
-Ecological overshoot exists at both local and serviceshed scales. 
-Efforts toward improvement should reduce emissions and restore ecosystems at both
-
- 
-Regarding the quandrant II, it represents the situation where the ES is used sustainably in the serviceshed but not at the local scale. 
-This implies that the activity is relying on ES outside its locality but within the serviceshed to satisfy its demand. 
-Improvement of a system in this quadrant could involve enhancing local sustainability by either reducing demand, increasing the local ES supply, or payment to other activities in the serviceshed that provide support [@ref]. 
-On the contrary in Quadrant IV, the ES is used sustainably in the local region, but not in the serviceshed. 
-Here, the activity is an “island of sustainability” [@Wallner1996].
-If all activities within a serviceshed strive toward becoming such islands, it will help in achieving serviceshed scale environmental sustainability.
-
-### Improvements and Design in the system
-
-  <!-- Goal of the step -->
-In this step, the main goal is to put effort for making changes such that $V_{i,j,k} \geq 0, \forall\{i,j,k\}$.
-This may be achieved by enhancing technological efficiency to reduce the demand for ecosystem services, or by restoring and protecting ecological systems to increase the supply of ecosystem services. 
-This final vision is to encourage engineering and human activities to be within ecological constraints. 
-
-Three main elements in terms of design is expected in this step
-The first is the explicit recognition of the inherent interdependencies between technological and ecological systems. 
-Such recognition enables a better understanding of the resiliency of coupled techno-ecological systems during any enhancement of technological efficiency or restoration of ecological service provision. 
-The collaboration with multi-stakeholders is expected in this step.
-
-Typically, changes are likely to be easiest at the smallest scale, such as a manufacturing process. 
-If there are emissions that cannot be absorbed or mitigated by ecosystems, then it will be impossible for $V\{i,j,k\} \geq 0$ for some values of $i, j,$ and $k$. 
-Examples include processes that emit molecules that do not occur in nature such as chlorofluorocarbons, various synthetic polymers, many pharmaceutical molecules, etc. 
-For such molecules, the only way to satisfy the TES objective of $V\{i,j,k\} \geq 0$ is by technological changes. 
-One approach is to treat such molecules as "technological nutrients" and like biological nutrients, to recycle in technological systems.
-Nonrenewable resources will invariably result in values of $V\{i,j,k\} \geq 0$. 
-Therefore, this framework will discourage their extraction and encourage their reuse and recycling by efforts such as industrial symbiosis.
-
-
-
-### Establishment on Scenarios
-
-\textcolor{red}{to complete ... }
-
-
 # Case study: Distributing recycling via Additive Manufacturing
 ## Indicators in Ecosystem Services Distributed recycling The
 
 \newpage
 
+
+# Results of the 
+
+## Planning 
+
+### Goal and scope definition
+
+The system depicted is presented in the figure.
+The ES-LCIA framework proposed by was applied to the version of life cycle analysis of distributed recycling develped  by . 
+Because Es are expected to be more relevant in the 
+
+<!-- Funcitonal Unit -->
+The goal of this study is to evaluate and compare the change in ES provisioning 
+The functional unit (FU) is represented by *1kg of recycled filament delivered at school*.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 # References
