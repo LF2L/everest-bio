@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  21 OCT 2021 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  22 OCT 2021 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,9 +1202,13 @@ LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 5.76004pt on input line 125.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 13.82408pt on input line 129.
+(Font)              scaled to size 8.64006pt on input line 125.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 13.82408pt on input line 129.
+(Font)              scaled to size 8.64006pt on input line 125.
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 13.82408pt on input line 144.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 13.82408pt on input line 144.
 (./PubliER.toc
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 9.60007pt on input line 1.
@@ -1269,53 +1273,54 @@ LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 \tf@toc=\write4
 \openout4 = `PubliER.toc'.
 
+[1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 134.
+(Font)              scaled to size 4.80003pt on input line 149.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-34.
+49.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 145.
-[1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(Font)              scaled to size 9.60007pt on input line 160.
+[2]
 LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line
- 183.
+ 198.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
 File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 )
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 183.
-[2]
+(Font)              scaled to size 9.60007pt on input line 198.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 202.
-<Figures/Comparison.png, id=111, 597.52647pt x 420.86647pt>
+(Font)              scaled to size 11.52008pt on input line 217.
+[3]
+<Figures/Comparison.png, id=141, 597.52647pt x 420.86647pt>
 File: Figures/Comparison.png Graphic file (type png)
 <use Figures/Comparison.png>
-Package pdftex.def Info: Figures/Comparison.png  used on input line 231.
+Package pdftex.def Info: Figures/Comparison.png  used on input line 246.
 (pdftex.def)             Requested size: 469.7705pt x 330.8818pt.
-[3]
-<Figures/cices.png, id=143, 597.52647pt x 420.86647pt>
+<Figures/cices.png, id=150, 597.52647pt x 420.86647pt>
 File: Figures/cices.png Graphic file (type png)
 <use Figures/cices.png>
-Package pdftex.def Info: Figures/cices.png  used on input line 248.
+Package pdftex.def Info: Figures/cices.png  used on input line 263.
 (pdftex.def)             Requested size: 469.7705pt x 330.8818pt.
-[4 <./Figures/Comparison.png>]
-<Figures/Methodology.pdf, id=152, 1055.945pt x 746.79pt>
+[4]
+<Figures/Methodology.pdf, id=167, 746.79pt x 525.965pt>
 File: Figures/Methodology.pdf Graphic file (type pdf)
 <use Figures/Methodology.pdf>
-Package pdftex.def Info: Figures/Methodology.pdf  used on input line 274.
-(pdftex.def)             Requested size: 469.7571pt x 332.22363pt.
+Package pdftex.def Info: Figures/Methodology.pdf  used on input line 289.
+(pdftex.def)             Requested size: 469.7509pt x 330.84605pt.
 
-LaTeX Warning: Reference `Fig-Methodology' on page 5 undefined on input line 28
-1.
+LaTeX Warning: Reference `Fig-Methodology' on page 5 undefined on input line 29
+6.
 
-[5 <./Figures/cices.png>] [6 <./Figures/Methodology.pdf>] [7] [8] [9]
+[5 <./Figures/Comparison.png>] [6 <./Figures/cices.png>] [7 <./Figures/Methodol
+ogy.pdf>] [8] [9] [10]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     432.
+(LaTeX3)     459.
 
 (./PubliER.aux)
 
@@ -1326,13 +1331,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19117 strings out of 479023
- 306055 string characters out of 5859412
- 712812 words of memory out of 5000000
- 35752 multiletter control sequences out of 15000+600000
- 473532 words of font info for 336 fonts, out of 8000000 for 9000
+ 19202 strings out of 479023
+ 307017 string characters out of 5859412
+ 711814 words of memory out of 5000000
+ 35756 multiletter control sequences out of 15000+600000
+ 482883 words of font info for 391 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,6n,102p,1123b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 97i,6n,102p,1123b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{ref-ref} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -1344,10 +1349,10 @@ xmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2020/texmf
 ist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/mathdesign/mdbch/md-chb8t.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on PubliER.pdf (9 pages, 189671 bytes).
+Output written on PubliER.pdf (10 pages, 190670 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 347 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
- 63612 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 429 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 75900 words of extra memory for PDF output out of 89155 (max. 10000000)
 
