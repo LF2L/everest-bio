@@ -11,9 +11,13 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
+
+
 
 
 
@@ -167,7 +171,7 @@ h1, h2, h3 {
   padding-right: 50px;
   padding-bottom: 25px;
 }
-/* 
+/*
 To specify the margin of the first title h1
 */
 .remark-slide-content > h1:first-of-type {
@@ -191,7 +195,7 @@ To specify the margin of the first title h1
 
 
 /*************************
-  Custom classes 
+  Custom classes
 **************************/
 
 .pull-left-2 {
@@ -285,9 +289,9 @@ it from other content slides */
 }
 
 /* link colour */
-a { 
-    color: #0148A4; 
-} 
+a {
+    color: #0148A4;
+}
 
 .columns-2 {
   -webkit-columns: 2;
@@ -358,10 +362,10 @@ slides > slide {
 
 
 
- 
+
  /* inline code background */
  .remark-inline-code {
-   /* until the link between code and mathjax 
+   /* until the link between code and mathjax
    is broken, we need to use transparent */
   background: transparent; /* #F5F5F5; /* lighter */
   /* background: #e7e8e2; /* darker */
@@ -374,7 +378,7 @@ slides > slide {
 /******************
  * Coloured content boxes
  ****************/
-.content-box { 
+.content-box {
     box-sizing: border-box;
     background-color: #e2e2e2;
 }
@@ -409,7 +413,7 @@ slides > slide {
 .content-box-green .remark-inline-code,
 .content-box-purple .remark-inline-code,
 .content-box-red .remark-inline-code,
-.content-box-yellow .remark-inline-code { 
+.content-box-yellow .remark-inline-code {
   background: none;
 }
 
@@ -444,14 +448,14 @@ slides > slide {
 .rotate-left {
     -webkit-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
-    transform: rotate(-2deg); 
+    transform: rotate(-2deg);
 }
 .rotate-right {
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
-    transform: rotate(2deg);     
+    transform: rotate(2deg);
 }
-/********** 
+/**********
  * Image stuff
  ************/
 .polaroid img {
@@ -466,7 +470,7 @@ slides > slide {
     -moz-box-shadow: 5px 5px 5px #aaa;
     -webkit-box-shadow: 5px 5px 5px #aaa;
     box-shadow: 5px 5px 5px #aaa;
-    border-radius: 2px;  
+    border-radius: 2px;
 }
 
 
@@ -516,7 +520,7 @@ slides > slide {
 /*
 }
 */
- 
+
 .title-slide {
   background-image: url(figures/logo.png);
   background-position: 10% 90%;
@@ -640,14 +644,14 @@ https://github.com/yihui/xaringan/tree/master/inst/rmarkdown/templates/xaringan/
 
 
 
-/* 
-Masterbrand charcoal #424242; 
-C=0 M=0 Y=0 K=90 
-R=66 G=66 B=66 
+/*
+Masterbrand charcoal #424242;
+C=0 M=0 Y=0 K=90
+R=66 G=66 B=66
 
 Masterbrand red #e64626;
 C=0 M=0 Y=0 K=90
-R=66 G=66 B=66 
+R=66 G=66 B=66
 
 Masterbrand white #ffffff;
 C=0 M=0 Y=0 K=0
@@ -659,15 +663,15 @@ R=10 G=10 B=10
 
 Accent yellow #FFB800
 C=0 M=25 Y=98 K=0
-R=255 G=184 B=0 
+R=255 G=184 B=0
 
 Accent blue #0148A4
 C=100 M=61 Y=0 K=0
-R=1 G=72 B=164 
+R=1 G=72 B=164
 
 Accent grey - supportive #F1F1F1
 C=0 M=0 Y=0 K=10
-R=241 G=241 B=241 
+R=241 G=241 B=241
 */</style>
 
 
@@ -1236,7 +1240,6 @@ Technical system --&gt; Global *system* embedded in a *territory*!
 
 ---
 
-
 ## Towards systemic solutions
 
 Global system
@@ -1270,52 +1273,954 @@ Santander, P., Cruz Sanchez, F.A., Boudaoud, H., Camargo, M., 2020. Closed loop 
 - Method and [**prototype of a tool**](https://fabbiocrux.github.io/everest-bio-tool/) for the evaluation of local impacts of circular production systems
 
 ---
-
-
----
-
-class: middle, left
-background-image: url(https://raw.githubusercontent.com/fabbiocrux/Figures/main/Climatelabs/Climatelabs.png)
-background-position: center
-background-size: contain
-
----
-class: middle
-
-# EU projects 
+# Tool for Everest Bio
 
 .pull-left[
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Smagrinet/Smagrinet-00.jpg" alt=" " width="60%" /&gt;
-&lt;p class="caption"&gt; &lt;/p&gt;
-&lt;/div&gt;
-https://www.smagrinet.eu/
+## Goal:
+The main foal of the tool will be the identification of ES that are priorities for an industrial system inside a Territory.
+]
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Digiterri/Digiterri" alt=" " width="60%" /&gt;
-&lt;p class="caption"&gt; &lt;/p&gt;
-&lt;/div&gt;
+---
+## Structure of the tool
 
-https://digiterri.eu/
+1. Identification of the Territory
+1. Two types of actors:
+   1. Industrial Agent: **Identification of LCI of the Process**
+   1. Territorial Agent: **Identification of the Urban ES priorities**
 
-] 
+---
+
+
+class: middle
+
+# CICES 
+
+1. .large.bg-yellow[Provisioning Services (biotic &amp; Abiotic)]
+1. .large.bg-yellow[Regulation &amp; Maintenance (biotic &amp; Abiotic)]
+1. .large.bg-yellow[Cultural]
+
+---
+
+# Provisioning Services (biotic &amp; Abiotic)
+## Plants
+
+.pull-left[
+**Territorial Question**
+
+*Are cultivated plants (Terrestrial or Aquatic) strategic for the territory for nutrition, materials or energy ?*	
+]
+
 .pull-right[
+**Industrial Question**
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Inedit/Inedit-00.png" alt=" " width="100%" /&gt;
-&lt;p class="caption"&gt; &lt;/p&gt;
-&lt;/div&gt;
+*Are cultivated plants (Terrestrial or Aquatic) impacted in certain level by the use of your technology or proposition ?*
 
-https://www.inedit-project.eu/
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Cultivated terrestrial plants for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Cultivated terrestrial plants (including fungi, algae) grown for nutritional purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Standing wheat crop before harvest (Proxy for: ecosystem contribution to growth of harvestable wheat) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Fibres and other materials from cultivated plants, fungi, algae and bacteria for direct use or processing  (excluding genetic materials) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable surplus of  annual tree growth &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Cultivated plants (including fungi, algae) grown as a source of  energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.1.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Standing crop of Miscanthus at time of harvest &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Cultivated aquatic  plants for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Plants cultivated by in- situ aquaculture  grown for nutritional purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable surplus of seaweed biomass in situ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Fibres and other materials from in-situ aquaculture for direct use or processing  (excluding genetic materials) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable surplus of seaweed biomass in situ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Plants cultivated by in- situ aquaculture grown as an energy source &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.2.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable surplus of seaweed biomass in situ &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+# Provisioning Services (biotic &amp; Abiotic)
+## Animals
+
+.pull-left[
+**Territorial Question** 
+
+*Are Reared animals (Terrestrial or Aquatic) strategic for the territory for nutrition, materials or energy ?*	
+]
+
+.pull-right[
+**Industrial Question**
+
+*Are Reared animals (Terrestrial or Aquatic) strategic for the territory for nutrition, materials or energy ?*
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Reared animals  for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Animals reared  for nutritional purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.3.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Increase in weight or numbers of cattle herd per year [previously the grass feeding these animals was considered the final service ] &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Fibres and other materials from reared animals for direct use or processing (excluding genetic materials) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.3.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable number and quality of animal skins in herd &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Animals reared to provide energy (including mechanical) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.3.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Volume of dung
+or number of animals used for traction &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Reared aquatic animals  for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Animals reared by in-situ aquaculture for nutritional purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.4.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable stock of bivalves &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Fibres and other materials from animals grown by in-situ aquaculture for direct use or processing  (excluding genetic materials) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.4.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable pearls produced by oyster beds &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Animals reared by in-situ aquaculture as an energy source &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.4.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Biogas from aquaculture waste &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Provisioning Services (biotic &amp; Abiotic)
+## Wild Animals &amp; Plants
+
+.pull-left[
+**Territorial Question** 
+
+*Are Reared animals (Terrestrial or Aquatic) strategic for the territory for nutrition, materials or energy ?*	
+]
+
+.pull-right[
+**Industrial Question**
+
+*Are Reared animals (Terrestrial or Aquatic) strategic for the territory for nutrition, materials or energy ?*
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 13px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Wild plants (terrestrial and aquatic)  for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Wild plants (terrestrial and aquatic, including fungi, algae) used for nutrition &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.5.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable volume of wild berries or wild mushrooms, 
+Or
+Benthic macroalgae (e.g. Dulse, Laminaria (Kelp)) and macrophytes (e.g. Salicornia and other saltmarsh plants) harvested in the shallow sublittoral and/or littoral zone &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Fibres and other materials from wild plants for direct use or processing  (excluding genetic materials) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.5.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable volume of reeds
+Or
+Macroalgae used for thickening agents, agar and superconductor electrodes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Wild plants (terrestrial and aquatic, including fungi, algae) used as a source of energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.5.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Volume of harvested wood &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Wild animals (terrestrial and aquatic)  for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Wild animals (terrestrial and aquatic) used for nutritional purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.6.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable surplus of cod population, or deer population &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Fibres and other materials from wild animals for direct use or processing (excluding genetic materials) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.6.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Reindeer skins
+Or
+Zooplankton – jellyfish used to produce collagen for various purposes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Wild animals (terrestrial and aquatic)  used as a source of energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.1.6.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Seal blubber used by traditional cultures in lamps
+Or
+Sand eels (Historical)  or Cetaceans &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+# Provisioning Services (biotic &amp; Abiotic)
+## Genetic Material
+
+.pull-left[
+**Territorial Question** 
+
+*Is the Genetic material from plants, algae or fungi (including seed, spore or gamete production) an important element for the territory ?*	]
+
+.pull-right[
+**Industrial Question**
+
+*Is the Genetic material from plants, algae or fungi (including seed, spore or gamete production) affected by the use of your technology int the territory ?*
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Genetic material from plants, algae or fungi &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Seeds, spores and other plant materials collected for maintaining or establishing a population &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.2.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Seeds or spores that we can harvest &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Higher and lower plants (whole organisms) used to breed new strains or varieties &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.2.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Population of plant algae or fungi species used to in breeding programmes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Individual genes extracted from higher and lower plants for the design and construction of new biological entities &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.2.1.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable share of population of plant species used to extract genes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Genetic material from animals &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Animal material collected for the purposes of maintaining or establishing a population &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.2.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Spat for fish and shellfish farms &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Wild animals  (whole organisms) used to breed  new strains or varieties &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.2.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Population of  animals used in breeding programmes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Genetic material from organisms &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Individual genes extracted from organisms  for the design and construction of new biological entities &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1.2.2.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Harvestable share of population of a given species used to extract genes &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Provisioning Services (biotic &amp; Abiotic)
+## Water
+
+.pull-left[
+**Territorial Question** 
+
+*Is Water (for nutrition, materials or energy) an issue for the territory?*	]
+
+.pull-right[
+**Industrial Question**
+
+*The is the impact of LCI?*
 ]
 
 
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="4"&gt; Surface water used for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Surface water for drinking &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.2.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Volume and characteristics of water from a natural springs &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Surface water used as a material (non-drinking purposes) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.2.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Temperature and volume of water that can be used for cooling or irrigation &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Freshwater surface water used as an energy source &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.2.1.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Hydraulic potential (Head) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Coastal and marine water used as energy source &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.2.1.4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Tidal velocity &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Ground water for used for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Ground (and subsurface) water for drinking &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.2.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Aquifer volume and characteristics &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Ground water (and subsurface)  used as a material (non-drinking purposes) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.2.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Characteristics and volume of water that can be used for washing purposes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Ground water (and subsurface)  used as an energy source &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.2.2.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Hot water and steam vents &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
 ---
 
 
+# Provisioning Services (biotic &amp; Abiotic)
+## Others Abiotic 
+
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Mineral substances used for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Mineral substances used for nutritional purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Salt &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Mineral substances used for material purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Pigments &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Mineral substances used for as an energy source &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.1.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Uranium &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="5"&gt; Non-mineral substances or ecosystem properties used for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Non-mineral substances or ecosystem properties used for nutritional purposes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Sunlight &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Non-mineral substances used for materials &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Ozone; or mineraloids (e.g. Opal) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Wind energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.2.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Wind power &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Solar energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.2.4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Solar power &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Geothermal &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.2.5 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Hot springs &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Other mineral or non-mineral substances or ecosystem properties used for nutrition, materials or energy &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Other &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 4.3.2.6 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+class: middle
+
+# CICES 
+
+1. .large.bg-yellow[Provisioning Services (biotic &amp; Abiotic)]
+1. .large.bg-yellow[Regulation &amp; Maintenance (biotic &amp; Abiotic)]
+1. .large.bg-yellow[Cultural]
+
+---
+
+# Regulation &amp; Maintenance (biotic &amp; Abiotic)
+
+## Biochemical or physical inputs to ecosystems
+
+.pull-left[
+**Territorial Question** 
+
+*Is*	]
+
+.pull-right[
+**Industrial Question**
+
+*The *
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Mediation of wastes or toxic substances of anthropogenic origin by living processes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Bio-remediation by micro-organisms, algae, plants, and animals &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.1.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Bio-remediation of industrial wastes by disposal on agricultural land
+Or
+Bacteria such as Marionobacter that can break the oil down into simple monomers &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Filtration/sequestration/storage/accumulation by micro-organisms, algae, plants, and animals &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.1.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Dust filtration by urban trees
+Or
+Macrophytes, for example salt marsh grass, can trap particles in their roots, sequestering wastes/toxicants in the sediment (Govers et al. 2014) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Mediation of nuisances of anthropogenic origin &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Smell reduction &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.1.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Shelter belts that filter particulates that carry odours
+Or
+Birds, epifauna, infauna and bacterial communities contribute to this service by removing material such as rotting algal mats, which is in the littoral zone or offshore but could potentially wash up on shore and produce olfactory and visual impacts &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Noise attenuation &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.1.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Shelter belts along motorways &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Visual screening &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.1.2.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Shelter belts around industrial structures &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Regulation &amp; Maintenance (biotic &amp; Abiotic)
+## Regulation of physical, chemical, biological conditions
+
+.pull-left[
+**Territorial Question** 
+
+*Is*	]
+
+.pull-right[
+**Industrial Question**
+
+*The *
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="5"&gt; Regulation of baseline flows and extreme events &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Control of erosion rates &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; The capacity of vegetation to prevent or reduce the incidence of soil erosion
+Or
+Macroalgae, microphytobenthos, macrophytes and biogenic reef structures (epifauna and infauna) all contribute through sediment stabilisation &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Buffering and attenuation of mass movement &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; The capacity of forest cover to prevent or mitigate the extent and force of snow avalanche &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Hydrological cycle and water flow regulation (Including flood control, and coastal protection) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.1.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; The capacity of vegetation to retain water and release it slowly, 
+Or
+The capacity of mangroves to mitigate the effects of tsunamis
+Or
+Localised coastal influences on the hydrological cycle by phytoplankton producing Dimethylsulphide (DMS) and localised flow changes due to algal and higher plant structures. 
+Macroalgae beds, such as a kelp forest, macrophytes and biogenic reefs (epifauna and infauna) contribute to attenuation of wave energy and flood prevention &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Wind protection &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.1.4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Wind breaks &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Fire protection &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.1.5 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; The capacity of ecosystems to reduce the frequency, spread or magnitudes of fires. (e.g. wetland area between forests, or fire belt in woodland containing species of low combustibility) &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Regulation &amp; Maintenance (biotic &amp; Abiotic)
+## Regulation of physical, chemical, biological conditions
+
+.pull-left[
+**Territorial Question** 
+
+*Is*	]
+
+.pull-right[
+**Industrial Question**
+
+*The *
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Lifecycle maintenance, habitat and gene pool protection &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Pollination (or 'gamete' dispersal in a marine context) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Providing a habitat for native pollinators
+Or
+In the context of societal efforts for the restoration of, for example, seagrass beds , it can be considered final since seed dispersal can occur through this service rather than artificially. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Seed dispersal &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Acorn dispersal by Eurasian Jays &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Maintaining nursery populations and habitats (Including gene pool protection) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.2.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Important nursery habitats include estuaries, seagrass, kelp forest, wetlands, soft sediment, hard bottom, shell bottom and water column habitats.
+Floating seaweed clumps (macroalgae) form rafts under which juvenile fish aggregate e.g. in the North Sea in pelagic habitats &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Pest and disease control &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Pest control (including invasive species) &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.3.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Providing a habitat for native pest control agents
+Or
+In the Black Sea, the recovery of fish populations and an alien invader, the Beroe comb jelly, (both of whom predate nuisance alien comb jellies, Finenko et al.2009) may have been the most important contributing factors for the control of the Mnemiopsis leidyi alien comb jelly, which caused an ecosystem shift in the late 80s. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Disease control &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.3.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Presence of native disease control agents  such as microbial antagonists for the control of postharvest diseases &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Regulation of soil quality &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Weathering processes and their effect on soil quality &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.4.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Inorganic nutrient release in cultivated fields &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Decomposition and fixing processes and their effect on soil quality &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.4.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Decomposition of plant residue; N-fixation by legumes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Water conditions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regulation of the chemical condition of freshwaters by living processes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.5.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Use of buffer strips along water courses to remove nutrients in runoff &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Regulation of the chemical condition of salt waters by living processes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.5.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Fish communities that regulate the resilience and resistance of coral reefs to eutrophication &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Atmospheric composition and conditions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regulation of chemical composition of atmosphere and oceans &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.6.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Sequestration of carbon in tropical peatlands &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Regulation of temperature and humidity, including ventilation and transpiration &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.6.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Evaporative cooling provided by urban trees &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+
+# Regulation &amp; Maintenance (biotic &amp; Abiotic)
+## Regulation of physical, chemical, biological conditions
+
+.pull-left[
+**Territorial Question** 
+
+*Is*	]
+
+.pull-right[
+**Industrial Question**
+
+*The *
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Regulation of soil quality &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Weathering processes and their effect on soil quality &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.4.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Inorganic nutrient release in cultivated fields &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Decomposition and fixing processes and their effect on soil quality &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.4.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Decomposition of plant residue; N-fixation by legumes &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Water conditions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regulation of the chemical condition of freshwaters by living processes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.5.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Use of buffer strips along water courses to remove nutrients in runoff &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Regulation of the chemical condition of salt waters by living processes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.5.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Fish communities that regulate the resilience and resistance of coral reefs to eutrophication &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Atmospheric composition and conditions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Regulation of chemical composition of atmosphere and oceans &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.6.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Sequestration of carbon in tropical peatlands &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Regulation of temperature and humidity, including ventilation and transpiration &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2.2.6.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Evaporative cooling provided by urban trees &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# CICES 
+
+1. .large.bg-yellow[Provisioning Services (biotic &amp; Abiotic)]
+1. .large.bg-yellow[Regulation &amp; Maintenance (biotic &amp; Abiotic)]
+1. .large.blue[Cultural]
+
+
+---
+
+# Cultural (Biotic) 
+## Direct contact with Nature
+
+.pull-left[
+**Territorial Question** 
+
+*Is*	]
+
+.pull-right[
+**Industrial Question**
+
+*The *
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Physical and experiential interactions with natural environment &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Characteristics of living systems that that enable activities promoting health, recuperation or enjoyment through active or immersive interactions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.1.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Ecological qualities of woodland that make it attractive to hiker; private gardens
+Or
+Opportunities for diving, swimming &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Characteristics of living systems that enable activities promoting health, recuperation or enjoyment through passive or observational interactions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.1.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Mix of species in a woodland of interest to birdwatchers
+Or
+Whales, birds, seals and reptiles can be enjoyed by wildlife watchers &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="4"&gt; Intellectual and representative interactions with natural environment &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Characteristics of living systems that enable scientific investigation or the creation of traditional ecological knowledge &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.1.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Site of special scientific interest, Natura 2000 site &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Characteristics of living systems that enable education and training &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.1.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Site used for voluntary conservation activities &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Characteristics of living systems that are resonant in terms of culture or heritage &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.1.2.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Sherwood Forest &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Characteristics of living systems that enable aesthetic experiences &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.1.2.4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Area of Outstanding Natural Beauty; panorama site &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+
+# Cultural (Biotic) 
+## Indirect contact with Nature
+
+.pull-left[
+**Territorial Question** 
+
+*Is*	]
+
+.pull-right[
+**Industrial Question**
+
+*The *
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="3"&gt; Spiritual, symbolic and other interactions with natural environment &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Elements of living systems that have symbolic meaning &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.2.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Bald Eagle &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Elements of living systems that have sacred or religious meaning &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.2.1.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Totemic species, such as the turtle &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Elements of living systems used for entertainment or representation &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.2.1.3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Archive records or collections &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: middle !important;" rowspan="2"&gt; Other biotic characteristics that have a non-use value &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Characteristics or features of living systems that have an existence value &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.2.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Areas designated as wilderness &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Characteristics or features of living systems that have an option or bequest value &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3.2.2.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Endangered species or habitat &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Cultural (Abiotic) 
+## Direct and Indirect link with Nature
+
+.pull-left[
+**Territorial Question** 
+
+*Is*	]
+
+.pull-right[
+**Industrial Question**
+
+*The *
+]
+
+&lt;table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 15px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Class &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Code &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example Service &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Physical and experiential interactions with natural abiotic components of the environment &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Natural, abiotic characteristics of nature that enable active or passive physical and experiential interactions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 6.1.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Caves &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Intellectual and representative interactions with abiotic components of the natural environment &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Natural, abiotic characteristics of nature that enable intellectual interactions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 6.1.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Rock faces for climbing &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Spiritual, symbolic and other interactions with the abiotic components of the natural environment &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Natural, abiotic characteristics of nature that enable spiritual, symbolic and other interactions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 6.2.1.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Iconic mountain peaks &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Other abiotic characteristics that have a non-use value &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Natural, abiotic characteristics or features of nature that have either an existence, option or bequest value &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 6.2.2.1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Distinctive geological formation or geomorphological feature. &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
 class: middle, center
 
-Thanks !
+# Thanks !
 
 ![:scale 70%](figures/DRAM-bd.png)
 
