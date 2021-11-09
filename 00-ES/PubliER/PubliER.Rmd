@@ -1,40 +1,76 @@
 ---
-title: "Towards a robust desicion tool for ecosystems services in the industrial systems:  A case study of Distributed recycling for additive manufacturing"
+title: "Integrating and prioritizing ecosystems services at early development stages of industrial systems in a territory:  the case of distributed recycling at Nancy, France"
 #documentclass: extarticle
 #fontsize: 14pt
-#geometry: "left=2cm, right=2cm,top=3cm,bottom=2cm"
-output: 
-  bookdown::pdf_document2:
-    toc: true
-    keep_tex: TRUE
+geometry: "left=3cm, right=3cm,top=3cm,bottom=2cm"
+author:
+  - name: Fabio A. Cruz
+    email: cruzsanc1@univ-lorraine.fr
+    affiliation: UTT
+    footnote: 1
+  - name: Nadège Troussier
+    #email: bob@example.com
+    affiliation: UTT
+  - name: Hakim Boudaoud
+    #email: cat@example.com
+    affiliation: UL
+    #footnote: 2
+  - name: Mauricio Camargo
+    #email: derek@example.com
+    affiliation: UL
+    #footnote: 2
+address:
+  - code: UTT
+    address: "Universite de Technologie de Troyes, Troyes, France"
+  - code: UL
+    address: "ERPI, Université de Lorraine, F-54000 Nancy, France."
+footnote:
+  - code: 1
+    text: "Corresponding Author"
+journal: "PubliER2022 - The industry of the future : beyond the Anthropocene. 2-4 Feb 2022 Troyes (France)"
+date: "`r Sys.Date()`" 
+csl: journal-of-cleaner-production.csl
+output: rticles::elsevier_article
+# author:
+# - Fabio A. Cruz Sanchez^[Université de Lorraine]
+# - Nadège Troussier^[Université Technologique de Troyes]
+# - Hakim Boudaoud^[Université Technologique de Troyes]
+# - Mauricio Camargo^[Université Technologique de Troyes]
+# date: "`r format(Sys.time(), '%d %B %Y')`"
+
+# output:
+#   bookdown::pdf_document2:
+#     toc: true
+#     keep_tex: TRUE
     #pandoc_args: "--latex-engine-opt=--shell-escape"
   # bookdown::html_document2: default
   # bookdown::word_document2: default
 #output: rticles::tf_article
 abstract: |
     <!-- Intro -->
-    Ecosystem services (ES) is a powerful conceptual framework to put in evidence the benefits that humans received from nature, most of time for free.
+    Ecosystem services (ES) is a powerful conceptual framework to put in evidence the benefits that humans receive from nature, most of time for free.
     <!-- Problem -->
-    The problem is that it is complex to link between the local ecosystem services of an urban territory and the industrial systems placed within it identifying the priority interactions (as synergy and impacts).
+    The problem is that it is complex to link between the local ecosystem services of an urban territory and the industrial systems placed within it, identifying the priority interactions (as synergy and impacts).
     From a decision-maker perspective, there is no a aid decision tool to guide a multicriteria evaluation at early development stages of industrial systems.
     <!-- Conceptual Framework (broad theoretical) -->
        <!-- ES valuation and Urban  ES-->
-    There have been major efforts in the valuation of ES given by ecosystems (terrestrial, aquatic, atmospheric) to the human well-being [@Costanza2017; @DeGroot2012; @MEA2005; @Costanza1997], and  great advances in the developing of a standard ES baselines such as Common International Classification of Ecosystem Services (CICES)[@RoyHaines-Young2018]. 
-    <!-- Knowledge Gap -->
-    However, few researches have been addressed the alignment the territorial priorities in terms of ES for planning and urban development with the supply/demand of ES by industrial systems.
-    <!-- Logic & Evidence for Problem, KG and Context -->
+    On the ecological side, there have been major efforts in the valuation of ES given by ecosystems (terrestrial, aquatic, atmospheric) to the human well-being and great advances in the developing of a standard ES baselines such as Common International Classification of Ecosystem Services (CICES).
        <!-- LCA -->
-    In the industrial side, Life cycle thinking have been a major assessment tool putting a great attention in the quantification of the environmental impact of industrial interventions, and helping in the comparison of different scenarios in each aspect stage of the product life [@Mahmud2021; @Pryshlakivsky2021]. 
-       <!-- LCA AND ES -->
-    Recently, several research efforts reported  accounts for the dependence systems by explicitly accounting for the demand that technological systems place on ecosystems and the supply of ecosystem services that nature can provide to a process or product at multiple spatial scales [@Liu2019g].
-    This techno-ecological synergy (TES) [@Liu2019g; @Bakshi2015] to reflect its emphasis on establishing mutually beneficial or synergistic relationships between technological and ecological systems, with the ultimate goal of achieving harmony between human activities and nature.
+    While on the industrial side, life cycle assessment (LCA) tool is focused on the quantification of the environmental impact of industrial interventions. Despite its ability to cover mutually exclusive and exhaustive impact categories, the LCA approach still has deficiencies: 1) it focuses on quantifying and reducing the net environmental impacts, but not on reducing ecological overshoot and establishing synergies with nature; 2) it considers the interactions between technological processes, but not the interactions between relevant ecosystems.
+    <!-- Knowledge Gap -->
+    Few researches have addressed the alignment the territorial priorities in terms of ES for planning and urban development with the supply/demand of ES by industrial systems.
+    There is a need to include the ES in the desicion making process to establish the capacity of the territory in order to evaluate an absolute environmental sustainability of industrial systems. 
+    <!-- Logic & Evidence for Problem, KG and Context -->
+          <!-- LCA AND ES -->
+    <!-- Recently, several research efforts reported  accounts for the dependence systems by explicitly accounting for the demand that technological systems place on ecosystems and the supply of ecosystem services that nature can provide to a process or product at multiple spatial scales.
+    This techno-ecological synergy (TES) [@Liu2019g; @Bakshi2015] to reflect its emphasis on establishing mutually beneficial or synergistic relationships between technological and ecological systems, with the ultimate goal of achieving harmony between human activities and nature. -->
     <!-- Purpose Statement -->
     The purpose of this article is to propose a methodological approach in order to include ecosystem services in regarding the territorial and industrial endeavors.
        <!-- Expand a methodology -->
-    This prioritization is based on the connection of urban ES services and the techno-ecological synergy.
+    A prioritization is made based on the connection of urban ES services and the techno-ecological synergy.
     The results of are step forwards to create techno-ecological synergies between ecological and industrial systems.
     <!-- Context -->
-    This methodological steps will applied to the case of distributed recycling via additive manufacturing (DRAM) to highlight the relevant ES from the CICES framework of this industrial system for the territory of Nancy, France. 
+    This methodological steps will applied to the case of distributed recycling via additive manufacturing (DRAM) to highlight the relevant ES from the CICES framework for the territory of Nancy, France. 
     The technical advancements of recycling approaches using additive manufacturing are promising technical interventions to foster plastic recycling at a local level.
 always_allow_html: true
 # editor_options: 
@@ -56,9 +92,6 @@ header-includes: |
   \usepackage{setspace}
   \newcommand*{\doverline}[1]{\overline{\overline{#1}}}
   \usepackage{tabu}
-  
-
-
 ---
 
 ```{r setup, include=FALSE}
@@ -80,6 +113,11 @@ URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
 
 \linenumbers
 <!-- \onehalfspacing -->
+
+
+```{r, include=FALSE}
+knitr::knit_exit()
+```
 
 
 # Introduction
@@ -138,9 +176,6 @@ The final aims is to encourage a more robust analysis of technological and ecolo
 
 <!-- The key point for bussiness and government sectors in terms realize an integrated valuation and comprehensive account of both the negative impacts on ES from business activites and the positive contributions of ES to business and households [@Costanza2017]. -->
 <!-- More general, the critical issues relies on the importance of ES to challenge the conventional approaches to growth and development, towards a perspective more focalized on the prosperity and wellbeing.  -->
-
-\textcolor{red}{
-Based on this background, in the following section a methodlogy will be presented in the analysis of the  To complete ...} 
 
 
 The main purpose of this article is to propose a methodology in order to evaluate the techno-ecological synergy with identifying relative and absolute sustainability aspect of prospective industrial systems. 
@@ -318,7 +353,16 @@ In the following sub-sections, each stage of the methodology is explained.
 
 # Results
 
-## Step I - Definition the Industrial system : Distributed recycling via additive manufacturing
+
+## Step I - Ecosystem Services issues at the Value chain: Plastic issues at the ecosystems
+
+The goal of this first step is to highlight the main interactions (positive and negative) that the 
+
+The global value chain of the plastic material 
+
+
+
+## Step II - Definition the Industrial system : Distributed recycling via additive manufacturing
 
 <!-- Distributed Fabrication -->
 Major technological advance in the Additive manufacturing field have enable the validation of distributed fabrication.
@@ -342,14 +386,12 @@ The goal of this study is to evaluate and compare the change in ES provisioning
 The functional unit (FU) is represented by *1kg of recycled filament delivered at school*.
 
 
-
 ## Step II - Ecosystem services Priorities at the territorial level: Nancy, France 
 
-Three main elements needs to be carry out in this phase: 1) definition of the technological and ecological spheres, 2) prioritization of the territorial issues, and 3) identification of the industrial issues.
+Three main elements needs to be carry out in this phase: 
 
+1) definition of the technological and ecological spheres, 2) prioritization of the territorial issues, and 3) identification of the industrial issues.
 
-
-## Step III - Ecosystem Services issues at the Value chain: Plastic issues at the ecosystems
 
 
 
