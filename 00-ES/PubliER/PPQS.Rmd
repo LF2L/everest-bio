@@ -27,14 +27,14 @@ However, few researches have been addressed the alignment the territorial priori
 In the industrial side, Life cycle thinking have been a major assessment tool putting a great attention in the quantification of the environmental impact of industrial interventions, and helping in the comparison of different scenarios in each aspect stage of the product life [@Mahmud2021; @Pryshlakivsky2021]. 
    <!-- LCA AND ES -->
 Recently, several research efforts reported  accounts for the dependence systems by explicitly accounting for the demand that technological systems place on ecosystems and the supply of ecosystem services that nature can provide to a process or product at multiple spatial scales [@Liu2019g].
-This techno-ecological synergy (TES) [@Liu2019g; @Bakshi2015] to reflect its emphasis on establishing mutually beneficial or synergistic relationships between technological and ecological systems, with the ultimate goal of achieving harmony between human activities and nature.
+This techno-ecological synergy (TES) [@Liu2019g; @Bakshi2015] aims to reflect its emphasis on establishing mutually beneficial relationships between technological and ecological systems, with the ultimate goal of achieving harmony between human activities and nature.
 <!-- Purpose Statement -->
 The purpose of this article is to propose a methodological approach in order to include ecosystem services in regarding the territorial and industrial endeavors.
    <!-- Expand a methodology -->
 This prioritization is based on the connection of urban ES services and the techno-ecological synergy.
-The results of are step forwards to create techno-ecological synergies between ecological and industrial systems.
+The results seek a step forwards to create techno-ecological synergies between ecological and industrial systems.
 <!-- Context -->
-This methodological steps will applied to the case of distributed recycling via additive manufacturing (DRAM) to highlight the relevant ES from the CICES framework of this industrial system for the territory of Nancy, France. 
+This methodological approach will applied to the case of distributed recycling via additive manufacturing (DRAM) to highlight the relevant ES from the CICES framework of this industrial system for the territory of Nancy, France. 
 The technical advancements of recycling approaches using additive manufacturing are promising technical interventions to foster plastic recycling at a local level.
 <!-- Reseacch Questions (NOt add more problems) -->
 This study seeks to address the following questions:

@@ -32,27 +32,6 @@ Terminology %>% flextable() %>%
 knitr::include_graphics('Figures/Systemes.pdf')
 ```
 
-### Territorial issues
-
-<!-- Urban Ecosystem Services -->
-More than two thirds of the world's population are expected to live in cities by 2050 [@ref]. Thus, the integration of ecosystem services in the urban and peri-urban planning is a key issue for on quality of life in cities [@Gomez-Baggethun2013].
-  <!-- Importance of Urban ES -->
-Urban ecosystems are especially important in providing services with direct impact on health and security such as air purification, noise reduction, urban
-cooling, and runoff mitigation [@Bolund1999]. 
-  <!-- Classification of Urban ES -->
-@Gomez-Baggethun2013 draws on the developments of the ecosystem services for urban planning. 
-They formulated a classification of ecosystem services and disservices in urban areas, including valuation methods and tools.
-  
-  <!-- Goal -->
-The main purpose in this step is the identification of the main urban priorities in the territorial context from a perspective of ecosystem services.
-THe ES in a particular city varies greatly in function of the environmental and socio-economic characteristics of the territory.
-
-
-### Industrial Issues
-
-\textcolor{red}{ To complete based on article that reading on...} 
-
-
 
 ### Definition of the Tech-Sphere
 
