@@ -1,0 +1,25 @@
+/* use to position text at the bottom */
+.pull-down {
+  position: absolute;
+  bottom: 50px;
+}
+
+
+/* Green Fablab background */
+.bg-gf {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-gf::before {    
+      content: "";
+      background-image: url('https://raw.githubusercontent.com/fabbiocrux/Figures/main/Inedit/WP6/octroi/2021-11-17-octroi.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.3;
+      z-index: -1;
+}
