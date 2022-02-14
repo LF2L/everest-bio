@@ -1,0 +1,55 @@
+---
+title: "Questionnaire for Everest Bio Tool"
+output: pdf_document
+header-includes:
+   - \usepackage{tabu}
+   - \usepackage{booktabs}
+   - \usepackage{xcolor}
+   - \def\DefaultOptionsofCheckBox{print,bordercolor=blue}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Main Structure of the questionnaire
+
+1. Characterization of the respondent 
+   1. Identification of the Geographical area.
+   2.
+2. Selection of the 
+
+
+
+## Questionnaire for the Territorial side
+
+
+\begin{Form}
+
+\begin{tabu} to \linewidth {X[2,l] | X[1,c] | X[1p, c]}
+
+\midrule
+\textbf{Characterizing the respondant} & & \\
+\midrule
+
+
+\TextField[width=15em, bordercolor={0 0 0}]{Enter your name:} & & \\
+
+\midrule
+\textbf{Provisioning Services (biotic \& Abiotic)} & & \\
+\midrule
+
+\textit{Are cultivated plants (Terrestrial or Aquatic) strategic for the territory for nutrition, materials or energy ?} & 
+         \CheckBox[name=optionA, width=10pt]{Yes  Not} & \\
+
+ & & \\
+ & & \\
+ & & \\
+
+\end{tabu}
+    
+\end{Form}
+
+
+
+

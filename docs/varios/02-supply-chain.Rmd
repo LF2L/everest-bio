@@ -1,0 +1,116 @@
+---
+title: "DRAM and ES"
+description: |
+  Some additional details about the website
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+repository_url: https://github.com/LF2L/everest-bio
+#bibliography: 02-supply-chain.bib
+bibliography: library.bib
+#nocite: '@*'
+  
+author:
+  - first_name: "Sabrina?"
+    last_name: "Master 2"
+    url: 
+    affiliation: CREIDD?, ERPI?
+    affiliation_url: 
+
+  - first_name: "Fedoua"
+    last_name: "Kasmi"
+    url: https://erpi.univ-lorraine.fr/people/Fedoua-Kasmi/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0001-5159-0264
+        
+  - first_name: "Pavlo"
+    last_name: "Santander"
+    url: http://erpi.univ-lorraine.fr/people/Pavlo-Santander/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    #orcid_id: 0000-0001-6328-1338
+    
+  - first_name: "Fabio"
+    last_name: "Cruz"
+    url: https://erpi.univ-lorraine.fr/people/Fabio-Cruz/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0001-8529-5327    
+    
+  - first_name: "Nadège"
+    last_name: "Troussier"
+    url: https://recherche.utt.fr/icd-directory/nadege-troussier
+    affiliation: CREIDD
+    affiliation_url: https://recherche.utt.fr/icd-directory/nadege-troussier
+    orcid_id: 0000-0001-6707-0300
+
+  - first_name: "Hakim"
+    last_name: "Boudaoud"
+    url: https://erpi.univ-lorraine.fr/people/Hakim-Boudaoud/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 0000-0003-4452-5952
+   
+---
+
+```{r, include=FALSE}
+
+#library(rticles)
+#library(rmarkdown)
+#render("02-supply-chain.Rmd", output_format = "word_document", output_dir = "02-supply-chain")
+
+
+#render("01-Sustainable-indicators.Rmd", output_format = "pdf_document", output_dir = "01-Sustainable-Indicators")
+#render("01-Sustainable-indicators.Rmd", output_format = "elsevier_article", output_dir = "01-Sustainable-Indicators")
+
+```
+
+
+# Abstract
+
+Master 2: sur la chaine de valeur localisée sur le cas d’étude (périmètre de pavlo) sur la base d’une analyse par les acteurs effectifs et potentiels; quels ont les freins et leviers au développement du plastique recyclé dans le territoire envisagé; analyse des services écosystémiques actuels et impactés. Pas que PLA mais aussi polypro en particulier… (Sabrina, avec Fedoua Kasmi et Hakim) 
+
+
+
+[**Link to modify the Graph**](https://lucid.app/lucidchart/invitations/accept/f6847ab0-3fd4-4749-a581-669058760d2d)
+
+:::l-page
+<div style="width: 100%; height: 480px; margin: 10px; position: relative; text-align: center;"><iframe allowfullscreen frameborder="0" style="width:95%; height:480px" src="https://lucid.app/documents/embeddedchart/945c1be7-a621-4c3e-9267-f77f2fb2855a" id="Nb17wGQ7otTB"></iframe></div>
+:::
+
+# Rationale
+
+A new paradigm of plastic recycling, called distributed plastic recycling, has emerged in the literature in order to face the socio-environmental challenges related to plastic waste management. Under this new model of small recycling centers, the main hypothesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community. To do so, the use of additive manufacturing enables the technical paths. 
+
+  However, as with any recycling system, its feasibility must be evaluated before its implementation. Although research has been conducted regarding the technical feasibility of distributed plastic recycling, little is known about its feasibility from the supply chain perspective [@CruzSanchez2020] and its impact in ecosystem services. 
+From a supply chain perspective, the feasibility evaluation for the establishment of recycling networks should be oriented towards sustainable development. 
+In addition, the notion of sustainability could be used as a framework to analyze and manage the impact of human activities (or supply chain) on ecosystem services [@Abson2014].
+A network is sustainable, if it integrates the economic, environmental and social dimensions, traditionally referred to as the three pillars of sustainability (’triple bottom-lines - TBL) (Hacking and Guthrie, 2008). 
+In addition, @Bautista2016 proposes the integration of political and technological dimensions (TBL+) if they have a great importance in the system to evaluate.. However, literature reviews about supply chains networks highlight : 
+(1) the little consideration of social, technological and political aspects in sustainability assessments, and 
+(2) the great consideration of economic and environmental aspects 
+[@EspinozaPerez2017c, @Fonseca2018, @Moreno-Camacho2019]. 
+
+
+This study intends to explore the local impact derived from the implementation of a distributed plastic recycling chain in a territory.  
+
+The purpose of this research is to explore and assess the local impact, considering sustainability dimensions and ecosystem services, derived from the implementation of a distributed plastic recycling chain. 
+The study intends to research, based on the notion of sustainability, which and how the ecosystem services are impacted due to the implementation of the plastic recycling chain proposed. 
+While not all types of materials can be recycled given the technical difficulties, the estimation of the environmental advantage is needed to assess at early stages the pertinence of this distributed approaches  
+
+This study seeks to address the following questions: 
+
+- What are the appropriate ecosystem service indicators for assessing distributed plastic recycling? 
+- How does the implementation of a distributed plastic recycling chain impact on ecosystem services? 
+- What are the barriers and drivers for the development of a distributed plastic recycling chain in a territory? 
+ 
+
+ 
+## Ideas
+
+- @Alkhuzaim2020 provide insights into more effective environmentally sustainable supply chain and circularity performance evaluation, accounting, and appraisal using emergy based performance measurements. 
+ 
+
+

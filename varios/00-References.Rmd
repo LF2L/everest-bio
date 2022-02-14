@@ -1,0 +1,44 @@
+---
+title: "References"
+description: |
+  Some additional details about the website
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+# repository_url: https://github.com/LF2L/everest-bio
+#bibliography: Biblio.bib
+#nocite: '@*'
+---
+
+
+
+# Circular Economy
+
+## On the definition
+
+
+- Calisto Friant, M., Vermeulen, W.J.V., Salomone, R., 2020. A typology of circular economy discourses: Navigating the diverse visions of a contested paradigm. Resour. Conserv. Recycl. 161, 104917. https://doi.org/10.1016/j.resconrec.2020.104917
+
+- Morseletto, P., 2020. Targets for a circular economy. Resour. Conserv. Recycl. 153, 104553. https://doi.org/10.1016/j.resconrec.2019.104553
+
+- Schöggl, J.-P., Stumpf, L., Baumgartner, R.J., 2020. The narrative of sustainability and circular economy - A longitudinal review of two decades of research. Resour. Conserv. Recycl. 163, 105073. https://doi.org/10.1016/j.resconrec.2020.105073
+
+# Service Ecosystémiques
+
+## 2016
+
+- Clement Morlat. Modélisation dynamique des systèmes de coûts pour une gestion durable des territoires. Economies et finances. Université Paris-Saclay, 2016. Français. ffNNT : 2016SACLV115ff.
+fftel-01617502f. https://tel.archives-ouvertes.fr/tel-01617502/document 
+
+
+# Developpement durable
+
+## 
+
+ 
+
+
+---
+
+Coming soon more ! `r emo::ji("smile")`

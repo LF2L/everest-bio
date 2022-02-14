@@ -1,0 +1,867 @@
+---
+title: "Integrating and prioritizing ecosystems services at early development stages of industrial systems in a territory:  the case of distributed recycling at Nancy, France"
+#documentclass: extarticle
+#fontsize: 14pt
+geometry: "left=3cm, right=3cm,top=3cm,bottom=2cm"
+author:
+  - name: Fabio A. Cruz
+    email: cruzsanc1@univ-lorraine.fr
+    affiliation: UTT
+    footnote: 1
+  - name: Nadège Troussier
+    #email: bob@example.com
+    affiliation: UTT
+  - name: Hakim Boudaoud
+    #email: cat@example.com
+    affiliation: UL
+    #footnote: 2
+  - name: Mauricio Camargo
+    #email: derek@example.com
+    affiliation: UL
+    #footnote: 2
+address:
+  - code: UTT
+    address: "Universite de Technologie de Troyes, Troyes, France"
+  - code: UL
+    address: "ERPI, Université de Lorraine, F-54000 Nancy, France."
+footnote:
+  - code: 1
+    text: "Corresponding Author"
+journal: "PubliER2022 - The industry of the future : beyond the Anthropocene. 2-4 Feb 2022 Troyes (France)"
+date: "`r Sys.Date()`" 
+csl: journal-of-cleaner-production.csl
+
+output:
+  bookdown::pdf_book:
+    base_format: rticles::elsevier_article
+  #pandoc_args: "--latex-engine-opt=--shell-escape"  
+  # bookdown::html_document2: default
+  #bookdown::word_document2: default
+
+abstract: |
+    <!-- Intro -->
+    Ecosystem services (ES) is a powerful conceptual framework to put in evidence the benefits that humans receive from nature, most of time for free.
+    <!-- Problem 
+    The problem is that it is complex to link between the local ecosystem services of an urban territory and the industrial systems placed within it, identifying the priority interactions (as synergy and impacts). -->
+    From a decision-maker perspective, there is no a aid decision tool to guide a multicriteria evaluation at early development stages of industrial systems.
+    <!-- Conceptual Framework (broad theoretical) -->
+       <!-- ES valuation and Urban  ES-->
+    On the ecological side, there have been major efforts in the valuation of ES given by ecosystems (terrestrial, aquatic, atmospheric) to the human well-being and great advances in the developing of a standard ES baselines such as Common International Classification of Ecosystem Services (CICES).
+       <!-- LCA -->
+    While on the industrial side, life cycle assessment (LCA) tool is focused on the quantification of the environmental impact of industrial interventions. Despite its ability to cover mutually exclusive and exhaustive impact categories, the LCA approach still has deficiencies: 1) it focuses on quantifying and reducing the net environmental impacts, but not on reducing ecological overshoot and establishing synergies with nature; 2) it considers the interactions between technological processes, but not the interactions between relevant ecosystems.
+    <!-- Knowledge Gap -->
+    Few researches have addressed the alignment the territorial priorities in terms of ES for planning and urban development with the supply/demand of ES by industrial systems.
+    There is a need to include the ES in the desicion making process to establish the capacity of the territory in order to evaluate an absolute environmental sustainability of industrial systems. 
+    <!-- Logic & Evidence for Problem, KG and Context -->
+          <!-- LCA AND ES -->
+    <!-- Recently, several research efforts reported  accounts for the dependence systems by explicitly accounting for the demand that technological systems place on ecosystems and the supply of ecosystem services that nature can provide to a process or product at multiple spatial scales.
+    This techno-ecological synergy (TES) [@Liu2019g; @Bakshi2015] to reflect its emphasis on establishing mutually beneficial or synergistic relationships between technological and ecological systems, with the ultimate goal of achieving harmony between human activities and nature. -->
+    <!-- Purpose Statement -->
+    The purpose of this article is to propose a methodological approach in order to include ecosystem services in regarding the territorial and industrial endeavors.
+       <!-- Expand a methodology -->
+    A prioritization is made based on the connection of urban ES services and the techno-ecological synergy.
+    The results of are step forwards to create techno-ecological synergies between ecological and industrial systems.
+    <!-- Context -->
+    This methodological steps will applied to the case of distributed recycling via additive manufacturing (DRAM) to highlight the relevant ES from the CICES framework for the territory of Nancy, France. 
+    The technical advancements of recycling approaches using additive manufacturing are promising technical interventions to foster plastic recycling at a local level.
+always_allow_html: true
+bibliography: library.bib
+link-citations: yes
+linkcolor: blue
+header-includes: |
+  \usepackage{float}
+  \usepackage{subfig}
+  \usepackage[utf8]{inputenc}
+  \def\tightlist{}
+  \usepackage[bitstream-charter]{mathdesign}
+  \usepackage{pdflscape}
+  \usepackage{svg}
+  \usepackage{lineno}
+  \usepackage{setspace}
+  \newcommand*{\doverline}[1]{\overline{\overline{#1}}}
+  \usepackage{tabu}
+  \makeatletter
+  \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+           {12\p@ \@plus 6\p@ \@minus 3\p@}%
+           {3\p@ \@plus 6\p@ \@minus 3\p@}%
+           {\normalfont\normalsize\itshape\bfseries}}
+   \makeatother        
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.retina = 3, message = FALSE, warning = FALSE, out.width='100%', cache = FALSE, fig.align='center')
+options(knitr.kable.NA = '')
+#options(tinytex.engine_args = '--shell-escape')
+
+library(readxl)
+library(here)
+library(tidyverse)
+library(flextable)
+library(rsvg)
+library(kableExtra)
+set_flextable_defaults(fonts_ignore=TRUE)
+
+#URL for Figurs
+URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
+
+```
+
+\linenumbers
+<!-- \onehalfspacing -->
+
+
+
+# Introduction
+
+<!-- ## Ecosystems services in the industrial systems: towards a reconciliation of two capitals for humanity. -->
+<!-- Intro -->
+The current ecological urgency confirms that the understanding and managing the interactions between humans systems and the rest of nature is a major prerequisite for addressing the worsening environmental and social crises of the $21^{st}$ century [@Lomborg2020].
+<!-- Technological development claiming sustainabiilty -->
+Even though engineering products and processes might meet the needs of the present society, many of the technological developments are compromising the ability of future generations to meet their own needs [@Bakshi2019a].
+Claiming for sustainability in technological development and interventions, implies that the human activities should not exceed critical ecosystem capacity  [@Bakshi2018]. 
+This meta-principle is an imperative but not sufficient condition for sustainability.
+Moreover, no country currently meets minimum thresholds for social development without exceeding planetary boundaries [@ONeill2018].
+  <!-- MEA and Planeatry results -->
+According to the Milleniums 15 out of 24 ecosystems services examined are degraded or being used in an unsustainable manner [@MEA2005]. 
+Likewise, using the  planetary boundaries framework, it is argued that anthropogenic activities already exceed the biophysical limits of the "safe operating zone" in terms of carbon and nitrogen cycles, and biodiversity loss [@Rockstrom2009; @ONeill2018].
+  <!-- Causas of exceeding Planeatry boundaries -->
+Among the root causes of ecological degradation is ignorance about the exceed of the ecological carrying capacity in many decisions [@Liu2019g; @Rodrigues2021].
+Therefore, it is no possible to rely only on techno-centric interventions without considering the finite planetary ecosystem characterized by profound uncertainty and the shared goals of ecological sustainability and just distribution [@Diwekar2021].
+  <!-- Expand boundaries of Engineering -->
+It is urgent to expand the boundaries for engineering design from the lowest molecular level to the process level, and from individual process to the higher levels of value chains, ecosystems and the planet [@Martinez-Hernandez2017].
+We need to integrate ecological carrying capacity since the fuzzy front end phase of an industrial systems. 
+<!-- Gap in the literature -->
+However, the integration of ecological aspects in the decision-making seems not evident given the complexity to define the boundaries and interactions of industrial and ecological systems.
+
+
+<!-- Sustainability frameworks -->
+@Ceschin2016 putted forward the evolution of *Design for Sustainability (DfS)* framework showing the different approaches that have evolved from a product innovation level to socio-technical systems level. 
+They pointed out that engineering interventions at only technological unit operation/product level are necessary, but not sufficient condition for sustainability.
+<!-- They hightligthed that differens Systemic design approaches are   -->
+@SousaRocha2019 revealed ten different models at operational, tactical, and strategical levels.
+<!-- Importance of ES in the Engineering -->
+One strategical point in sustainability relies on the economic valuation of ecosystem goods and services framework. 
+This approach gives an elegant framework highlighting their importance for society and human welfare. 
+However, there is a need to explicitly account for their contribution when designing and developing products and services [@Diwekar2021].
+  <!-- Engineering blindness -->
+The engineering discipline developed the implicit assumption that ecological systems have nearly endless capacity  to provide resources and adsorb wastes.
+This blindness in the engineering vision can be explaining by the fact that at the beginning of the technological industrialization, the  human activites' impacts on the earth remained marginal. This scenario is not true today.
+  <!-- Engineering withing ecological constraints -->
+The need for ecosystem services research has become evident due to the impacts of population growth, economic activities, and urbanization on natural capital [@Torres2021].
+ <!-- Importance of ES in the decision making process -->
+The loss in value associated with biodiversity loss and the related loss of ecosystem services is often invisible and does not influence decision makers [@Bruel2018]. 
+It is difficult to provide information about pressure from industrial systems in corporate information systems. 
+Engineering within ecological constraints need to acknowledge the capacity of relevant ecosystems to supply the demanded goods and services while the ecosystems and natural capital must be protected, restored and developed to be capable of continuing to supply those services that industry (and society) relies on [@Bakshi2018].
+
+
+
+The main purpose of this article is to propose a methodology in order to  prioritize the ecosystem services at early development stages of industrial systems in a territory.
+This methodology is based in the use of the ecosystem services as boundary object [@Abson2014] with the purpose to identify ES according to the perspective of global value chain, industrial chain and territorial perspective. 
+  <!-- Case study -->
+As a case application, the study of distributed recycling manufacturing will be described.
+Plastic pollution is a global concern that must be addressed collectively with the utmost priority because it endangers the ecosystem and all life forms [@Kumar2021].
+Therefore, new approaches need to be explored in order to reduce or at least recycling this material. 
+Thus, this study intends to explore the local impact derived from the implementation of a distributed plastic recycling chain in a territory. 
+<!-- Expected results -->
+The expected results seek to address the following questions: 
+
+- What are the appropriate ecosystem service indicators for assessing an prospective filière as distributed plastic recycling? 
+- How does the implementation of a distributed plastic recycling chain impact on ecosystem services? 
+- What are the barriers and drivers for the development of a distributed plastic recycling chain in a territory? 
+
+From a perspective of strong sustainability, we look to identify a set of principles, criteria and indicators for deployments distributed recycling approach.
+In a methodological level, the expected in goals concern to the creation of decision-tools to informed decisions about real impact of industrial systems in a territory.
+This start by raising awareness of the dependence of natural capital in the technology system towards quantification and valuation of technological impacts on ecosystems.
+
+
+The article is structure as follows. 
+Section \@ref(background) presents a background on theoretical element of ecosystem service in link with life cycle assessment and the territorial planning.
+Section \@ref(methodology) presents the methodology proposed to identify and prioritize the ecosystems services. 
+In Section \label{results}, the results of the methodology are presented for the industrial system of distributed recycling for additive manufacturing at Nancy, France. 
+This industrial case enable to highlight the pertinence and limits of the methodology. 
+
+# Literature Review
+\label{background}
+
+
+## Ecosystem services and the global value chain
+
+<!--# Intro -->
+Foundational ideas on ecosystem services (ES) seek for conceptual and methodological tools with the major goal to increase public interest in biodiversity conservation through the recognition, accounting and valuation of the societal dependence on the ecological life support systems for the human well-being [@Gomez-Baggethun2010; @DeGroot2002]. 
+<!--# Definition of Ecosystem Services -->
+ES describes the ecological characteristics, function or processes that contribute (actively or passively) to the human well-being [@Costanza1997; @Costanza2017]. 
+Ecosystem goods (e.g; Food) and services (e.g. waste assimilation) illustrate the benefits that human derive from the ecosystem functions [@Costanza1997]. 
+<!--# Functions vs Services -->
+It is needed to distinguish between the ecosystem's functions and processes from the ecosystem services concept itself. 
+The former describes biophysical relationships that are carried out by nature regardless of whether or not human benefits. 
+By contrast, the latter are those processes and functions where people can (or could have the potential) obtain benefits. 
+The ecosystem services do not flow to human well-being without crucial interactions with the different forms of capital (Natural, Social, Human, Built), which entails the need of understanding, modelling, measuring, and managing ES in a trans-disciplinary approach. 
+Likewise, the concept of ecosystem dis-service denotes the processes and functions that affect humans in 'negative' way, making damage and costs [@TEEB2010]. 
+One major point that ES make clear is to raise awareness on the recognition of humanity's primary dependencies on the 'functions of' natural capital. Humans are part of, and not apart from, nature [@Ekins2003]. 
+This entails the necessity to create knowledge for trans-disciplinary approaches using ES as boundary object for sustainability for diverse stakeholders [@Honeck2021].
+
+
+<!--  Research themes in ES -->
+Using a systematic literature review approach, @Torres2021 distinguished and categorized 8 major key themes and 22 approaches in the ES field. Key themes represent underlying meanings or ideas that are widely used, trending or rising in the ecosystem services research field. 
+Key approaches include methods [@Harrison2018], tools, frameworks, perspectives and management strategies to analyze, assess, and quantify ecosystem services.
+It was reported that, computational modelling and non-monetary valuation are emergent topics that appear to be trending upwards in terms of interest.
+   <!-- Conclusion of ES research -->
+Today, ecosystems services field are being included in the decision-making through promotion of market-based instruments for payment for ES schemes with the purpose of create and environmental governance according to the reality of impact on the natural capital [@Laurans2013].
+Nevertheless, the commodification of nature's services by reductionist thinking about  individual services runs the risk of unintended harm and unbalanced outputs [@Gomez-Baggethun2010].
+Systems thinking is essential for avoiding such harm [@Gopalakrishnan2016].
+
+
+<!--# Strong sustainability and ES -->
+Therefore, it is needed the correlation of ES with the global value chain and the natural capital.
+Efforts on biodiversity conservation relies on the highlight of the economic aspects of biodiversity and the natural capital [@Costanza1997] and the environmental inaction related to the cost of policy damage occurring in the absence of an effective regulatory framework [@Bruel2016].
+  <!-- Strong sustainability -->
+From a strong sustainability perspective, a declining capital stock is an unambiguous indicator of unsustainability in the flow of goods and services that derive from it [@Ekins2003].
+More important, the recognition of the non-substitutability of natural capital with regard to the other forms of capital; acknowledging the characteristics of irreversibility (such as species extinction or climate change), uncertainty and the existence of *critical* components that make a major contribution to welfare.
+  <!--# Main environmental issue -->
+The main core of the environmental problem relies on the use of use ecosystem's functions, mainly those that generate economic welfare, that are making a negative impact and influence on the natural capital stock, and even worse, on those functions that are responsible for ecosystem stability and resilience [@Ekins2003].
+
+## Common standard of ecosystem services 
+
+<!--# Classification of ES -->
+Different initiatives have been reported to classify the ES, including the Millennium Ecosystem Assessment [@MEA2005], 
+The Economics of Ecosystems and Biodiversity TEEB [@TEEB2010],
+The Intergovernmetal Plateform of Biodiversity and Ecosystem Services (IPBES) [@IPBS2019] and the Common International Classification of Ecosystem Services (CICES) [@RoyHaines-Young2018]. 
+   <!-- Explanation of structure -->
+Essentially, there are four main categories:
+**Provisioning** (e.g. food and medicines); 
+**Regulating** (e.g. pollination and climate regulation), 
+**Supporting** (e.g soil formation and fixation of solar energy) and 
+**Cultural / Information** services (e.g. artistic inspiration and recreation) services.
+These four broad categories constitutes the core of most recent classifications and that are shared by the most frameworks [@Costanza2017].
+
+
+```{r Fig:ES, fig.cap='ES conceptual framework', out.width='100%', fig.pos='!ht', }
+# img_url <- paste0(URL, 'Everest-bio/ES')
+#download.file(paste0(URL, 'Ecoservices/CICES/', 'Potschin-Burkhard2017.png'), "Figures/Potschin-Burkhard2017.png")
+# rsvg_pdf(img_url, "Figures/Methodology.pdf")
+
+knitr::include_graphics(here("PubliER", "Figures", "Potschin-Burkhard2017.png"))
+
+```
+
+
+  <!-- CICES -->
+In the context of this article, the CICES approach is chosen by the fact that it establish hierarchically consistent and science-based classification to be used for natural capital accounting purposes. 
+@Potschin-Young2018 argued the conceptual framework of 'ecosystem service cascade' feature make it possible to re-frame the analysis of ES helping in the clarification of the complex relationships that can be placed.
+CICES scheme refers to ES specifically as the products from ecosystem, which can be directly used by human-beings. 
+This implies that *supporting services*, defined in MEA framework, are excluded from CICES scheme, by the fact that human beings do not 'receive'consumed' directly the benefits of these services.
+Additionally, it tries to avoid the double-counting problem.
+In that sense, CICES has *regulation and maintenance services* as one section only.
+The other two are *provisioning services* and *cultural services*.
+From there, there are *Divisions* describing the main types of output or process, and these are further split into *groups* according to biological, physical or cultural type or process. 
+The lowest level is the *class*, which specify the biological / material outputs and bio-physical and cultural processes.
+Finally, the *class type* measures the  *class level* which are the individual entities of the ESs. 
+   <!-- Critic of cascade -->
+Nevertheless, this cascade aspect is not far from critics. 
+@Constanza2017 raised the point that the complex connections among the different ES and the benefits might be poorly represented by a linear 'cascade' model, which assumes simple linkages and effects.
+But on the other hand, the hierarchical structure can add different levels of detail needed by decision makers. 
+
+Figure \@ref(fig:ES-CICES) presents the whole structure of ES from the CICES V5.1 [@]
+
+
+
+
+
+<!-- \begin{landscape} -->
+```{r table-CICES, include=FALSE, eval=FALSE}
+# From the CICES intial
+CICES <- read_excel(here("tables/CICES.xlsx"), sheet = "CICES V5.1",  skip = 4 )
+CICES <- CICES %>% filter(Filter == "CICES" ) %>% select(Section,Division, Group, Class,`Class type`)
+
+CICES %>% pull(Section) 
+names(CICES)
+CICES %>% flextable() %>%
+  set_caption("CICES ") %>%
+  #autofit() %>% 
+  width(j=1:5, width = c(1, 1, 2, 2, 2)) %>% 
+  fontsize(size=10, part = "all") %>% 
+  #fit_to_width(max_width = 8) %>% 
+  merge_v(j = c("Section", "Division",  "Class type")) %>% #"Group", "Class",
+  theme_booktabs()
+
+#names(CICES)
+```
+<!-- \end{landscape} -->
+
+
+
+```{r ES-CICES, fig.cap='ES conceptual framework', out.width='100%', fig.pos='!ht', fig.align='center'}
+# img_url <- paste0(URL, 'Everest-bio/ES')
+# rsvg_pdf(img_url, "Figures/Methodology.pdf")
+
+knitr::include_graphics(here("PubliER", "Figures", "CICES-diagram.pdf"))
+
+```
+
+
+
+## Ecosystems services and industrial systems: Towards a synergy between both 
+
+<!-- Intro LCA -->
+In environmental management, major efforts have been dedicated to the evaluation of the environmental impact of industrial systems using Life cycle assessment (LCA). 
+LCA aims to assess impacts on ecosystems, natural resources, and human health, as three primary areas of protection.
+LCA proffers an internationally standardized approach to modeling, assessing, and valuing the impacts of a product or process throughout its life cycle. 
+<!-- Critique LCA -->
+However, a design approaches based on life cycle characterization and footprint methods focus on continuous improvement by reducing life cycle impacts per unit of product, encouraging improvements by doing "less bad", which need not necessary translate into keeping human activities within ecological constraints.
+Moreover, LCA does not fully acknowledge impacts on the supply of ES.
+Assessing the impacts of production systems on ES supply is a new – and contested – paradigm of the latest years [@Vanderwilde2021]
+<!-- Purpose of strong sustainability -->
+Ideally, it is needed to (re)designed industrial activities to reduce the demand of ecosystems services creating for a local '*island of sustainability*' [@Wallner1996] which is that the demand should not exceed the supply at the local scale [@Gopalakrishnan2016]. 
+
+
+<!-- Focus on integration of the ES and LCA -->
+Ecosystems services and industrial systems need to be confronted to holistic evaluation to determine the externalities positive and negative.
+In particular, full cost accounting in the business and governmental sectors, including new comprehensive accounts that include both the negative impacts on ES from business activities and the positive contributions of ES to businesses and households are key to develop [@Costanza2017]
+Decision makers  at the early stages should take into account the potential synergies and threats that the development of industrial systems could have to the local ecosystems.
+  <!-- TES -->
+For instance, @Bakshi2015 reported a framework of Techno-Ecological Synergy (TES) in order to expand the scope of the usual techno-centric perspectives.
+The main point argued is that TES develops ways of enhancing synergies between a local scale manufacturing process and the land around it.
+The final aims is to encourage a more robust analysis of technological and ecological systems at multiple spatial scales ranging from local (e.g. for small systems such as a house and its yard, a manufacturing process and its site) to a larger scale systems that extend to consider the entire life cycle.
+
+
+In that sense, @Vanderwilde2021 reported a systematic literature review revealing that a persistent division between the LCA and ES research communities. 
+They putted forward that there are LCA research has focus on one or a few ES, especially carbon balance, sequestration, and emissions. 
+Also, the work has prioritized regulation and maintenance and provisioning services, with work especially scarce on cultural services.
+Likewise, @Rugani2019 proposed an approach towards consensus building in the assessment of human activities' impacts on the provision of ES and their beneficial uses for human well-being. More specifically, to harmonize the cascade concept [@RoyHaines-Young2018] from the ES literature and the cause- effect chain modelling used in LCIA.
+<!-- More general, the critical issues relies on the importance of ES to challenge the conventional approaches to growth and development, towards a perspective more focalized on the prosperity and wellbeing. -->
+
+
+
+
+## Ecosystems services at the urban territorial planification
+
+```{r, include=FALSE}
+Urban_ES <- read_csv(file= here('Scopus', '02-12-2021-Urban-ES-review.csv'))
+Urban_ES <- Urban_ES %>% select(Title, Year, DOI)
+#View(Urban_ES)
+```
+
+
+<!-- Urban Ecosystem Services -->
+More than two thirds of the world's population are expected to live in cities by 2050 [@ref]. 
+Thus, the integration of ecosystem services in the urban and peri-urban planning is a key issue for prioritizing the quality of life in cities [@Gomez-Baggethun2013], helping to urban planners to guarantee that future city districts the local people have access to urban greenery and their services
+
+  <!-- Importance of Urban ES -->
+Urban ecosystems are especially important in providing services with direct impact on health and security such as air purification, noise reduction, urban cooling, and runoff mitigation [@Bolund1999]. 
+@Croci2021 presented a critical review
+  <!-- Classification of Urban ES -->
+@Gomez-Baggethun2013 draws on the developments of the ecosystem services for urban planning. 
+They formulated a classification of ecosystem services and disservices in urban areas, including valuation methods and tools.
+  
+
+Using this background on ES from the different perspectives, in the following section a methodology is proposed converge main ES that are relevant for the industrial, territorial and global value chain. 
+
+# Methodology
+\label{methodology}
+
+The purpose of this article is to identify main relevant ES services from a industrial and territorial perspective at the early design of industrial systems. 
+This identification is a first step with the purpose to evaluate the supply and demand of ecosystem services for these industrial systems.
+
+
+```{r Fig-Methodology, fig.cap='Operational framework for evaluatig the ecosystem services of industrial systems', out.width='100%', fig.pos='!ht', fig.align='center'}
+
+#library(magick)
+#image_write(image_read_svg(img_url,  width = 350), path = "Figures/Methodology.jpeg", format = "jpeg")
+
+# img_url <- paste0(URL, 'Everest-bio/Publier/Methodology.svg')
+# rsvg_pdf(img_url, "Figures/Methodology.pdf")
+
+knitr::include_graphics(here("PubliER", "Figures", "Methodology.pdf"))
+```
+
+
+Four major steps are proposed as illustrated in figure \@ref(Fig-Methodology) .
+
+  
+- **I) Global value Planning**: the main goal is to identify the the links between the global value chain to be evaluated and the capital nature through the literature on ecological systems.
+The main purpose in this step is to map the the interactions positive and negative.
+  
+- **II) Industrial system**: the main aim is to define the technosphere and identify the key ecosystems services that are impacted. 
+The identification is made using the lens of connection between the LCA and ES elements.
+  
+- **II) Industrial system**: in this step, the main purpose is the identification of the key urban priorities in the territorial context from a perspective of ecosystem services.
+To establish these priorities, the territorial planification perspective is analysed given the fact that a particular city varies greatly in function of the environmental and socio-economic characteristics of the territory.
+
+- Finally, in **IV) Synthesis**, the main goal is to converge on main ES that are identified for the three last perspectives, 
+
+
+In the following sub-sections, each stage of the methodology is explained.
+An application of the framework will be presented in Section \label{results} using as case study of the distributed recycling chain via additive manufacturing.
+
+
+# Results
+\label{results}
+
+ Context of the industrial system
+ 
+ A prospective distributed recycling chain for additive manufacturing .
+ 
+ 
+ 
+ 
+## Step I - Ecosystem Services issues at the Value chain: Plastic issues at the ecosystems
+
+The goal of this first step is to highlight the main interactions that the value chain have with the natural ecosystems.
+This enables us to have a holistic picture of the impacts of plastic pollution in the natural ecosystems taking into account the highlighting the uncertainties and knowledge gaps that could exist in the field.
+
+
+```{r fig-Kumar2021, fig.cap= 'Illustration of MPs and NPs affecting various ecosystem services and climate change on terrestrial, aquatic, and atmospheric ecosystems. Source. Kumar2021.jpg' }
+
+#download.file(paste0(URL,'Plastics/ES/Kumar2021.jpg'), "Figures/Kumar2021.jpg")
+
+knitr::include_graphics(here("PubliER", "Figures","Kumar2021.jpg"))
+
+```
+
+
+@Kumar2021 reported a complete description of the major impacts on the plastic pollution an the ecosystems services,identifying in what extend there are present the interlinkages between plastic pollution, waste management, and Sustainable Development Goals (SDG).
+  <!-- Presenting the Figure -->
+Figure \@ref(fig:fig-Kumar2021) presents an overview of the major interactions that plastic impact the ecosystem services in the terrestrial and aquatic ecosystems, representing a major societal issue.
+Macrosplastics -MP- (particules $\geq 5mm$ ), mesoplastics -MsP- ($1-5 mm$) and microplastics ($<1~mm$) are the major problems in the ecosystems. 
+
+For aquatic ecosystems, main risks are linked to standing water that acts as a breeding niche (to mosquitoes, pests, vector-borne diseases transmission), becomes a vector for toxic chemicals and, ultimately, disturbs the natural cycles (biogeochemical cycle in terrestrial ecosystems). Additionally, the transfer of  plastic into the food chain is a clear danger to animal and, certainly, to humans as well. Thus, reducing the consumption of plastics is of great importance in the long term.
+
+For terrestrial ecosystems, 
+
+
+For atmospheric ecosystem, the pollution 
+
+
+The plastic value chain is one of the mo
+
+- Plastic materials have impats on the terrestrial, auquatic, and atmospheric ecosystems. 
+
+
+-  
+
+Concerning the terrestrial impacts, the plastic degradation make and important impact on the pollitation of the 
+
+The global value chain of the plastic material 
+
+
+
+\renewcommand{\arraystretch}{1.5}
+```{r Value-chain-ES-table, include=TRUE}
+Value_chain <- 
+  tribble(
+  ~Description, ~"ES impact", ~Reference,
+# Provisioning (Biotic)
+  'Soil productivity is impacted due to the nutrient imbalance followed by oxidative stress and leading to the poor growth of food crops',
+  '1.1.1.1 ; 1.2.1.1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 
+   '[@Kumar2021; @Garcia-Vazquez2021] 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+
+
+'MPs and their suspended solids hasten eutrophication adding more contaminants to the food chain supply and primarily creating organic contamination.', 
+  '1.1.5.1 ; 1.1.6.1 ', 
+    '[136]',
+
+
+# Regulation & Maintenance (Biotic)
+  
+  'MPs and NPs in the atmosphere also lead to the obstruction and lowering of pollination.',
+  '2.2.2.1',
+    '[@Kumar2021]',
+
+"MPs and NPs are established to act as a vector and breach through any system (organisms) and even via trophic transfer (one trophic level to another via food chain), therefore, it can be hypothesized that MPs in the future can play a pivotal role in the spill over of infectious diseases, leading to an epidemic or pandemic of unknown scale",
+  '2.2.3.1; 2.2.3.1',
+  'Ref', 
+
+
+  'MP and NP in terrestrial ecosystems reduce tha ability to sequester carbon.',
+    '2.1.1.2 ; 2.2.4.1', 
+      '[@Kumar2021]',
+  
+
+  'Elements as nitrogen and phosphorous, are also vividly influenced due to MPs and NPs in the soil ecosystem',
+    '2.2.4.1 ; 2.2.4.2',
+      '[@Kumar2021]',
+    
+   
+    "MPs accumulation can promote mineralization, nitrification, and denitrification in aquatic ecosystems, therefore releasing CO2, CH4, and N2O.",
+    '2.2.6.1',
+      '[@Kumar2021]',
+    
+  
+  'marine carbon sinks are critical in analyzing the global climate change and are potentially affected by MPs and NPs pollution on phytoplankton-sequestered CO2 and their transmission to the deep ocean via zooplankton [77].',
+    '2.2.5.2 ',
+    '[@Kumar2021]',
+  
+
+
+  'Plastics-induced variations in solar radiation in the water column can alter physical processes at the ocean’s surface and near-surface layers as well as trigger climate feedback mechanisms',
+    '2.2.6.1',
+    '[@Kumar2021]',
+  
+
+  'MPs and NPs are known to cause a dynamic shift in the soil temperature as is commonly practiced in agriculture sectors with extreme climatic conditions.', 
+    '2.2.4.1',
+    '',
+  
+  
+  'MPs and NPs in the soil ecosystem are known to have a strong impact on the population structure and survival of these faunas [135,137,154,158].' ,
+  '2.2.4.1',
+  ' ',
+  
+  
+
+  'Small-sized plastics act as stressors, altering the ocean level and temperature and influencing the acidification.' ,
+  '2.2.6.1',
+  '',
+   
+  
+  'High amounts of MPs and NPs are more substantially found in pelagic species than in deep-water species.',
+  '1.1.5.1',
+  '',
+   
+  
+  'MPs and NPs act as vectors for toxic chemicals and microbes and can breach any ecosystem.',
+  '2.1.1.1',
+   'REf'
+  
+# Cultural (Biotic)
+  
+)
+```
+
+
+```{r Value-chain-ES, include=TRUE}
+# Value_chain %>%
+#    kbl(caption = "Plastic pollution impact on ES",  booktabs = T) %>%
+#    kable_styling(latex_options = c("striped", "hold_position") ) %>%
+#    column_spec(1, width = "30em")
+  # xtable::xtable(Value_chain, caption = "Hello xtable",
+  #                align = c("l", "p{1.5in}", "p{0.5in}", "p{1in}")) %>%
+  #  xtable2kable() #%>%
+  # column_spec(1, color = "red")
+
+knitr::kable(Value_chain, "pipe")
+```
+
+
+
+## Step II - Definition the Industrial system : Distributed recycling via additive manufacturing
+
+<!-- Distributed Fabrication -->
+Major technological advances in the additive manufacturing (AM) field have enable the validation of distributed fabrication [@Woern2017; @Petersen2017a; @Matt2015].
+In the same logic, recently, the concept of distributed recycling via additive manufacturing (DRAM) emerged in the literature to face the technico-environmental challenges related to recycling option, mostly for material-extrusion based technologies using thermoplastic assets as feedstock [@CruzSanchez2020; @Santander2020]. 
+The use of recycled material, either in the form of raw material or blended with virgin material, is a method of special interest to contribute to sustainable manufacturing [@Zhao2018].
+
+<!-- Explaining DRAM -->
+The main hypothesis relies on the fact that a distributed and local spaces can provide recycled feedstock to transform it into finish (or prototypes) for a local community. 
+To do so, the use of additive manufacturing enables the technical paths to achieve this objective. 
+   <!-- Reasons: Economic -->
+In the DRAM methodology, consumers have an economic incentive to recycle. 
+This is because they can use their waste as feedstock for a wide range of consumer products that can be produced for a fraction of the conventional cost of the equivalent products. 
+   <!-- Reasons: Design -->
+Moreover, 3D printing is especially well suited because it enables the production of parts with (almost) no waste, and could reduce the waste related to the material by more than 40 %, reusing 95 % of the unused material [@Petrovic2011]. 
+Currently, most of the cost of 3D printing is associated with filament in FFF techniques [@Wittbrodt2013]. 
+
+By recycling raw materials such as Polylactic acid (PLA), one of the most frequently used materials in 3D printing, it is possible to reduce the carbon dioxide emissions that are incurred by transport to landfills or shipping to customers, offering environmental benefits [@Santander2020]. 
+
+
+However, while not all types of materials can be recycled given the technical difficulties, the integral evaluation of the environmental advantage is needed to assess at early stages the pertinence of this distributed approaches. 
+Although research has been conducted regarding on the technical and logistical feasibility of distributed plastic recycling, little is known about its pertinence from the ecosystem services perspective in a territory.  
+
+
+The technical system is depicted  in the figure XX.
+
+```{r DRAM}
+
+```
+
+From a perspective of AM process, several researches have used the life cycle impact assessment (LCIA) for the case of distributed recycling [@Kreiger2013; @Kreiger2014; @Kerdlap2021; @Garcia2021; @Zhao2018].
+The main element to highlight is that climate change (global warming potential -GWP-) and cumulative energy demand (CED) are the most studied impact factors in the literature of additive manufacturing. 
+For instance, using a technical system *recyclebot* to create 3D printing recycled filament with High Density Polyethylen (HPDE),
+@Kreiger2014 argued that the distributed recycling can decrease the embodied energy by 69%-82% with respect to conventional recycling using CED estimations. 
+@Zhao2018 estimated the  environmental impacts associated with disposal of 1 kg PLA in three end-of-life options (landfill, recycling, incineration), making a point that recycling option is made using 3D printing technology.
+They used GWP (in kg CO2 eq), ozone depletion potential (ODP, in CFC-11 eq), fossil depletion potential (FDP, in kg oil eq), human toxicity potential (HTP, in kg 1,4-DB eq), particulate matter formation potential (PMFP, in kg PM10 eq), photochemical oxidant formation potential (POFP, in kg NMVOC), freshwater eutrophication potential (FEP, in kg P eq), freshwater ecotoxicity potential (FETP, in kg 1,4-DB eq), marine eutrophication potential (MEP, in kg N eq), marine ecotoxicity potential (METP, in kg 1,4-DB eq), terrestrial acidification potential (TAP, in kg SO2 eq), and terrestrial ecotoxicity potential (TETP, in kg 1,4-DB eq).
+In a more network level, @Kerdlap2021  quantify the LCIA  of distributed versus centralized  plastic recycling systems of small-scale distributed plastic sorting and recycling systems in comparison to traditional large-scale centralized systems in Singapore. They used climate change and cumulative energy, water depletion and terrestrial eco-toxicity as impact categories.
+ 
+
+<!-- From perspective of the bioplastic material, @Bishop2021 reported a a comprehensive review of the appication of LCA studies on the comparative sustainability of bioplastics regarding petrol-based alternative. -->
+
+
+```{r Tab:DRAM-ES}
+
+```
+
+Given these literature,  it is possible to conclude that GWP and 
+
+@Vanderwilde2021 studied the connection of LCIA with the field of ecosystem services. 
+One major point from this studied is the proposition of the links that can connect the LCIA mid-point categories with the set of ES .
+Nevertheless, they used the version.
+
+
+Therefore, based on, table \@ref
+
+
+```{r, }
+
+ES_LCA <- 
+   tribble(~Description, ~"ES impact", ~Reference,
+           'Climate change', '2.2.4.1; 2.1.1.2; 2.2.4.1; 2.2.4.2', ' ',
+           'Eutrophication', '2.2.5.1; 2.2.5.2; 2.1.1.1; 2.1.1.2 ', ' ',
+           'Ressources Depletion', 'All CICES-defined Provisioning (1.1.1.1 - 1.2.2.3; ) ES as potentially relevant; adding water availability (2.2.1.3; 2.2.5.1; 2.2.5.2', ' ',
+           
+           'RD', '1.1.1.1; 1.1.1.2;
+1.1.1.3;
+1.1.2.1;
+1.1.2.2;
+1.1.2.3;
+1.1.3.1;
+1.1.3.2;
+1.1.3.3;
+1.1.4.1;
+1.1.4.2;
+1.1.4.3;
+1.1.5.1;
+1.1.5.2;
+1.1.5.3;
+1.1.6.1;
+1.1.6.2;
+1.1.6.3;
+1.2.1.1;
+1.2.1.2;
+1.2.1.3;
+1.2.2.1;
+1.2.2.2;
+1.2.2.3;
+
+2.2.1.3; 
+2.2.5.1; 
+2.2.5.2', ' '
+           )
+
+
+
+
+
+ ES_LCA %>% filter(Description != 'RD') %>% 
+  kbl(caption = "LCA impact categories of DRAM connecting with ES",  booktabs = T) %>%
+    kable_styling(latex_options = c("striped", "hold_position") ) %>% 
+    column_spec(1, width = "10em") %>% 
+    column_spec(2, width = "30em")
+
+
+```
+
+
+
+
+
+
+## Step III - Ecosystem services Priorities at the territorial level: Nancy, France 
+
+In this step, the main goal is to identify the stratic axis that the territory put in the view of preserving/improving/restauring ecosystem services. 
+For that, we delimitate the city of Nancy, in the east region of , .
+
+
+Based on the three main perspectives of ES, 
+
+
+- https://fr.calameo.com/read/005820422f7f4ab30f35b?page=1
+- https://www.ecologie.gouv.fr/levaluation-francaise-des-ecosystemes-et-des-services-ecosystemiques#scroll-nav__2
+
+- https://www.ecologie.gouv.fr/levaluation-francaise-des-ecosystemes-et-des-services-ecosystemiques#scroll-nav__3
+
+
+
+```{r Tab:Nancy-ES}
+
+Nancy_ES <- 
+   tribble(~Description, ~"ES impact", ~Reference,
+           
+           'Clima - Air', '2.2.6.1; 2.1.2.2', 'Calameo',
+           'Sol', '2.2.4.1; 2.2.4.2', 'Calameo'
+           
+           )
+
+Nancy_ES %>% 
+  kbl(caption = "LCA impact categories of DRAM connecting with ES",  booktabs = T) %>%
+    kable_styling(latex_options = c("striped", "hold_position") ) %>% 
+    column_spec(1, width = "10em") %>% 
+    column_spec(2, width = "30em")
+
+```
+
+
+
+## Step IV - Identifying the Hot spot of the ES for the case of DRAM at Nancy, France
+
+
+```{r, include=FALSE, eval=FALSE}
+Value_chain <- Value_chain %>% mutate(Perspective = "Value chain of plastic")
+ES_LCA <- ES_LCA %>% mutate(Reference = ' ', Perspective = "LCA of DRAM") %>% filter(Description != 'Ressources Depletion' )
+Nancy_ES <- Nancy_ES %>% mutate(Perspective = "Territorial at Nancy")
+
+
+# Gathering all data
+Total_ES <- rbind(Value_chain, ES_LCA, Nancy_ES)
+
+
+Sankey <- Total_ES %>% select(Perspective, `ES impact`)
+
+Sankey <- Sankey %>% separate(`ES impact`, into=LETTERS[1:27], sep = ";")
+
+library(stringr)
+
+Sankey <- Sankey %>% pivot_longer(A:Z)
+Sankey$ES <- gsub('\\s+', '', Sankey$value)
+ 
+Sankey <-  Sankey %>% select(Perspective, ES)
+Sankey <- na.omit(Sankey)
+#Sankey$value = c(1)
+colnames(Sankey) <- c("source", "target")
+
+
+library(networkD3)
+
+# I need a long format
+Sankey <- Sankey %>% group_by(source, target) %>% summarise(value=sum (n()))
+
+# From these flows we need to create a node data frame: it lists every entities involved in the flow
+nodes <- data.frame(name=c(as.character(Sankey$source), as.character(Sankey$target)) %>% unique())
+ 
+# With networkD3, connection must be provided using id, not using real name like in the links dataframe.. So we need to reformat it.
+Sankey$IDsource=match(Sankey$source, nodes$name)-1 
+Sankey$IDtarget=match(Sankey$target, nodes$name)-1
+
+# prepare colour scale
+ColourScal ='d3.scaleOrdinal() .range(["#FDE725FF","#B4DE2CFF","#6DCD59FF","#35B779FF","#1F9E89FF","#26828EFF","#31688EFF","#3E4A89FF","#482878FF","#440154FF"])'
+
+
+# Make the Network
+Sankey_graf <-
+   sankeyNetwork(Links = Sankey, Nodes = nodes,
+                 Source = "IDsource", Target = "IDtarget",
+                 Value = "value", NodeID = "name", fontSize=13 ,
+                 LinkGroup = "source")
+
+                     #sinksRight=FALSE, colourScale=ColourScal, nodeWidth=40,  nodePadding=20)
+
+
+
+library(htmlwidgets)
+saveWidget(Sankey_graf, file="Sankey.html")
+
+library(webshot)
+webshot("Sankey.html", "Figures/Sankey.png")
+
+
+```
+
+
+\begin{landscape}
+```{r fig-sankey, fig.cap= 'Priorization of ES for the distributed recycling indsutrail system.' }
+
+#download.file(paste0(URL,'Plastics/ES/Kumar2021.jpg'), "Figures/Kumar2021.jpg")
+knitr::include_graphics(here("PubliER", "Figures", "Sankey.png"))
+```
+\end{landscape}
+
+# Discussion and perspective of the analysis
+
+
+
+
+# Conclusions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliography{library.bib}
+
+\newpage
+# References

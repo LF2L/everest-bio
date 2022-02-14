@@ -1,0 +1,72 @@
+---
+title: "Structuration of Everest Bio Project"
+bibliography: "`r here::here('library.bib')`"
+date: "`r paste('Last Version of the document: ', format(Sys.time(), '%b %d/%Y'))`"
+fontsize: 12pt
+link-citations: yes
+linkcolor: blue
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Version I: Towards a robust desicion tool for ecosystems services in the industrial systems:  A case study of Distributed recycling for additive manufacturing
+
+<!-- Intro -->
+Ecosystem services (ES) is a powerful conceptual framework to put in evidence the benefits that humans received from nature, most of time for free.
+<!-- Problem -->
+The problem is that it is complex to link between the local ecosystem services of an urban territory and the industrial systems placed within it identifying the priority interactions (as synergy and impacts).
+From a decision-maker perspective, there is no a aid decision tool to guide a multicriteria evaluation at early development stages of industrial systems.
+<!-- Conceptual Framework (broad theoretical) -->
+   <!-- ES valuation and Urban  ES-->
+There have been major efforts in the valuation of ES given by ecosystems (terrestrial, aquatic, atmospheric) to the human well-being [@Costanza2017; @DeGroot2012; @MEA2005; @Costanza1997], and  great advances in the developing of a standard ES baselines such as Common International Classification of Ecosystem Services (CICES)[@RoyHaines-Young2018]. 
+<!-- Knowledge Gap -->
+However, few researches have been addressed the alignment the territorial priorities in terms of ES for planning and urban development with the supply/demand of ES by industrial systems.
+<!-- Logic & Evidence for Problem, KG and Context -->
+   <!-- LCA -->
+In the industrial side, Life cycle thinking have been a major assessment tool putting a great attention in the quantification of the environmental impact of industrial interventions, and helping in the comparison of different scenarios in each aspect stage of the product life [@Mahmud2021; @Pryshlakivsky2021]. 
+   <!-- LCA AND ES -->
+Recently, several research efforts reported  accounts for the dependence systems by explicitly accounting for the demand that technological systems place on ecosystems and the supply of ecosystem services that nature can provide to a process or product at multiple spatial scales [@Liu2019g].
+This techno-ecological synergy (TES) [@Liu2019g; @Bakshi2015] aims to reflect its emphasis on establishing mutually beneficial relationships between technological and ecological systems, with the ultimate goal of achieving harmony between human activities and nature.
+<!-- Purpose Statement -->
+The purpose of this article is to propose a methodological approach in order to include ecosystem services in regarding the territorial and industrial endeavors.
+   <!-- Expand a methodology -->
+This prioritization is based on the connection of urban ES services and the techno-ecological synergy.
+The results seek a step forwards to create techno-ecological synergies between ecological and industrial systems.
+<!-- Context -->
+This methodological approach will applied to the case of distributed recycling via additive manufacturing (DRAM) to highlight the relevant ES from the CICES framework of this industrial system for the territory of Nancy, France. 
+The technical advancements of recycling approaches using additive manufacturing are promising technical interventions to foster plastic recycling at a local level.
+<!-- Reseacch Questions (NOt add more problems) -->
+This study seeks to address the following questions:
+
+- What are the main ecosystem services from a urban territorial perspective that DRAM can improve?.
+- How to make the connections of ES with the industrial systems?. 
+- How to connect the territorial issues and the industrial issues using the CICES framework to prioritize?
+
+
+\newpage
+
+# Version II  Fev 08/2022
+
+
+<!-- Problem -->
+The evaluation of the environmental externalities of (emergent) industrial systems in a territory is a central problem for decision-maker and industrial agents.
+From an industrial perspective, techno-economical remains as the major and only criteria used to evaluate the feasibility of emergent industrial systems [in short circuit].
+From a decision-maker perspective, a complete information about the relation on the impacts/dependencies of industrial systems on the natural capital and the ecosystems services of a particular territory is difficult to foreseen in the early/fuzzy-front design phases of development.
+<!-- Knowledge Gap: Academic rational -->
+In the scientific literature, life cycle thinking is a major body of knowledge to the quantification of the environmental impacts of industrial interventions, being Life cycle analysis a decision-aid tool for the comparison of different scenarios in each aspect stage of the product life [@Mahmud2021; @Pryshlakivsky2021]. 
+Likewise, Ecosystem services have been a major conceptual framework in the evaluation of the natural capital and the valuation of supply/demand ES in a territory.
+However, the research gap in the literature consist that few researches have been addressed the alignment the territorial priorities in terms of ES for planning and urban development with the supply/demand of ES by industrial systems.
+<!-- Purpose Statement: -->
+The purpose of this research is to propose a methodological steps to identify the hotspot of ES in terms that converge in the industrial value chain and the territorial perspective.  
+<!-- Research questions -->
+
+
+
+\newpage
+
+# References
+

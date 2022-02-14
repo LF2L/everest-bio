@@ -1,0 +1,148 @@
+---
+class: middle
+
+# Agenda
+
+.pull-left[
+1. .content-box-yellow[ERPI Laboratory]
+1. Green Fablab
+1. Everest Bio
+1. Proposition and Research axis
+]
+
+.pull-right[
+
+.brand-blue[Equipe de Recherche sur le Processus Innovatifs - ERPI]
+
+```{r, out.width = '80%', fig.align='center'}
+knitr::include_graphics('https://erpi.univ-lorraine.fr/assets/images/logo-ERPI.svg')
+```
+]
+
+
+---
+
+
+## .small[Equipe de Recherche sur le Processus Innovatifs - ERPI] 
+
+A .red[Multidisciplinary] team in **Industrial Engineering** specialized in the study of Innovation processes
+
+
+.pull-left[
+
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics('https://erpi.univ-lorraine.fr/assets/images/logo-ERPI.svg')
+```
+
+
+45 Members average
+
+24 permanent researchers <br>
+(10 full Pr., 13 associated Pr, 1 Research engineer) <br>
+1 Studies engineer <br>
+5 Postdoc  <br>
+3 Temporary lecturers  <br>
+2 Admin. <br>
+
+]
+
+.pull-right[
+
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'LF2L/Methodology-complet-00.jpg'))
+```
+
+Research platform: **LF2L** - http://lf2l.fr
+]
+
+
+---
+
+# Research domains at ERPI: 
+
+.pull-left[
+.pull-left[
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'ERPI/Presentation/01-Innovation-metrology.jpg'))
+```
+
+.orange[
+**Innovation capability**
+
+Product <br>
+Process  <br>
+Business Model <br>
+
+]
+]
+.pull-right[
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'ERPI/Presentation/02-Prospective.jpg'))
+```
+.blue[
+**Technological  Emergence/maturity**
+
+Product-Process <br>
+Industrial supply chain <br>
+]]]
+
+.pull-right[
+.pull-left[
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'ERPI/Presentation/03-Design.jpg'))
+```
+.green[
+**Materialized**
+
+Creative Exploration <br>
+Feasibility Product-Process <br>
+Physic & digital (virtual) Prototyping <br>
+]
+]
+.pull-right[
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'ERPI/Presentation/04-Acceptability.jpg'))
+```
+.purple[
+**Front-end validation**
+Multi-actors Acceptability <br>
+User eXperience & test by use <br>
+Living Lab <br>
+]]]
+
+.center.Large[Creator of **methods & tools** supporting innovation process]
+
+---
+
+## Scope: The Fuzzy Front End of innovation 
+
+.pull-left[
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'ERPI/Presentation/Scope-00.jpg'))
+```
+]
+
+.pull-right[
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'ERPI/Presentation/Purpose-00.jpg'))
+```
+.footnote[
+Martinez-Hernandez, E., 2017. Trends in sustainable process design—from molecular to global scales. Curr. Opin. Chem. Eng. 17, 35–41. <br/> https://doi.org/10.1016/j.coche.2017.05.005 
+]
+]
+
+Think earlier in the sustainable design and their impact
+
+
+
+---
+
+## Innovation: a response to current social challenges
+
+```{r, out.width = '95%', fig.align='center'}
+knitr::include_graphics(paste0(URL, 'ERPI/Presentation/Fields-00.jpg'))
+```
+
+.tiny[Tran Thi Hoang, G., Dupont, L., & Camargo, M. (2019). Application of Decision-Making Methods in Smart City Projects: A Systematic Literature Review. Smart Cities, 2(3), 433-452.]
+
+---
